@@ -3,8 +3,11 @@
 @import "base/_reset";
 
 // Layout
+@import "layout/_extra";
 @import "layout/_general";
 
 // Page styles
 @import "modules/_header";
 @import "modules/_section-main";
+@import "modules/_section-buy";
+@import "modules/_section-advertising";

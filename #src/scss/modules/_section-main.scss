@@ -3,8 +3,11 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
-    position: relative;
+
+    &__wrapper {
+        position: relative;
+        height: 100vh;
+    }
 }
 
 .main-logo {
@@ -20,6 +23,100 @@
         @media (min-width: 992px) {
             width: 180px;
             height: 170px;
+        }
+    }
+}
+
+.main-lang {
+    position: absolute;
+    left: 0;
+    bottom: 25px;
+    display: none;
+    flex-direction: column;
+    border-radius: 5px;
+    overflow: hidden;
+
+    @media (min-width: 992px) {
+        display: flex;
+    }
+
+    &__btn {
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(10px);
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.01em;
+        color: #909198;
+        padding: 10px;
+        transition: all .5s;
+
+        &:hover {
+            color: #FAFAFA;
+
+        }
+    }
+
+    &__btn.active {
+        color: #FAFAFA;
+    }
+}
+
+.main-cards {
+    position: absolute;
+    right: 0;
+    bottom: 25px;
+    display: flex;
+}
+
+.main-card {
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    padding: 4px;
+    margin-left: 25px;
+
+    &__photo {
+        max-width: 100%;
+        height: auto;
+    }
+
+    &__descr {
+        padding: 10px 0 10px 10px;
+    }
+
+    &__link {
+        display: block;
+        color: #FAFAFA;
+        transition: all .5s;
+
+        &:hover {
+            color: #cecccc;
+        }
+    }
+
+    &__headline {
+        font-family: $Lora;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+
+        @media (min-width: 992px) {
+            font-size: 22px;
+            line-height: 25px;
+        }
+    }
+
+    &__txt {
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 22px;
+        letter-spacing: 0.01em;
+        color: #FAFAFA;
+
+        @media (min-width: 992px) {
+            font-size: 16px;
+            line-height: 22px;
         }
     }
 }

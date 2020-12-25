@@ -12,7 +12,7 @@ let path = {
     src: {
         html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"],
         css:  [
-            "node_modules/bootstrap/dist/css/bootstrap.css",
+            "node_modules/bootstrap/dist/css/bootstrap-grid.css",
             source_folder + "/scss/style.scss"
         ],
         js: [

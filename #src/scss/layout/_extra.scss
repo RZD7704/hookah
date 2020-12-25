@@ -1,0 +1,43 @@
+.general-head {
+    padding-top: 25px;
+    padding-bottom: 10px;
+
+    @media (min-width: 992px) {
+        padding-top: 60px;
+    }
+
+    &__title {
+        font-weight: normal;
+        font-size: 16px;
+        letter-spacing: 0.02em;
+        color: #363636;
+        padding-left: 15px;
+        border-left: 2px solid #16B0A7;
+
+        @media (min-width: 992px) {
+            font-size: 20px;
+        }
+    }
+
+    &__actions {
+        text-align: right;
+        padding-top: 10px;
+    }
+
+    &__btn {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0.01em;
+        color: #909198;
+        transition: all .5s;
+
+        @media (min-width: 992px) {
+            font-size: 16px;
+        }
+
+        &:hover {
+            color: #363636;
+        }
+    }
+}
