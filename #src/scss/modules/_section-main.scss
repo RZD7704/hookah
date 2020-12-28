@@ -64,9 +64,15 @@
 
 .main-cards {
     position: absolute;
-    right: 0;
     bottom: 25px;
     display: flex;
+    right: 0;
+
+    @media(max-width: 767px) {
+        width: 100%;
+        right: auto;
+        justify-content: space-between;
+    }
 }
 
 .main-card {
@@ -75,6 +81,24 @@
     border-radius: 5px;
     padding: 4px;
     margin-left: 25px;
+
+    @media(max-width: 767px) {
+        display: none;
+    }
+
+    &:first-child {
+        margin-left: 0;
+
+        @media(max-width: 767px) {
+            display: block;
+        }
+    }
+
+    &:last-child {
+        @media(max-width: 767px) {
+            display: block;
+        }
+    }
 
     &__photo {
         max-width: 100%;

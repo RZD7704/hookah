@@ -8,70 +8,76 @@
     @@include('_links.html')
 <body>
     <div class="content">
-        <header class="header main-header">
+        <header class="header header_theme_main">
             <div class="container">
                 <div class="header__body">
                     <div class="header__burger header__burger_theme_white">
                         <span></span>
                     </div>
-                    <a class="header__btn-help main-header__btn-help" href="#">
-                        <svg class="header__btn-help--icon">
-                            <use xlink:href="img/icons/icons.svg#ask-icon"></use>
-                        </svg>
-                    </a>
+                    <div class="header-help">
+                        <a class="header-help__btn header-help__btn_theme_main" href="#">
+                            <svg class="header-help__btn--icon">
+                                <use xlink:href="img/icons/icons.svg#ask-icon"></use>
+                            </svg>
+                        </a>
+                    </div>
+                
                     <div class="header__wrapper">
-                        <div class="header__menu">
-                            <nav>
-                                <ul class="header__list">
-                                    <li>
-                                        <a href="#" class="header__link header__link_theme_white">Карта</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="header__link header__link_theme_white">Кальянные</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="header__link header__link_theme_white">Товары</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="header__link header__link_theme_white">Магазины</a>
-                                    </li>
-                                    <li>
-                                        <span class="header__list-span header__list-span_theme_white">Ваш город:</span>
-                                        <a href="#" class="header__link header__link_theme_white">Москва</a>
-                                    </li>
-                                </ul>
-                            </nav>
+                        <div class="header-menu">
+                            <ul class="header-menu__list">
+                                <li class="header-menu__item">
+                                    <a href="#" class="header-menu__link header-menu__link_theme_white">Карта</a>
+                                </li>
+                                <li class="header-menu__item">
+                                    <a href="#" class="header-menu__link header-menu__link_theme_white">Кальянные</a>
+                                </li>
+                                <li class="header-menu__item">
+                                    <a href="#" class="header-menu__link header-menu__link_theme_white">Товары</a>
+                                </li>
+                                <li class="header-menu__item">
+                                    <a href="#" class="header-menu__link header-menu__link_theme_white">Магазины</a>
+                                </li>
+                                <li class="header-menu__item">
+                                    <span class="header-menu__list-span header-menu__list-span_theme_white">Ваш город:</span>
+                                    <a href="#" class="header-menu__link header-menu__link_theme_white">Москва</a>
+                                </li>
+                            </ul>
         
-                            <div class="header__mobile-btns">
-                                <a class="header__btn-help" href="#">
-                                    <svg class="header__btn-help--icon">
-                                        <use xlink:href="img/icons/icons.svg#ask-icon-grey"></use>
-                                    </svg>
-                                </a>
-                                <div class="header__mobile-leng-btns">
-                                    <a class="header__mobile-leng-btn" href="#">
-                                        EN
-                                    </a>
-                                    <a class="header__mobile-leng-btn active" href="#">
-                                        RU
+                            <div class="header-mobile-btns">
+                                <div class="header-help">
+                                    <a class="header-help__btn" href="#">
+                                        <svg class="header-help__btn--icon">
+                                            <use xlink:href="img/icons/icons.svg#ask-icon-grey"></use>
+                                        </svg>
                                     </a>
                                 </div>
+                                <ul class="lang-switcher">
+                                    <li class="lang-switcher__item">
+                                        <a class="lang-switcher__link" href="#">EN</a>
+                                    </li>
+                                    <li class="lang-switcher__item">
+                                        <a class="lang-switcher__link active" href="#">RU</a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="header__nav">
-                            <a class="header__nav-link" href="#">
-                                <svg class="header__nav-icon">
-                                    <use xlink:href="img/icons/icons.svg#persone-icon"></use>
-                                </svg>
-                            </a>
-                            <a class="header__nav-link" href="#">
-                                <svg class="header__nav-icon">
-                                    <use xlink:href="img/icons/icons.svg#shop-icon"></use>
-                                </svg>
-                            </a>
+                        <div class="header-btns">
+                            <div class="header-btn">
+                                <a class="header-btn__link" href="#">
+                                    <svg class="header-btn__link--icon">
+                                        <use xlink:href="img/icons/icons.svg#persone-icon"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="header-btn">
+                                <a class="header-btn__link" href="#">
+                                    <svg class="header-btn__link--icon">
+                                        <use xlink:href="img/icons/icons.svg#shop-icon"></use>
+                                    </svg>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                   
                 </div>
             </div>
         </header>
@@ -121,6 +127,7 @@
                                 </div>
                             </div>
                         </div>
+                        
                     </div>
                 </div>
             </section>
@@ -132,79 +139,101 @@
                             <a class="general-head__btn" href="#">Lead more</a>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="buy-card col-md-6 col-lg-3">
-                            <a class="buy-card__link" href="#">
-                                <img class="buy-card__photo" src="img/buy-cart-photo.png" alt="Photo">
-                            </a>
-                            <div class="buy-card__descr">
-                                <a class="buy-card__link" href="#">
-                                    <div class="buy-card__headline">Stanley Blond</div>
-                                </a>
-                                <div class="buy-card__foot">
-                                    <div class="buy-card__price">2500</div>
-                                    <a class="buy-card__select" href="#">
-                                        <svg class="buy-card__select--icon">
-                                            <use xlink:href="img/icons/icons.svg#heart-icon"></use>
-                                        </svg>
+                    <div class="swiper-container section-buy-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide general-swiper-slide">
+                                <div class="buy-card pl-0">
+                                    <a class="buy-card__link" href="#">
+                                        <img class="buy-card__photo" src="img/buy-cart-photo.png" alt="Photo">
                                     </a>
+                                    <div class="buy-card__descr">
+                                        <a class="buy-card__link" href="#">
+                                            <div class="buy-card__headline">Stanley Blond</div>
+                                        </a>
+                                        <div class="buy-card__foot">
+                                            <div class="buy-card__price">2500</div>
+                                            <a class="buy-card__select" href="#">
+                                                <svg class="buy-card__select--icon">
+                                                    <use xlink:href="img/icons/icons.svg#heart-icon"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide general-swiper-slide">
+                                <div class="buy-card">
+                                    <a class="buy-card__link" href="#">
+                                        <img class="buy-card__photo" src="img/buy-cart-photo.png" alt="Photo">
+                                    </a>
+                                    <div class="buy-card__descr">
+                                        <a class="buy-card__link" href="#">
+                                            <div class="buy-card__headline">Stanley Blond</div>
+                                        </a>
+                                        <div class="buy-card__foot">
+                                            <div class="buy-card__price">2500</div>
+                                            <a class="buy-card__select" href="#">
+                                                <svg class="buy-card__select--icon">
+                                                    <use xlink:href="img/icons/icons.svg#heart-icon"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide general-swiper-slide">
+                                <div class="buy-card">
+                                    <a class="buy-card__link" href="#">
+                                        <img class="buy-card__photo" src="img/buy-cart-photo.png" alt="Photo">
+                                    </a>
+                                    <div class="buy-card__descr">
+                                        <a class="buy-card__link" href="#">
+                                            <div class="buy-card__headline">Stanley Blond</div>
+                                        </a>
+                                        <div class="buy-card__foot">
+                                            <div class="buy-card__price">2500</div>
+                                            <a class="buy-card__select" href="#">
+                                                <svg class="buy-card__select--icon">
+                                                    <use xlink:href="img/icons/icons.svg#heart-icon"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide general-swiper-slide">
+                                <div class="buy-card">
+                                    <a class="buy-card__link" href="#">
+                                        <img class="buy-card__photo" src="img/buy-cart-photo.png" alt="Photo">
+                                    </a>
+                                    <div class="buy-card__descr">
+                                        <a class="buy-card__link" href="#">
+                                            <div class="buy-card__headline">Stanley Blond</div>
+                                        </a>
+                                        <div class="buy-card__foot">
+                                            <div class="buy-card__price">2500</div>
+                                            <a class="buy-card__select" href="#">
+                                                <svg class="buy-card__select--icon">
+                                                    <use xlink:href="img/icons/icons.svg#heart-icon"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="buy-card col-md-6 col-lg-3">
-                            <a class="buy-card__link" href="#">
-                                <img class="buy-card__photo" src="img/buy-cart-photo.png" alt="Photo">
-                            </a>
-                            <div class="buy-card__descr">
-                                <a class="buy-card__link" href="#">
-                                    <div class="buy-card__headline">Stanley Blond</div>
-                                </a>
-                                <div class="buy-card__foot">
-                                    <div class="buy-card__price">2500</div>
-                                    <a class="buy-card__select" href="#">
-                                        <svg class="buy-card__select--icon">
-                                            <use xlink:href="img/icons/icons.svg#heart-icon"></use>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
+                        <div class="general-pagination">
+                            <button class="general-pagination__btn general-pagination__btn_prev" type="button">
+                                <svg class="general-pagination__btn--icon general-pagination__btn--icon_prev">
+                                    <use xlink:href="img/icons/icons.svg#general-pagination-arr"></use>
+                                </svg>
+                            </button>
+                            <button class="general-pagination__btn general-pagination__btn_next" type="button">
+                                <svg class="general-pagination__btn--icon">
+                                    <use xlink:href="img/icons/icons.svg#general-pagination-arr"></use>
+                                </svg>
+                            </button>
                         </div>
-                        <div class="buy-card col-md-6 col-lg-3">
-                            <a class="buy-card__link" href="#">
-                                <img class="buy-card__photo" src="img/buy-cart-photo.png" alt="Photo">
-                            </a>
-                            <div class="buy-card__descr">
-                                <a class="buy-card__link" href="#">
-                                    <div class="buy-card__headline">Stanley Blond</div>
-                                </a>
-                                <div class="buy-card__foot">
-                                    <div class="buy-card__price">2500</div>
-                                    <a class="buy-card__select" href="#">
-                                        <svg class="buy-card__select--icon">
-                                            <use xlink:href="img/icons/icons.svg#heart-icon"></use>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="buy-card col-md-6 col-lg-3">
-                            <a class="buy-card__link" href="#">
-                                <img class="buy-card__photo" src="img/buy-cart-photo.png" alt="Photo">
-                            </a>
-                            <div class="buy-card__descr">
-                                <a class="buy-card__link" href="#">
-                                    <div class="buy-card__headline">Stanley Blond</div>
-                                </a>
-                                <div class="buy-card__foot">
-                                    <div class="buy-card__price">2500</div>
-                                    <a class="buy-card__select" href="#">
-                                        <svg class="buy-card__select--icon">
-                                            <use xlink:href="img/icons/icons.svg#heart-icon"></use>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div> 
                     </div>
                 </div>
             </section>
@@ -218,6 +247,188 @@
                     </div>
                 </div>
                 <img class="advertising__photo" src="img/adv-banner.png" alt="Banner">
+            </section>
+            <section class="section section-shop">
+                <div class="container">
+                    <div class="general-head">
+                        <div class="general-head__title">Популярные магазины:</div>
+                        <div class="general-head__actions">
+                            <a class="general-head__btn" href="#">Lead more</a>
+                        </div>
+                    </div>
+                    <div class="swiper-container section-shop-slider">
+                        <div class="swiper-wrapper section-shop-slider__wrapper">
+                            <div class="swiper-slide general-swiper-slide">
+                                <div class="shop-card pl-0">
+                                    <a class="shop-card__link" href="#">
+                                        <img class="shop-card__photo" src="img/shop-cart-photo.png" alt="Photo">
+                                    </a>
+                                    <div class="shop-card__descr">
+                                        <a class="shop-card__link" href="#">
+                                            <div class="shop-card__headline">Tundra Shop</div>
+                                        </a>
+                                        <div class="shop-card__foot">
+                                            <a class="shop-card__rate" href="#">
+                                                <svg class="shop-card__rate--icon">
+                                                    <use xlink:href="img/icons/icons.svg#rate-star-icon"></use>
+                                                </svg>
+                                            </a>
+                                            <a class="shop-card__rate" href="#">
+                                                <svg class="shop-card__rate--icon">
+                                                    <use xlink:href="img/icons/icons.svg#rate-star-icon"></use>
+                                                </svg>
+                                            </a>
+                                            <a class="shop-card__rate" href="#">
+                                                <svg class="shop-card__rate--icon">
+                                                    <use xlink:href="img/icons/icons.svg#rate-star-icon"></use>
+                                                </svg>
+                                            </a>
+                                            <a class="shop-card__rate" href="#">
+                                                <svg class="shop-card__rate--icon">
+                                                    <use xlink:href="img/icons/icons.svg#rate-star-icon"></use>
+                                                </svg>
+                                            </a>
+                                            <a class="shop-card__rate" href="#">
+                                                <svg class="shop-card__rate--icon">
+                                                    <use xlink:href="img/icons/icons.svg#rate-star-icon"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide general-swiper-slide">
+                                <div class="shop-card">
+                                    <a class="shop-card__link" href="#">
+                                        <img class="shop-card__photo" src="img/shop-cart-photo.png" alt="Photo">
+                                    </a>
+                                    <div class="shop-card__descr">
+                                        <a class="shop-card__link" href="#">
+                                            <div class="shop-card__headline">Tundra Shop</div>
+                                        </a>
+                                        <div class="shop-card__foot">
+                                            <a class="shop-card__rate" href="#">
+                                                <svg class="shop-card__rate--icon">
+                                                    <use xlink:href="img/icons/icons.svg#rate-star-icon"></use>
+                                                </svg>
+                                            </a>
+                                            <a class="shop-card__rate" href="#">
+                                                <svg class="shop-card__rate--icon">
+                                                    <use xlink:href="img/icons/icons.svg#rate-star-icon"></use>
+                                                </svg>
+                                            </a>
+                                            <a class="shop-card__rate" href="#">
+                                                <svg class="shop-card__rate--icon">
+                                                    <use xlink:href="img/icons/icons.svg#rate-star-icon"></use>
+                                                </svg>
+                                            </a>
+                                            <a class="shop-card__rate" href="#">
+                                                <svg class="shop-card__rate--icon">
+                                                    <use xlink:href="img/icons/icons.svg#rate-star-icon"></use>
+                                                </svg>
+                                            </a>
+                                            <a class="shop-card__rate" href="#">
+                                                <svg class="shop-card__rate--icon">
+                                                    <use xlink:href="img/icons/icons.svg#rate-star-icon"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide general-swiper-slide">
+                                <div class="shop-card">
+                                    <a class="shop-card__link" href="#">
+                                        <img class="shop-card__photo" src="img/shop-cart-photo.png" alt="Photo">
+                                    </a>
+                                    <div class="shop-card__descr">
+                                        <a class="shop-card__link" href="#">
+                                            <div class="shop-card__headline">Tundra Shop</div>
+                                        </a>
+                                        <div class="shop-card__foot">
+                                            <a class="shop-card__rate" href="#">
+                                                <svg class="shop-card__rate--icon">
+                                                    <use xlink:href="img/icons/icons.svg#rate-star-icon"></use>
+                                                </svg>
+                                            </a>
+                                            <a class="shop-card__rate" href="#">
+                                                <svg class="shop-card__rate--icon">
+                                                    <use xlink:href="img/icons/icons.svg#rate-star-icon"></use>
+                                                </svg>
+                                            </a>
+                                            <a class="shop-card__rate" href="#">
+                                                <svg class="shop-card__rate--icon">
+                                                    <use xlink:href="img/icons/icons.svg#rate-star-icon"></use>
+                                                </svg>
+                                            </a>
+                                            <a class="shop-card__rate" href="#">
+                                                <svg class="shop-card__rate--icon">
+                                                    <use xlink:href="img/icons/icons.svg#rate-star-icon"></use>
+                                                </svg>
+                                            </a>
+                                            <a class="shop-card__rate" href="#">
+                                                <svg class="shop-card__rate--icon">
+                                                    <use xlink:href="img/icons/icons.svg#rate-star-icon"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide general-swiper-slide">
+                                <div class="shop-card">
+                                    <a class="shop-card__link" href="#">
+                                        <img class="shop-card__photo" src="img/shop-cart-photo.png" alt="Photo">
+                                    </a>
+                                    <div class="shop-card__descr">
+                                        <a class="shop-card__link" href="#">
+                                            <div class="shop-card__headline">Tundra Shop</div>
+                                        </a>
+                                        <div class="shop-card__foot">
+                                            <a class="shop-card__rate" href="#">
+                                                <svg class="shop-card__rate--icon">
+                                                    <use xlink:href="img/icons/icons.svg#rate-star-icon"></use>
+                                                </svg>
+                                            </a>
+                                            <a class="shop-card__rate" href="#">
+                                                <svg class="shop-card__rate--icon">
+                                                    <use xlink:href="img/icons/icons.svg#rate-star-icon"></use>
+                                                </svg>
+                                            </a>
+                                            <a class="shop-card__rate" href="#">
+                                                <svg class="shop-card__rate--icon">
+                                                    <use xlink:href="img/icons/icons.svg#rate-star-icon"></use>
+                                                </svg>
+                                            </a>
+                                            <a class="shop-card__rate" href="#">
+                                                <svg class="shop-card__rate--icon">
+                                                    <use xlink:href="img/icons/icons.svg#rate-star-icon"></use>
+                                                </svg>
+                                            </a>
+                                            <a class="shop-card__rate" href="#">
+                                                <svg class="shop-card__rate--icon">
+                                                    <use xlink:href="img/icons/icons.svg#rate-star-icon"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="general-pagination">
+                            <button class="general-pagination__btn general-pagination__btn_prev" type="button">
+                                <svg class="general-pagination__btn--icon general-pagination__btn--icon_prev">
+                                    <use xlink:href="img/icons/icons.svg#general-pagination-arr"></use>
+                                </svg>
+                            </button>
+                            <button class="general-pagination__btn general-pagination__btn_next" type="button">
+                                <svg class="general-pagination__btn--icon">
+                                    <use xlink:href="img/icons/icons.svg#general-pagination-arr"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
     </div>

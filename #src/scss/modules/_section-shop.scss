@@ -1,8 +1,4 @@
-.section-buy {
-    &__wrapper {}
-}
-
-.buy-card {
+.shop-card {
     @media(min-width: 992px) {
         padding-left: 30px;
     }
@@ -28,6 +24,7 @@
     }
 
     &__headline {
+        text-align: center;
         font-weight: normal;
         font-size: 20px;
         line-height: 22px;
@@ -37,21 +34,29 @@
 
     &__foot {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
     }
 
-    &__price {
-        font-weight: normal;
-        font-size: 20px;
-        line-height: 22px;
-        letter-spacing: 0.02em;
-        color: #090909;
-    }
+    &__rate {
+        display: flex;
+        margin-left: 3px;
 
-    &__select {
+        &:first-child {
+            margin-left: 0;
+        }
+
         &--icon {
             width: 20px;
             height: 20px;
+        }
+    }
+}
+
+.section-shop-slider {
+    &__wrapper {
+        @media (min-width: 992px) {
+            display: flex;
+            justify-content: space-between;
         }
     }
 }
