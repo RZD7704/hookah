@@ -60,6 +60,12 @@
         display: none;
     }
 
+    &_d-flex {
+        @media(min-width: 992px) {
+            display: flex;
+        }
+    }
+
     &__btn {
         padding: 5px;
         display: flex;
