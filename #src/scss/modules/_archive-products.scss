@@ -1,0 +1,44 @@
+.section-archive-products {
+    padding-top: 25px;
+}
+
+.products-card {
+    margin-bottom: 25px;
+
+    @media(min-width: 992px) {
+        padding-left: 30px;
+        margin-bottom: 50px;
+    }
+
+    &__photo {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+    }
+
+    &__descr {
+        padding-top: 10px;
+    }
+
+    &__link {
+        color: #363636;
+        transition: all .5s;
+
+        &:hover {
+            color: #090909;
+        }
+    }
+
+    &__headline {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+        text-align: center;
+
+        @media(min-width: 992px) {
+            font-size: 20px;
+        }
+    }
+}

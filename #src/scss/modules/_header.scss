@@ -156,6 +156,14 @@
         padding-left: 40px;
     }
 
+    &:first-child {
+        padding-left: 0;
+
+        @media (min-width: 992px) {
+            padding-left: 40px;
+        }
+    }
+
     &__link {
         &--icon {
             width: 20px;
@@ -237,6 +245,11 @@
         line-height: 30px;
         letter-spacing: 0.02em;
         color: #363636;
+        transition: all .5s;
+
+        &:hover {
+            color: #16B0A7;
+        }
     }
 
     &__link_theme_white {

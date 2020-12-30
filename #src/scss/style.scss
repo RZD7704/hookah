@@ -3,6 +3,7 @@
 @import "base/_reset";
 
 // Layout
+@import "layout/_extra-archive";
 @import "layout/_extra";
 @import "layout/_general";
 
@@ -15,3 +16,6 @@
 @import "modules/_section-shop";
 @import "modules/_section-partners";
 @import "modules/_page-everything";
+@import "modules/_archive-hookah";
+@import "modules/_archive-shop";
+@import "modules/_archive-products";

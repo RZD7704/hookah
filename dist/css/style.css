@@ -137,6 +137,124 @@ table {
   border-spacing: 0;
 }
 
+.archive-head__headline {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  color: #090909;
+}
+
+.archive-head__action {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+.archive-filter-btn {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  color: #909198;
+  transition: all .5s;
+}
+
+.archive-filter-btn:hover {
+  color: #363636;
+}
+
+.archive-filter-btn__icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+
+.archive-sort-btn {
+  background: #fff;
+  cursor: pointer;
+}
+
+.archive-sort-btn__icon {
+  width: 25px;
+  height: 25px;
+}
+
+.archive-filters {
+  z-index: 3;
+}
+
+.archive-filters__btn-back {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  background: #fff;
+  color: #909198;
+  display: block;
+  margin-left: auto;
+}
+
+.archive-filter {
+  padding-bottom: 23px;
+}
+
+.archive-filter__headline {
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  color: #090909;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.archive-filter__list {
+  display: none;
+  padding-top: 15px;
+}
+
+.archive-filter__list.show {
+  display: block;
+}
+
+.archive-filter__item {
+  padding-bottom: 8px;
+}
+
+.archive-filter__btn {
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  color: #363636;
+  background: #fff;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.archive-filter__btn:hover {
+  color: #16B0A7;
+}
+
+.archive-more {
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  color: #FAFAFA;
+  background: #16B0A7;
+  padding: 7px 15px;
+  display: block;
+  margin: 0 auto 25px auto;
+  transition: all .5s;
+  cursor: pointer;
+}
+
+.archive-more:hover {
+  background: #008078;
+}
+
 .general-head {
   padding-top: 25px;
   padding-bottom: 15px;
@@ -177,9 +295,11 @@ table {
 }
 
 .general-pagination__btn {
-  padding: 5px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
   background: #FAFAFA;
   cursor: pointer;
 }
@@ -345,6 +465,10 @@ body {
   padding-left: 15px;
 }
 
+.header-btn:first-child {
+  padding-left: 0;
+}
+
 .header-btn__link--icon {
   width: 20px;
   height: 20px;
@@ -383,6 +507,11 @@ body {
   line-height: 30px;
   letter-spacing: 0.02em;
   color: #363636;
+  transition: all .5s;
+}
+
+.header-menu__link:hover {
+  color: #16B0A7;
 }
 
 .header-menu__list-span {
@@ -824,10 +953,15 @@ body {
 }
 
 .partners-card__photo-img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
+  border-radius: 8px;
+}
+
+.section-everything {
+  padding-top: 25px;
 }
 
 .everything-head__headline {
@@ -841,7 +975,7 @@ body {
 .everything-wrapper {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 20px;
+  padding-top: 25px;
 }
 
 .everything-nav {
@@ -878,7 +1012,116 @@ body {
   width: 100%;
 }
 
+.section-archive-hookah {
+  padding-top: 25px;
+}
+
+.hookah-card {
+  background: #FAFAFA;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 5px;
+  padding: 4px;
+  margin-left: 25px;
+  margin-bottom: 25px;
+}
+
+.hookah-card:first-child {
+  margin-left: 0;
+}
+
+.hookah-card__photo {
+  width: 100%;
+  height: auto;
+}
+
+.hookah-card__descr {
+  padding: 10px 0 10px 10px;
+}
+
+.hookah-card__link {
+  display: block;
+  color: #363636;
+  transition: all .5s;
+}
+
+.hookah-card__link:hover {
+  color: #909198;
+}
+
+.hookah-card__headline {
+  font-family: "Lora", serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.hookah-card__txt {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  color: #909198;
+}
+
+.archive-shop-card {
+  margin-bottom: 25px;
+}
+
+.section-archive-products {
+  padding-top: 25px;
+}
+
+.products-card {
+  margin-bottom: 25px;
+}
+
+.products-card__photo {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.products-card__descr {
+  padding-top: 10px;
+}
+
+.products-card__link {
+  color: #363636;
+  transition: all .5s;
+}
+
+.products-card__link:hover {
+  color: #090909;
+}
+
+.products-card__headline {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
 @media (min-width: 992px) {
+  .archive-head__action {
+    justify-content: flex-end;
+    padding-top: 5px;
+  }
+
+  .archive-filter-btn {
+    display: none;
+  }
+
+  .archive-filters__btn-back {
+    display: none;
+  }
+
+  .archive-more {
+    margin: 40px auto 40px auto;
+  }
+
   .general-head {
     padding-top: 60px;
     padding-bottom: 25px;
@@ -906,6 +1149,10 @@ body {
   }
 
   .header-btn {
+    padding-left: 40px;
+  }
+
+  .header-btn:first-child {
     padding-left: 40px;
   }
 
@@ -1028,15 +1275,58 @@ body {
   .everything-partners {
     width: 85%;
   }
+
+  .hookah-card__headline {
+    font-size: 22px;
+    line-height: 25px;
+  }
+
+  .hookah-card__txt {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .archive-shop-card {
+    margin-bottom: 40px;
+  }
+
+  .products-card {
+    padding-left: 30px;
+    margin-bottom: 50px;
+  }
+
+  .products-card__headline {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 992px) {
   .general-content {
     padding: 50px 0px 0px 0px;
   }
+
+  .hookah-card {
+    margin-bottom: 15px;
+  }
 }
 
 @media (max-width: 991px) {
+  .archive-filters {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    transition: all 0.3s ease 0s;
+    background-color: #fff;
+    padding: 70px 10px 20px 25px;
+  }
+
+  .archive-filters.active {
+    left: 0;
+  }
+
   body.lock {
     overflow: hidden;
   }
@@ -1166,5 +1456,21 @@ body {
 
   .main-card:last-child {
     display: block;
+  }
+
+  .hookah-card {
+    display: none;
+  }
+
+  .hookah-card:first-child {
+    display: block;
+  }
+
+  .hookah-card:last-child {
+    display: block;
+  }
+
+  .hookah-card__descr {
+    padding: 0;
   }
 }

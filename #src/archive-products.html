@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gulp</title>
+   
+    @@include('_links.html')
+<body>
+    <div class="content">
+        @@include('_header.html')
+        <main class="main general-content">
+            <section class="section section-archive-products">
+                <div class="container">
+                    <div class="archive-head">
+                        <div class="archive-head__headline">Категории товаров</div>
+                        <div class="archive-head__action">
+                            <button class="archive-filter-btn" type="button">
+                                <svg class="archive-filter-btn__icon">
+                                    <use xlink:href="img/icons/icons.svg#filters-icon"></use>
+                                </svg>
+                                Edit
+                            </button>
+                            <button class="archive-sort-btn" type="button">
+                                <svg class="archive-sort-btn__icon">
+                                    <use xlink:href="img/icons/icons.svg#sort-icons"></use>
+                                </svg>
+                            </button>
+                        </div>
+                     
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="archive-filters">
+                                <button class="archive-filters__btn-back" type="button">Вернуться</button>
+                                <div class="archive-filter">
+                                    <div class="archive-filter__headline">Кальяны</div>
+                                    <ul class="archive-filter__list">
+                                        <li class="archive-filter__item">
+                                            <button class="archive-filter__btn" type="button">1 km</button>
+                                        </li>
+                                        <li class="archive-filter__item">
+                                            <button class="archive-filter__btn" type="button">5 km</button>
+                                        </li>
+                                        <li class="archive-filter__item">
+                                            <button class="archive-filter__btn" type="button">10 km</button>
+                                        </li>
+                                        <li class="archive-filter__item">
+                                            <button class="archive-filter__btn" type="button">15 km +</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="archive-filter">
+                                    <div class="archive-filter__headline">Табак</div>
+                                    <ul class="archive-filter__list">
+                                        <li class="archive-filter__item">
+                                            <button class="archive-filter__btn" type="button">Недорого</button>
+                                        </li>
+                                        <li class="archive-filter__item">
+                                            <button class="archive-filter__btn" type="button">Дорого</button>
+                                        </li>
+                                        <li class="archive-filter__item">
+                                            <button class="archive-filter__btn" type="button">Умеренные цены</button>
+                                        </li>
+                                        <li class="archive-filter__item">
+                                            <button class="archive-filter__btn" type="button">Очень дорого</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="archive-filter">
+                                    <div class="archive-filter__headline">Угли</div>
+                                    <ul class="archive-filter__list">
+                                        <li class="archive-filter__item">
+                                            <button class="archive-filter__btn" type="button">Открыто сейчас</button>
+                                        </li>
+                                        <li class="archive-filter__item">
+                                            <button class="archive-filter__btn" type="button">Стандартное время работы</button>
+                                        </li>
+                                        <li class="archive-filter__item">
+                                            <button class="archive-filter__btn" type="button">Открывается вечером</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="archive-filter">
+                                    <div class="archive-filter__headline">Аксессуары</div>
+                                    <ul class="archive-filter__list">
+                                        <li class="archive-filter__item">
+                                            <button class="archive-filter__btn" type="button">Лофт</button>
+                                        </li>
+                                        <li class="archive-filter__item">
+                                            <button class="archive-filter__btn" type="button">Киберпанк</button>
+                                        </li>
+                                        <li class="archive-filter__item">
+                                            <button class="archive-filter__btn" type="button">Минимализм</button>
+                                        </li>
+                                        <li class="archive-filter__item">
+                                            <button class="archive-filter__btn" type="button">Стимпанк</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="archive-filter">
+                                    <div class="archive-filter__headline">Электронные сигареты</div>
+                                    <ul class="archive-filter__list">
+                                        <li class="archive-filter__item">
+                                            <button class="archive-filter__btn" type="button">Только кальяны</button>
+                                        </li>
+                                        <li class="archive-filter__item">
+                                            <button class="archive-filter__btn" type="button">Итальянская кухня</button>
+                                        </li>
+                                        <li class="archive-filter__item">
+                                            <button class="archive-filter__btn" type="button">Есть детское меню</button>
+                                        </li>
+                                        <li class="archive-filter__item">
+                                            <button class="archive-filter__btn" type="button">Алкольная карта</button>
+                                        </li>
+                                        <li class="archive-filter__item">
+                                            <button class="archive-filter__btn" type="button">Японская кухня</button>
+                                        </li>
+                                        <li class="archive-filter__item">
+                                            <button class="archive-filter__btn" type="button">Китайский чай</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="archive-filter">
+                                    <div class="archive-filter__headline">Жидкости</div>
+                                    <ul class="archive-filter__list">
+                                        <li class="archive-filter__item">
+                                            <button class="archive-filter__btn" type="button">Открыто сейчас</button>
+                                        </li>
+                                        <li class="archive-filter__item">
+                                            <button class="archive-filter__btn" type="button">Стандартное время работы</button>
+                                        </li>
+                                        <li class="archive-filter__item">
+                                            <button class="archive-filter__btn" type="button">Открывается вечером</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="row">
+                                <div class="col-6 col-lg-4">
+                                    <div class="products-card">
+                                        <a class="products-card__link" href="#">
+                                            <img class="products-card__photo" src="img/buy-cart-photo.png" alt="Photo">
+                                        </a>
+                                        <div class="products-card__descr">
+                                            <a class="products-card__link" href="#">
+                                                <div class="products-card__headline">Табак</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-4">
+                                    <div class="products-card">
+                                        <a class="products-card__link" href="#">
+                                            <img class="products-card__photo" src="img/buy-cart-photo.png" alt="Photo">
+                                        </a>
+                                        <div class="products-card__descr">
+                                            <a class="products-card__link" href="#">
+                                                <div class="products-card__headline">Угли</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-4">
+                                    <div class="products-card">
+                                        <a class="products-card__link" href="#">
+                                            <img class="products-card__photo" src="img/buy-cart-photo.png" alt="Photo">
+                                        </a>
+                                        <div class="products-card__descr">
+                                            <a class="products-card__link" href="#">
+                                                <div class="products-card__headline">Кальяны</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-4">
+                                    <div class="products-card">
+                                        <a class="products-card__link" href="#">
+                                            <img class="products-card__photo" src="img/buy-cart-photo.png" alt="Photo">
+                                        </a>
+                                        <div class="products-card__descr">
+                                            <a class="products-card__link" href="#">
+                                                <div class="products-card__headline">Аксессуары</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-4">
+                                    <div class="products-card">
+                                        <a class="products-card__link" href="#">
+                                            <img class="products-card__photo" src="img/buy-cart-photo.png" alt="Photo">
+                                        </a>
+                                        <div class="products-card__descr">
+                                            <a class="products-card__link" href="#">
+                                                <div class="products-card__headline">Жидкости</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-4">
+                                    <div class="products-card">
+                                        <a class="products-card__link" href="#">
+                                            <img class="products-card__photo" src="img/buy-cart-photo.png" alt="Photo">
+                                        </a>
+                                        <div class="products-card__descr">
+                                            <a class="products-card__link" href="#">
+                                                <div class="products-card__headline">Угли</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="archive-more" type="button">Посмотреть ещё</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </div>
+    @@include('_footer.html')
+    @@include('_scripts.html')
+</body>
+</html>

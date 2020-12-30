@@ -1,3 +1,7 @@
+.section-everything {
+    padding-top: 25px;
+}
+
 .everything-head {
     &__headline {
         font-weight: 600;
@@ -11,7 +15,7 @@
 .everything-wrapper {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 20px;
+    padding-top: 25px;
 }
 
 .everything-nav {

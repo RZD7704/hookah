@@ -67,9 +67,11 @@
     }
 
     &__btn {
-        padding: 5px;
         display: flex;
         justify-content: center;
+        align-items: center;
+        width: 35px;
+        height: 35px;
         background: #FAFAFA;
         cursor: pointer;
 
