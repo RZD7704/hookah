@@ -87,6 +87,31 @@
                 <div class="container">
                     <div class="archive-head">
                         <div class="archive-head__headline">Кальянные</div>
+                        <div class="archive-head-filters">
+                            <ul class="archive-head-filters__list">
+                                <li class="archive-head-filters__item">
+                                    <button class="archive-head-filters__btn active" type="button">Кальяны</button>
+                                </li>
+                                <li class="archive-head-filters__item">
+                                    <button class="archive-head-filters__btn" type="button">Табак</button>
+                                </li>
+                                <li class="archive-head-filters__item">
+                                    <button class="archive-head-filters__btn" type="button">Угли</button>
+                                </li>
+                                <li class="archive-head-filters__item">
+                                    <button class="archive-head-filters__btn" type="button">Аксессуары</button>
+                                </li>
+                                <li class="archive-head-filters__item">
+                                    <button class="archive-head-filters__btn" type="button">Электронные сигары</button>
+                                </li>
+                                <li class="archive-head-filters__item">
+                                    <button class="archive-head-filters__btn" type="button">Жидкости</button>
+                                </li>
+                            </ul>
+                            <div class="archive-head-filters__more-btn">
+                                <span class="archive-head-filters__more-btn--point"></span>
+                            </div>
+                        </div>
                         <div class="archive-head__action">
                             <button class="archive-filter-btn" type="button">
                                 <svg class="archive-filter-btn__icon">
@@ -100,26 +125,25 @@
                                 </svg>
                             </button>
                         </div>
-                     
                     </div>
                     <div class="row">
                         <div class="col-lg-3">
                             <div class="archive-filters">
                                 <button class="archive-filters__btn-back" type="button">Вернуться</button>
                                 <div class="archive-filter">
-                                    <div class="archive-filter__headline">Расположение</div>
+                                    <div class="archive-filter__headline">Крепкость кальяна</div>
                                     <ul class="archive-filter__list show">
                                         <li class="archive-filter__item">
-                                            <button class="archive-filter__btn" type="button">1 km</button>
+                                            <button class="archive-filter__btn" type="button">light</button>
                                         </li>
                                         <li class="archive-filter__item">
-                                            <button class="archive-filter__btn" type="button">5 km</button>
+                                            <button class="archive-filter__btn" type="button">medium</button>
                                         </li>
                                         <li class="archive-filter__item">
-                                            <button class="archive-filter__btn" type="button">10 km</button>
+                                            <button class="archive-filter__btn" type="button">strong</button>
                                         </li>
                                         <li class="archive-filter__item">
-                                            <button class="archive-filter__btn" type="button">15 km +</button>
+                                            <button class="archive-filter__btn" type="button">extra strong</button>
                                         </li>
                                     </ul>
                                 </div>
@@ -140,26 +164,54 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="archive-filter">
-                                    <div class="archive-filter__headline">Меню</div>
-                                    <ul class="archive-filter__list show">
-                                        <li class="archive-filter__item">
-                                            <button class="archive-filter__btn" type="button">Только кальяны</button>
+                                <div class="archive-filter-scroll">
+                                    <div class="archive-filter-scroll__head">
+                                        <div class="archive-filter-scroll__headline">Меню</div>
+                                        <form class="archive-filter-form" action="#">
+                                            <input class="archive-filter-form__field" placeholder="Искать..." type="text">
+                                            <button class="archive-filter-form__btn" type="submit">
+                                                <svg class="archive-filter-form__btn--icon">
+                                                    <use xlink:href="img/icons/icons.svg#filter-search-icon"></use>
+                                                </svg>
+                                            </button>
+                                        </form>
+                                    </div>
+                                    <ul class="archive-filter-scroll__list show">
+                                        <li class="archive-filter-scroll__item">
+                                            <button class="archive-filter-scroll__btn" type="button">Только кальяны</button>
                                         </li>
-                                        <li class="archive-filter__item">
-                                            <button class="archive-filter__btn" type="button">Итальянская кухня</button>
+                                        <li class="archive-filter-scroll__item">
+                                            <button class="archive-filter-scroll__btn" type="button">Итальянская кухня</button>
                                         </li>
-                                        <li class="archive-filter__item">
-                                            <button class="archive-filter__btn" type="button">Есть детское меню</button>
+                                        <li class="archive-filter-scroll__item">
+                                            <button class="archive-filter-scroll__btn" type="button">Есть детское меню</button>
                                         </li>
-                                        <li class="archive-filter__item">
-                                            <button class="archive-filter__btn" type="button">Алкольная карта</button>
+                                        <li class="archive-filter-scroll__item">
+                                            <button class="archive-filter-scroll__btn" type="button">Алкольная карта</button>
                                         </li>
-                                        <li class="archive-filter__item">
-                                            <button class="archive-filter__btn" type="button">Японская кухня</button>
+                                        <li class="archive-filter-scroll__item">
+                                            <button class="archive-filter-scroll__btn" type="button">Японская кухня</button>
                                         </li>
-                                        <li class="archive-filter__item">
-                                            <button class="archive-filter__btn" type="button">Китайский чай</button>
+                                        <li class="archive-filter-scroll__item">
+                                            <button class="archive-filter-scroll__btn" type="button">Китайский чай</button>
+                                        </li>
+                                        <li class="archive-filter-scroll__item">
+                                            <button class="archive-filter-scroll__btn" type="button">Только кальяны</button>
+                                        </li>
+                                        <li class="archive-filter-scroll__item">
+                                            <button class="archive-filter-scroll__btn" type="button">Итальянская кухня</button>
+                                        </li>
+                                        <li class="archive-filter-scroll__item">
+                                            <button class="archive-filter-scroll__btn" type="button">Есть детское меню</button>
+                                        </li>
+                                        <li class="archive-filter-scroll__item">
+                                            <button class="archive-filter-scroll__btn" type="button">Алкольная карта</button>
+                                        </li>
+                                        <li class="archive-filter-scroll__item">
+                                            <button class="archive-filter-scroll__btn" type="button">Японская кухня</button>
+                                        </li>
+                                        <li class="archive-filter-scroll__item">
+                                            <button class="archive-filter-scroll__btn" type="button">Китайский чай</button>
                                         </li>
                                     </ul>
                                 </div>
@@ -241,119 +293,182 @@
                         <div class="col-lg-9">
                             <div class="row">
                                 <div class="col-6 col-lg-4">
-                                    <div class="hookah-card">
-                                        <a class="hookah-card__link" href="#">
-                                            <img class="hookah-card__photo" src="img/main-card-1.png" alt="Photo">
+                                    <div class="archive-buy-card">
+                                        <a class="archive-buy-card__link" href="#">
+                                            <img class="archive-buy-card__photo" src="img/buy-cart-photo.png" alt="Photo">
                                         </a>
-                                        <div class="hookah-card__descr">
-                                            <a class="hookah-card__link" href="#">
-                                                <div class="hookah-card__headline">V Loft'e</div>
+                                        <div class="archive-buy-card__descr">
+                                            <a class="archive-buy-card__link" href="#">
+                                                <div class="archive-buy-card__headline">Stanley Blond</div>
                                             </a>
-                                            <div class="hookah-card__txt">Истринская ул., 8к3</div>
+                                            <div class="archive-buy-card__foot">
+                                                <div class="archive-buy-card__price">2500</div>
+                                                <a class="archive-buy-card__select" href="#">
+                                                    <svg class="archive-buy-card__select--icon">
+                                                        <use xlink:href="img/icons/icons.svg#heart-icon"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-6 col-lg-4">
-                                    <div class="hookah-card">
-                                        <a class="hookah-card__link" href="#">
-                                            <img class="hookah-card__photo" src="img/main-card-2.png" alt="Photo">
+                                    <div class="archive-buy-card">
+                                        <a class="archive-buy-card__link" href="#">
+                                            <img class="archive-buy-card__photo" src="img/buy-cart-photo.png" alt="Photo">
                                         </a>
-                                        <div class="hookah-card__descr">
-                                            <a class="hookah-card__link" href="#">
-                                                <div class="hookah-card__headline">V Loft'e</div>
+                                        <div class="archive-buy-card__descr">
+                                            <a class="archive-buy-card__link" href="#">
+                                                <div class="archive-buy-card__headline">Stanley Blond</div>
                                             </a>
-                                            <div class="hookah-card__txt">Истринская ул., 8к3</div>
+                                            <div class="archive-buy-card__foot">
+                                                <div class="archive-buy-card__price">2500</div>
+                                                <a class="archive-buy-card__select" href="#">
+                                                    <svg class="archive-buy-card__select--icon">
+                                                        <use xlink:href="img/icons/icons.svg#heart-icon"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-6 col-lg-4">
-                                    <div class="hookah-card">
-                                        <a class="hookah-card__link" href="#">
-                                            <img class="hookah-card__photo" src="img/main-card-3.png" alt="Photo">
+                                    <div class="archive-buy-card">
+                                        <a class="archive-buy-card__link" href="#">
+                                            <img class="archive-buy-card__photo" src="img/buy-cart-photo.png" alt="Photo">
                                         </a>
-                                        <div class="hookah-card__descr">
-                                            <a class="hookah-card__link" href="#">
-                                                <div class="hookah-card__headline">V Loft'e</div>
+                                        <div class="archive-buy-card__descr">
+                                            <a class="archive-buy-card__link" href="#">
+                                                <div class="archive-buy-card__headline">Stanley Blond</div>
                                             </a>
-                                            <div class="hookah-card__txt">Истринская ул., 8к3</div>
+                                            <div class="archive-buy-card__foot">
+                                                <div class="archive-buy-card__price">2500</div>
+                                                <a class="archive-buy-card__select" href="#">
+                                                    <svg class="archive-buy-card__select--icon">
+                                                        <use xlink:href="img/icons/icons.svg#heart-icon"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-6 col-lg-4">
-                                    <div class="hookah-card">
-                                        <a class="hookah-card__link" href="#">
-                                            <img class="hookah-card__photo" src="img/main-card-1.png" alt="Photo">
+                                    <div class="archive-buy-card">
+                                        <a class="archive-buy-card__link" href="#">
+                                            <img class="archive-buy-card__photo" src="img/buy-cart-photo.png" alt="Photo">
                                         </a>
-                                        <div class="hookah-card__descr">
-                                            <a class="hookah-card__link" href="#">
-                                                <div class="hookah-card__headline">V Loft'e</div>
+                                        <div class="archive-buy-card__descr">
+                                            <a class="archive-buy-card__link" href="#">
+                                                <div class="archive-buy-card__headline">Stanley Blond</div>
                                             </a>
-                                            <div class="hookah-card__txt">Истринская ул., 8к3</div>
+                                            <div class="archive-buy-card__foot">
+                                                <div class="archive-buy-card__price">2500</div>
+                                                <a class="archive-buy-card__select" href="#">
+                                                    <svg class="archive-buy-card__select--icon">
+                                                        <use xlink:href="img/icons/icons.svg#heart-icon"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-6 col-lg-4">
-                                    <div class="hookah-card">
-                                        <a class="hookah-card__link" href="#">
-                                            <img class="hookah-card__photo" src="img/main-card-2.png" alt="Photo">
+                                    <div class="archive-buy-card">
+                                        <a class="archive-buy-card__link" href="#">
+                                            <img class="archive-buy-card__photo" src="img/buy-cart-photo.png" alt="Photo">
                                         </a>
-                                        <div class="hookah-card__descr">
-                                            <a class="hookah-card__link" href="#">
-                                                <div class="hookah-card__headline">V Loft'e</div>
+                                        <div class="archive-buy-card__descr">
+                                            <a class="archive-buy-card__link" href="#">
+                                                <div class="archive-buy-card__headline">Stanley Blond</div>
                                             </a>
-                                            <div class="hookah-card__txt">Истринская ул., 8к3</div>
+                                            <div class="archive-buy-card__foot">
+                                                <div class="archive-buy-card__price">2500</div>
+                                                <a class="archive-buy-card__select" href="#">
+                                                    <svg class="archive-buy-card__select--icon">
+                                                        <use xlink:href="img/icons/icons.svg#heart-icon"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-6 col-lg-4">
-                                    <div class="hookah-card">
-                                        <a class="hookah-card__link" href="#">
-                                            <img class="hookah-card__photo" src="img/main-card-3.png" alt="Photo">
+                                    <div class="archive-buy-card">
+                                        <a class="archive-buy-card__link" href="#">
+                                            <img class="archive-buy-card__photo" src="img/buy-cart-photo.png" alt="Photo">
                                         </a>
-                                        <div class="hookah-card__descr">
-                                            <a class="hookah-card__link" href="#">
-                                                <div class="hookah-card__headline">V Loft'e</div>
+                                        <div class="archive-buy-card__descr">
+                                            <a class="archive-buy-card__link" href="#">
+                                                <div class="archive-buy-card__headline">Stanley Blond</div>
                                             </a>
-                                            <div class="hookah-card__txt">Истринская ул., 8к3</div>
+                                            <div class="archive-buy-card__foot">
+                                                <div class="archive-buy-card__price">2500</div>
+                                                <a class="archive-buy-card__select" href="#">
+                                                    <svg class="archive-buy-card__select--icon">
+                                                        <use xlink:href="img/icons/icons.svg#heart-icon"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-6 col-lg-4">
-                                    <div class="hookah-card">
-                                        <a class="hookah-card__link" href="#">
-                                            <img class="hookah-card__photo" src="img/main-card-1.png" alt="Photo">
+                                    <div class="archive-buy-card">
+                                        <a class="archive-buy-card__link" href="#">
+                                            <img class="archive-buy-card__photo" src="img/buy-cart-photo.png" alt="Photo">
                                         </a>
-                                        <div class="hookah-card__descr">
-                                            <a class="hookah-card__link" href="#">
-                                                <div class="hookah-card__headline">V Loft'e</div>
+                                        <div class="archive-buy-card__descr">
+                                            <a class="archive-buy-card__link" href="#">
+                                                <div class="archive-buy-card__headline">Stanley Blond</div>
                                             </a>
-                                            <div class="hookah-card__txt">Истринская ул., 8к3</div>
+                                            <div class="archive-buy-card__foot">
+                                                <div class="archive-buy-card__price">2500</div>
+                                                <a class="archive-buy-card__select" href="#">
+                                                    <svg class="archive-buy-card__select--icon">
+                                                        <use xlink:href="img/icons/icons.svg#heart-icon"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-6 col-lg-4">
-                                    <div class="hookah-card">
-                                        <a class="hookah-card__link" href="#">
-                                            <img class="hookah-card__photo" src="img/main-card-2.png" alt="Photo">
+                                    <div class="archive-buy-card">
+                                        <a class="archive-buy-card__link" href="#">
+                                            <img class="archive-buy-card__photo" src="img/buy-cart-photo.png" alt="Photo">
                                         </a>
-                                        <div class="hookah-card__descr">
-                                            <a class="hookah-card__link" href="#">
-                                                <div class="hookah-card__headline">V Loft'e</div>
+                                        <div class="archive-buy-card__descr">
+                                            <a class="archive-buy-card__link" href="#">
+                                                <div class="archive-buy-card__headline">Stanley Blond</div>
                                             </a>
-                                            <div class="hookah-card__txt">Истринская ул., 8к3</div>
+                                            <div class="archive-buy-card__foot">
+                                                <div class="archive-buy-card__price">2500</div>
+                                                <a class="archive-buy-card__select" href="#">
+                                                    <svg class="archive-buy-card__select--icon">
+                                                        <use xlink:href="img/icons/icons.svg#heart-icon"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-6 col-lg-4">
-                                    <div class="hookah-card">
-                                        <a class="hookah-card__link" href="#">
-                                            <img class="hookah-card__photo" src="img/main-card-3.png" alt="Photo">
+                                    <div class="archive-buy-card">
+                                        <a class="archive-buy-card__link" href="#">
+                                            <img class="archive-buy-card__photo" src="img/buy-cart-photo.png" alt="Photo">
                                         </a>
-                                        <div class="hookah-card__descr">
-                                            <a class="hookah-card__link" href="#">
-                                                <div class="hookah-card__headline">V Loft'e</div>
+                                        <div class="archive-buy-card__descr">
+                                            <a class="archive-buy-card__link" href="#">
+                                                <div class="archive-buy-card__headline">Stanley Blond</div>
                                             </a>
-                                            <div class="hookah-card__txt">Истринская ул., 8к3</div>
+                                            <div class="archive-buy-card__foot">
+                                                <div class="archive-buy-card__price">2500</div>
+                                                <a class="archive-buy-card__select" href="#">
+                                                    <svg class="archive-buy-card__select--icon">
+                                                        <use xlink:href="img/icons/icons.svg#heart-icon"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

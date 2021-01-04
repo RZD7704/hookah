@@ -79,6 +79,27 @@ $(document).ready(function() {
 	$('.archive-filter').on('click', '.archive-filter__headline', function() {
 		$(this).toggleClass('active').siblings('.archive-filter__list').slideToggle();
 	});
+
+	// $('.archive-filter-scroll').on('click', '.archive-filter-scroll__headline', function() {
+	// 	$(this).toggleClass('active').siblings('.archive-filter-scroll__list').slideToggle();
+	// });
+});
+
+jQuery(document).ready(function($){
+	if ($('ul.archive-head-filters__list').find('li').length > 5) {
+		$('.archive-head-filters__more-btn').click(function(){
+			$(this).prev().children('li:nth-child(n+3)').slideToggle('');
+			$(this).toggleClass('opnd_g');
+
+			// if ($(this).hasClass('opnd_g')) {
+			// 	$(this).html('Скрыть');}
+			// else {
+			// 	$(this).html('Смотреть все');
+			// }
+		});
+	} else {
+		$('.show_hide_list').hide();
+	}
 });
 
 

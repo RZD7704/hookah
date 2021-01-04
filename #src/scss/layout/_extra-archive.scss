@@ -130,6 +130,116 @@
     }
 }
 
+.scroll-block {
+    height: 70px;
+    width: 340px;
+    background: whitesmoke;
+    overflow-y: scroll;
+    border: 1px solid;
+}
+
+
+
+.archive-filter-scroll {
+    padding-bottom: 23px;
+
+    &__head {
+        display: flex;
+        align-items: center;
+    }
+
+    &__headline {
+        font-weight: 600;
+        font-size: 16px;
+        letter-spacing: 0.01em;
+        color: #090909;
+        display: inline-block;
+        cursor: pointer;
+        padding-right: 10px;
+    }
+
+    &__list {
+        display: none;
+        margin-top: 15px;
+
+        height: 180px;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar-track {
+            border-radius: 8px;
+        }
+
+        &::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            border-radius: 8px;
+            background: #f0f2f5;
+        }
+
+        &:hover::-webkit-scrollbar-thumb {
+            background: #909198;
+        }
+    }
+
+
+
+    &__list.show {
+        display: block;
+    }
+
+    &__item {
+        padding-bottom: 8px;
+    }
+
+    &__btn {
+        font-weight: normal;
+        font-size: 16px;
+        letter-spacing: 0.01em;
+        color: #363636;
+        background: #fff;
+        cursor: pointer;
+        transition: all .5s;
+
+        &:hover {
+            color: #16B0A7;
+        }
+    }
+}
+
+
+.archive-filter-form {
+    position: relative;
+
+    &__field {
+        border: 1px solid #909198;
+        border-radius: 5px;
+        width: 100%;
+        padding: 3px 20px 3px 5px;
+
+        &::placeholder {
+            font-weight: normal;
+            font-size: 12px;
+            color: #909198;
+        }
+    }
+
+    &__btn {
+        line-height: 0;
+        position: absolute;
+        top: 6px;
+        right: 7px;
+        background: #fff;
+        cursor: pointer;
+
+        &--icon {
+            width: 18px;
+            height: 18px;
+        }
+    }
+}
+
 .archive-more {
     font-weight: normal;
     font-size: 16px;
@@ -151,12 +261,107 @@
     }
 }
 
-// .extremum-slide {
-//     border: 1px solid;
-//     padding: 50px;
-//     display: none;
-// }
+.archive-head-filters {
+    padding-top: 15px;
 
-// .red {
-//     background-color: red;
-// }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        @media(min-width: 768px) {
+            justify-content: space-around;
+        }
+    }
+
+    &__item {
+        padding-bottom: 10px;
+
+        &:nth-child(1) {
+            @media (max-width: 767px) {
+                width: 45%;
+            }
+        }
+
+        &:nth-child(2) {
+            @media (max-width: 767px) {
+                width: 45%;
+            }
+        }
+
+    }
+
+    &__btn {
+        width: 100%;
+        padding: 5px 35px;
+        background: #FAFAFA;
+        font-weight: normal;
+        font-size: 16px;
+        letter-spacing: 0.01em;
+        color: #909198;
+        transition: all .5s;
+        cursor: pointer;
+        border-radius: 14.5px;
+
+        &:hover {
+            background: #16B0A7;
+            color: #FAFAFA;
+        }
+
+        &.active {
+            background: #16B0A7;
+            color: #FAFAFA;
+        }
+    }
+
+    &__more-btn {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    ul.archive-head-filters__list li:nth-child(n+3) {
+        display: none;
+    }
+
+    .archive-head-filters__more-btn {
+        margin: 0 auto;
+        cursor: pointer;
+        width: 35px;
+        height: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .archive-head-filters__more-btn--point {
+        display: block;
+        background: #16B0A7;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        position: relative;
+
+        &::before {
+            content: '';
+            display: block;
+            background: #16B0A7;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            position: absolute;
+            left: 10px;
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            background: #16B0A7;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            position: absolute;
+            right: 10px;
+        }
+    }
+}
