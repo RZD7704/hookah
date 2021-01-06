@@ -93,3 +93,60 @@
         }
     }
 }
+
+.breadcrumbs {
+    &__list {}
+
+    &__item {
+        display: inline-block;
+
+        &:not(:last-of-type)::after {
+            content: '/';
+            font-size: 12px;
+            margin: 0 5px;
+            color: #363636;
+
+            @media (min-width: 992px) {
+                font-size: 20px;
+            }
+        }
+    }
+
+    &__link {
+        font-weight: normal;
+        font-size: 12px;
+        letter-spacing: 0.02em;
+        color: #363636;
+        transition: all .5s;
+
+        &:hover {
+            color: #000;
+        }
+
+        @media (min-width: 992px) {
+            font-size: 20px;
+        }
+    }
+
+    &__link_active {
+        color: #909198;
+
+        &:hover {
+            color: #909198;
+        }
+    }
+}
+
+.select {
+    text-align: right;
+    line-height: 0;
+
+    &__btn {
+        line-height: 0;
+
+        &--icon {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}

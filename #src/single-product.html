@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gulp</title>
+   
+    @@include('_links.html')
+<body>
+    <div class="content">
+        @@include('_header.html')
+        <main class="main general-content">
+            <div class="section section-single-product">
+                <div class="container">
+                    <div class="breadcrumbs">
+                        <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__item">
+                                <a class="breadcrumbs__link" href="#">Кальяны</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a class="breadcrumbs__link" href="#">Кальяны Karma</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a class="breadcrumbs__link breadcrumbs__link_active" href="#">Кальян иранский (УТ895)</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="single-head">
+                        <div class="select pt-2 pb-2">
+                            <a class="select__btn" href="#">
+                                <svg class="select__btn--icon">
+                                    <use xlink:href="img/icons/icons.svg#heart-icon"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="single-head__headline">Кальян иранский (УТ895)</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <div class="single-product-photo">
+                                <a data-fancybox="img-photo" class="single-product-photo__gallery single-product-photo__gallery_main" href="img/product-photo-1.png" data-caption="My beautiful image">
+                                    <img class="single-product-photo__img single-product-photo__img_main pb-1" src="img/product-photo-1.png" alt="Photo">                             
+                                </a>
+                                <!-- <img class="single-product-photo__img single-product-photo__img_main pb-1" src="img/product-photo-1.png" alt="Photo"> -->
+                                <a data-fancybox="img-photo" class="single-product-photo__gallery" href="img/product-photo-2.png" data-caption="My beautiful image">
+                                    <img class="single-product-photo__img pr-1" src="img/product-photo-2.png" alt="Photo">
+                                </a>
+                                <a data-fancybox="img-photo" class="single-product-photo__gallery" href="img/product-photo-3.png" data-caption="My beautiful image">
+                                    <img class="single-product-photo__img pl-1" src="img/product-photo-3.png" alt="Photo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="d-flex flex-column">
+                                <div class="product-trade order-lg-2 pb-4">
+                                    <div class="product-trade__wrapper">
+                                        <p class="product-price">
+                                            2500
+                                            <span class="product-price__symbol">₴</span>
+                                        </p>
+                                        <!-- skin 1 -->
+                                        <div class="product-quantity skin-1">
+                                            <div class="product-quantity__wrapper">
+                                                <span class="minus dis"></span>
+                                                <input type="text" class="product-num" value="1" readonly="">
+                                                <span class="plus"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="product-trade__btn product-trade__btn_fill" type="button">Купить</button>
+                                    <button class="product-trade__btn product-trade__btn_unfill product-trade__btn_backed" type="button">Добавить в корзину</button>
+                                </div>
+                                <div class="product-characteristics order-lg-1">
+                                    <ul class="product-characteristics__list">
+                                        <li class="product-characteristics__item">
+                                            <div class="product-characteristics__label">Артикул</div>
+                                            <div class="product-characteristics__value">УТ000000895</div>
+                                        </li>
+                                        <li class="product-characteristics__item">
+                                            <div class="product-characteristics__label">Гарантия</div>
+                                            <div class="product-characteristics__value">1 год</div>
+                                        </li>
+                                        <li class="product-characteristics__item">
+                                            <div class="product-characteristics__label">Высота</div>
+                                            <div class="product-characteristics__value">70 см</div>
+                                        </li>
+                                        <li class="product-characteristics__item">
+                                            <div class="product-characteristics__label">Цвет</div>
+                                            <div class="product-characteristics__value">Разноцветный</div>
+                                        </li>
+                                        <li class="product-characteristics__item">
+                                            <div class="product-characteristics__label">Страна</div>
+                                            <div class="product-characteristics__value">Иран</div>
+                                        </li>
+                                        <li class="product-characteristics__item">
+                                            <div class="product-characteristics__label">Особенности</div>
+                                            <div class="product-characteristics__value">Хороший кальян</div>
+                                        </li>
+                                        <li class="product-characteristics__item pt-lg-5 pb-lg-5">
+                                            <div class="product-characteristics__label">В наличии</div>
+                                            <div class="product-characteristics__value">99 шт.</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="product-comments order-3">
+                                    <a class="product-comments__link" href="#">Читать отзывы</a>
+                                </div>
+                                <div class="product-about order-4">
+                                    <div class="product-about__wgt">
+                                        <div class="product-about__headline">Время работы</div>
+                                        <div class="product-about__schedule">
+                                            <div class="product-about__schedule-item">
+                                                <div class="product-about__txt">Пн-Пт</div>
+                                                <div class="product-about__txt">с 10-00 до 20-00</div>
+                                            </div>
+                                            <div class="product-about__schedule-item">
+                                                <div class="product-about__txt">Сб</div>
+                                                <div class="product-about__txt">с 12-00 до 17-00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-about__wgt">
+                                        <div class="product-about__headline">Способы доставки</div>
+                                        <div class="product-about__item">
+                                            <img class="product-about__icon product-about__icon_post" src="img/icons/icons.svg#np-icon" alt="icon">
+                                            <div class="product-about__txt">Новая почта</div>
+                                        </div>
+                                        <div class="product-about__item">
+                                            <img class="product-about__icon product-about__icon_post" src="img/icons/icons.svg#yp-icon" alt="icon">
+                                            <div class="product-about__txt">Укрпочта</div>
+                                        </div>
+                                        <div class="product-about__item">
+                                            <img class="product-about__icon product-about__icon_post" src="img/icons/icons.svg#np-icon" alt="icon">
+                                            <div class="product-about__txt">Курьерская доставка 
+                                                от Нова почта</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-about__wgt">
+                                        <div class="product-about__headline">Способы оплаты</div>
+                                        <div class="product-about__txt pb-3">Наложенный платёж</div>
+                                        <div class="product-about__item">
+                                            <img class="product-about__icon product-about__icon_card" src="img/icons/icons.svg#MasterCard-icon" alt="icon">
+                                            <div class="product-about__txt">Картой MasterCard</div>
+                                        </div>
+                                        <div class="product-about__item">
+                                            <img class="product-about__icon product-about__icon_card" src="img/icons/icons.svg#Visa-icon" alt="icon">
+                                            <div class="product-about__txt">На карту Visa</div>
+                                        </div>
+                                        <div class="product-about__item">
+                                            <img class="product-about__icon product-about__icon_card" src="img/icons/icons.svg#GooglePay-icon" alt="icon">
+                                            <div class="product-about__txt">Через Google Pay</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+    </div>
+    @@include('_footer.html')
+    @@include('_scripts.html')
+</body>
+</html>

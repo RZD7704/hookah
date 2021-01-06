@@ -61,6 +61,8 @@ $(document).ready(function() {
 					prevEl: '.general-pagination__btn_prev',
 				},
 			});
+
+			$('.product-trade__btn_backed').html('В корзину');
 		}
 	}
 	resizeScrenn();
@@ -83,6 +85,48 @@ $(document).ready(function() {
 	// $('.archive-filter-scroll').on('click', '.archive-filter-scroll__headline', function() {
 	// 	$(this).toggleClass('active').siblings('.archive-filter-scroll__list').slideToggle();
 	// });
+
+
+	/////////////////// product +/-
+	$('.product-quantity__wrapper span').click(function () {
+		var $input = $(this).parents('.product-quantity__wrapper').find('input.product-num');
+	  if($(this).hasClass('minus')) {
+		var count = parseFloat($input.val()) - 1;
+		count = count < 1 ? 1 : count;
+		if (count < 2) {
+		  $(this).addClass('dis');
+		}
+		else {
+		  $(this).removeClass('dis');
+		}
+		$input.val(count);
+	  }
+	  else {
+		var count = parseFloat($input.val()) + 1
+		$input.val(count);
+		if (count > 1) {
+		  $(this).parents('.product-quantity').find(('.minus')).removeClass('dis');
+		}
+	  }
+	  
+	  $input.change();
+	  return false;
+	});
+
+	// Fancybox
+	$('.single-product-photo__gallery').fancybox({
+		buttons: [
+			"fullScreen",
+			"download",
+			// "thumbs",
+			"close"
+		],
+		animationEffect: "zoom-in-out",
+		animationDuration: 500,
+		transitionEffect: "circular",
+		transitionDuration: 800,
+		loop: true,
+	});
 });
 
 jQuery(document).ready(function($){
@@ -90,16 +134,8 @@ jQuery(document).ready(function($){
 		$('.archive-head-filters__more-btn').click(function(){
 			$(this).prev().children('li:nth-child(n+3)').slideToggle('');
 			$(this).toggleClass('opnd_g');
-
-			// if ($(this).hasClass('opnd_g')) {
-			// 	$(this).html('Скрыть');}
-			// else {
-			// 	$(this).html('Смотреть все');
-			// }
 		});
 	} else {
 		$('.show_hide_list').hide();
 	}
 });
-
-

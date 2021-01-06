@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gulp</title>
+   
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/bootstrap-grid.css">
+<link rel="stylesheet" href="css/swiper-bundle.min.css">
+<link rel="stylesheet" href="css/jquery.fancybox.css">
+<link rel="stylesheet" href="css/style.css"></head>
+<body>
+    <div class="content">
+        <header class="header">
+    <div class="container">
+        <div class="header__body">
+            <div class="header__burger">
+                <span></span>
+            </div>
+            <a href="index.html" class="header__logo">
+                <img src="img/icons/icons.svg#header-logo" alt="Logo">        
+            </a>
+            <div class="header__wrapper">
+                <div class="header-menu">
+                    <ul class="header-menu__list">
+                        <li class="header-menu__item">
+                            <a href="archive-all.html" class="header-menu__link">Карта</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="archive-hookah.html" class="header-menu__link">Кальянные</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="archive-products.html" class="header-menu__link">Товары</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="archive-shop.html" class="header-menu__link">Магазины</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <span class="header-menu__list-span">Ваш город:</span>
+                            <a href="#" class="header-menu__link">Москва</a>
+                        </li>
+                    </ul>
+
+                    <div class="header-mobile-btns">
+                        <div class="header-help">
+                            <a class="header-help__btn" href="#">
+                                <svg class="header-help__btn--icon">
+                                    <use xlink:href="img/icons/icons.svg#ask-icon-grey"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <ul class="lang-switcher">
+                            <li class="lang-switcher__item">
+                                <a class="lang-switcher__link" href="#">EN</a>
+                            </li>
+                            <li class="lang-switcher__item">
+                                <a class="lang-switcher__link active" href="#">RU</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header-btns">
+                    <div class="header-btn">
+                        <a class="header-btn__link" href="#">
+                            <svg class="header-btn__link--icon">
+                                <use xlink:href="img/icons/icons.svg#persone-icon-grey"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="header-btn">
+                        <a class="header-btn__link" href="#">
+                            <svg class="header-btn__link--icon">
+                                <use xlink:href="img/icons/icons.svg#shop-icon-grey"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</header>
+        <main class="main general-content">
+            <div class="section section-single-product">
+                <div class="container">
+                    <div class="breadcrumbs">
+                        <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__item">
+                                <a class="breadcrumbs__link" href="#">Кальяны</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a class="breadcrumbs__link" href="#">Кальяны Karma</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a class="breadcrumbs__link breadcrumbs__link_active" href="#">Кальян иранский (УТ895)</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="single-head">
+                        <div class="select pt-2 pb-2">
+                            <a class="select__btn" href="#">
+                                <svg class="select__btn--icon">
+                                    <use xlink:href="img/icons/icons.svg#heart-icon"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="single-head__headline">Кальян иранский (УТ895)</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <div class="single-product-photo">
+                                <a data-fancybox="img-photo" class="single-product-photo__gallery single-product-photo__gallery_main" href="img/product-photo-1.png" data-caption="My beautiful image">
+                                    <img class="single-product-photo__img single-product-photo__img_main pb-1" src="img/product-photo-1.png" alt="Photo">                             
+                                </a>
+                                <!-- <img class="single-product-photo__img single-product-photo__img_main pb-1" src="img/product-photo-1.png" alt="Photo"> -->
+                                <a data-fancybox="img-photo" class="single-product-photo__gallery" href="img/product-photo-2.png" data-caption="My beautiful image">
+                                    <img class="single-product-photo__img pr-1" src="img/product-photo-2.png" alt="Photo">
+                                </a>
+                                <a data-fancybox="img-photo" class="single-product-photo__gallery" href="img/product-photo-3.png" data-caption="My beautiful image">
+                                    <img class="single-product-photo__img pl-1" src="img/product-photo-3.png" alt="Photo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="d-flex flex-column">
+                                <div class="product-trade order-lg-2 pb-4">
+                                    <div class="product-trade__wrapper">
+                                        <p class="product-price">
+                                            2500
+                                            <span class="product-price__symbol">₴</span>
+                                        </p>
+                                        <!-- skin 1 -->
+                                        <div class="product-quantity skin-1">
+                                            <div class="product-quantity__wrapper">
+                                                <span class="minus dis"></span>
+                                                <input type="text" class="product-num" value="1" readonly="">
+                                                <span class="plus"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="product-trade__btn product-trade__btn_fill" type="button">Купить</button>
+                                    <button class="product-trade__btn product-trade__btn_unfill product-trade__btn_backed" type="button">Добавить в корзину</button>
+                                </div>
+                                <div class="product-characteristics order-lg-1">
+                                    <ul class="product-characteristics__list">
+                                        <li class="product-characteristics__item">
+                                            <div class="product-characteristics__label">Артикул</div>
+                                            <div class="product-characteristics__value">УТ000000895</div>
+                                        </li>
+                                        <li class="product-characteristics__item">
+                                            <div class="product-characteristics__label">Гарантия</div>
+                                            <div class="product-characteristics__value">1 год</div>
+                                        </li>
+                                        <li class="product-characteristics__item">
+                                            <div class="product-characteristics__label">Высота</div>
+                                            <div class="product-characteristics__value">70 см</div>
+                                        </li>
+                                        <li class="product-characteristics__item">
+                                            <div class="product-characteristics__label">Цвет</div>
+                                            <div class="product-characteristics__value">Разноцветный</div>
+                                        </li>
+                                        <li class="product-characteristics__item">
+                                            <div class="product-characteristics__label">Страна</div>
+                                            <div class="product-characteristics__value">Иран</div>
+                                        </li>
+                                        <li class="product-characteristics__item">
+                                            <div class="product-characteristics__label">Особенности</div>
+                                            <div class="product-characteristics__value">Хороший кальян</div>
+                                        </li>
+                                        <li class="product-characteristics__item pt-lg-5 pb-lg-5">
+                                            <div class="product-characteristics__label">В наличии</div>
+                                            <div class="product-characteristics__value">99 шт.</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="product-comments order-3">
+                                    <a class="product-comments__link" href="#">Читать отзывы</a>
+                                </div>
+                                <div class="product-about order-4">
+                                    <div class="product-about__wgt">
+                                        <div class="product-about__headline">Время работы</div>
+                                        <div class="product-about__schedule">
+                                            <div class="product-about__schedule-item">
+                                                <div class="product-about__txt">Пн-Пт</div>
+                                                <div class="product-about__txt">с 10-00 до 20-00</div>
+                                            </div>
+                                            <div class="product-about__schedule-item">
+                                                <div class="product-about__txt">Сб</div>
+                                                <div class="product-about__txt">с 12-00 до 17-00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-about__wgt">
+                                        <div class="product-about__headline">Способы доставки</div>
+                                        <div class="product-about__item">
+                                            <img class="product-about__icon product-about__icon_post" src="img/icons/icons.svg#np-icon" alt="icon">
+                                            <div class="product-about__txt">Новая почта</div>
+                                        </div>
+                                        <div class="product-about__item">
+                                            <img class="product-about__icon product-about__icon_post" src="img/icons/icons.svg#yp-icon" alt="icon">
+                                            <div class="product-about__txt">Укрпочта</div>
+                                        </div>
+                                        <div class="product-about__item">
+                                            <img class="product-about__icon product-about__icon_post" src="img/icons/icons.svg#np-icon" alt="icon">
+                                            <div class="product-about__txt">Курьерская доставка 
+                                                от Нова почта</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-about__wgt">
+                                        <div class="product-about__headline">Способы оплаты</div>
+                                        <div class="product-about__txt pb-3">Наложенный платёж</div>
+                                        <div class="product-about__item">
+                                            <img class="product-about__icon product-about__icon_card" src="img/icons/icons.svg#MasterCard-icon" alt="icon">
+                                            <div class="product-about__txt">Картой MasterCard</div>
+                                        </div>
+                                        <div class="product-about__item">
+                                            <img class="product-about__icon product-about__icon_card" src="img/icons/icons.svg#Visa-icon" alt="icon">
+                                            <div class="product-about__txt">На карту Visa</div>
+                                        </div>
+                                        <div class="product-about__item">
+                                            <img class="product-about__icon product-about__icon_card" src="img/icons/icons.svg#GooglePay-icon" alt="icon">
+                                            <div class="product-about__txt">Через Google Pay</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+    </div>
+    <footer class="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer-info">
+                <div class="footer-info__headline">Hookah Map.</div>
+                <div class="footer-info__descr d-none d-lg-block">
+                    <a class="footer-info__txt" href="#">Служба поддержки</a>
+                    <div class="footer-rights">@ 2020 Hookah Map</div>
+                </div>
+            </div>
+            <form class="footer-form" action="#">
+                <div class="footer-form__headline">For callaboration</div>
+                <input class="footer-form__field" type="text" placeholder="E-mail">
+                <button class="footer-form__btn" type="button">
+                    <svg class="footer-form__btn--icon">
+                        <use xlink:href="img/icons/icons.svg#btn-arr"></use>
+                    </svg>
+                </button>
+            </form>
+            <div class="footer-nav">
+                <ul class="footer-nav__list">
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link" href="#">
+                            Создать магазин
+                            <!-- <svg class="footer-nav__link--icon">
+                                <use xlink:href="img/icons/icons.svg#btn-arr"></use>
+                            </svg> -->
+                        </a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link" href="#">
+                            Служба поддержки                        
+                            <!-- <svg class="footer-nav__link--icon">
+                                <use xlink:href="img/icons/icons.svg#btn-arr"></use>
+                            </svg> -->
+                        </a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link" href="#">
+                            Зарегистрировать кальянную
+                            <!-- <svg class="footer-nav__link--icon">
+                                <use xlink:href="img/icons/icons.svg#btn-arr"></use>
+                            </svg> -->
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-rights d-lg-none">@ 2020 Hookah Map</div>
+        </div>
+        
+    </div>
+</footer>
+    <script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
