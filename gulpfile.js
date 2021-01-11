@@ -19,7 +19,6 @@ let path = {
         ],
         js: [
             "node_modules/jquery/dist/jquery.min.js",
-            "node_modules/bootstrap/dist/js/bootstrap.js",
             "node_modules/swiper/swiper-bundle.min.js",
             "node_modules/fancybox/dist/jquery.fancybox.js",
             source_folder + "/js/script.js"
