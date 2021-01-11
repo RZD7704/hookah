@@ -146,6 +146,7 @@
         line-height: 22px;
         letter-spacing: 0.01em;
         color: #090909;
+        cursor: pointer;
     }
 }
 
@@ -238,6 +239,7 @@
         color: #FAFAFA;
         background: #16B0A7;
         padding: 7px 25px;
+        cursor: pointer;
         transition: all .5s;
 
         @media (min-width: 768px) {
