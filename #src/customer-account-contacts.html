@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gulp</title>
+   
+    @@include('_links.html')
+<body>
+    <div class="content">
+        @@include('_header.html')
+        <main class="main general-content">
+            <section class="section section-account-contacts">
+                <div class="container">
+                    <div class="archive-head">
+                        <div class="archive-head__headline">Кальянные</div>
+                        <div class="personal-account-tabs">
+                            <ul class="personal-account-tabs__list nav" id="myTab" role="tablist">
+                                <li class="personal-account-tabs__item" role="presentation">
+                                  <a class="personal-account-tabs__btn active" href="#">Контактные данные</a>
+                                </li>
+                                <li class="personal-account-tabs__item" role="presentation">
+                                  <a class="personal-account-tabs__btn" href="customer-account-products.html">Любимые товары</a>
+                                </li>
+                                <li class="personal-account-tabs__item" role="presentation">
+                                  <a class="personal-account-tabs__btn" href="customer-account-history.html">История покупок</a>
+                                </li>
+                            </ul>
+                            <div class="archive-head-filters__more-btn">
+                                <span class="archive-head-filters__more-btn--point"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <form action="#">
+                        <div class="row">
+                            <div class="col-lg-3 ms-auto me-lg-3">
+                                <div class="contacts-column">
+                                    <div class="column-head">
+                                        <div class="column-head__num">1</div>
+                                        <div class="column-head__headline">Личные данные</div>
+                                    </div>
+                                    <div class="column-wgt">
+                                        <label class="column-wgt__title" for="name">Имя</label>
+                                        <input class="column-wgt__field" id="name" type="text">
+                                    </div>
+                                    <div class="column-wgt">
+                                        <label class="column-wgt__title" for="surname">Фамилия</label>
+                                        <input class="column-wgt__field" id="surname" type="text">
+                                    </div>
+                                    <div class="column-wgt">
+                                        <label class="column-wgt__title" for="tel">Телефон</label>
+                                        <input class="column-wgt__field" id="tel" type="text">
+                                    </div>
+                                    <div class="column-wgt">
+                                        <label class="column-wgt__title" for="mail">E-mail</label>
+                                        <input class="column-wgt__field" id="mail" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 me-auto ms-lg-3">
+                                <div class="contacts-column">
+                                    <div class="column-head">
+                                        <div class="column-head__num">1</div>
+                                        <div class="column-head__headline">Личные данные</div>
+                                    </div>
+                                    <div class="column-wgt">
+                                        <label class="column-wgt__title" for="city">Имя</label>
+                                        <select class="select contacts-select" name="city" id="city">
+                                            <option>Киев</option>
+                                            <option>Полтава</option>
+                                            <option>Харьков</option>
+                                            <option>Донецк</option>
+                                        </select>
+                                    </div>
+                                    <div class="column-wgt">
+                                        <label class="column-wgt__title" for="surname">Фамилия</label>
+                                        <input class="column-wgt__field" id="surname" type="text">
+                                    </div>
+                                    <div class="column-wgt">
+                                        <label class="column-wgt__title" for="tel">Телефон</label>
+                                        <input class="column-wgt__field" id="tel" type="text">
+                                    </div>
+                                    <div class="column-wgt">
+                                        <label class="column-wgt__title" for="mail">E-mail</label>
+                                        <input class="column-wgt__field" id="mail" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                  
+                </div>
+            </section>
+        </main>
+
+    </div>
+    @@include('_footer.html')
+    @@include('_scripts.html')
+</body>
+</html>

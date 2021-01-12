@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gulp</title>
+   
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/bootstrap-grid.css">
+<link rel="stylesheet" href="css/swiper-bundle.min.css">
+<link rel="stylesheet" href="css/jquery.fancybox.css">
+<link rel="stylesheet" href="css/style.css"></head>
+<body>
+    <div class="content">
+        <header class="header">
+    <div class="container">
+        <div class="header__body">
+            <div class="header__burger">
+                <span></span>
+            </div>
+            <a href="index.html" class="header__logo">
+                <img src="img/icons/icons.svg#header-logo" alt="Logo">        
+            </a>
+            <div class="header__wrapper">
+                <div class="header-menu">
+                    <ul class="header-menu__list">
+                        <li class="header-menu__item">
+                            <a href="archive-all.html" class="header-menu__link">Карта</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="archive-hookah.html" class="header-menu__link">Кальянные</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="archive-products.html" class="header-menu__link">Товары</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="archive-shop.html" class="header-menu__link">Магазины</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <span class="header-menu__list-span">Ваш город:</span>
+                            <a href="#" class="header-menu__link">Москва</a>
+                        </li>
+                    </ul>
+
+                    <div class="header-mobile-btns">
+                        <div class="header-help">
+                            <a class="header-help__btn" href="#">
+                                <svg class="header-help__btn--icon">
+                                    <use xlink:href="img/icons/icons.svg#ask-icon-grey"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <ul class="lang-switcher">
+                            <li class="lang-switcher__item">
+                                <a class="lang-switcher__link" href="#">EN</a>
+                            </li>
+                            <li class="lang-switcher__item">
+                                <a class="lang-switcher__link active" href="#">RU</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header-btns">
+                    <div class="header-btn">
+                        <a class="header-btn__link" href="customer-account-products.html">
+                            <svg class="header-btn__link--icon">
+                                <use xlink:href="img/icons/icons.svg#persone-icon-grey"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="header-btn">
+                        <a class="header-btn__link" href="#">
+                            <svg class="header-btn__link--icon">
+                                <use xlink:href="img/icons/icons.svg#shop-icon-grey"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</header>
+        <main class="main general-content">
+            <section class="section section-account-history">
+                <div class="container">
+                    <div class="archive-head">
+                        <div class="archive-head__headline">Кальянные</div>
+                        <div class="personal-account-tabs">
+                            <ul class="personal-account-tabs__list nav" id="myTab" role="tablist">
+                                <li class="personal-account-tabs__item" role="presentation">
+                                  <a class="personal-account-tabs__btn" href="customer-account-contacts.html">Контактные данные</a>
+                                </li>
+                                <li class="personal-account-tabs__item" role="presentation">
+                                  <a class="personal-account-tabs__btn" href="customer-account-products.html">Любимые товары</a>
+                                </li>
+                                <li class="personal-account-tabs__item" role="presentation">
+                                  <a class="personal-account-tabs__btn active" href="customer-account-history.html">История покупок</a>
+                                </li>
+                            </ul>
+                            <div class="archive-head-filters__more-btn">
+                                <span class="archive-head-filters__more-btn--point"></span>
+                            </div>
+                        </div>
+                        <div class="archive-head__action">
+                            <button class="archive-filter-btn" type="button">
+                                <svg class="archive-filter-btn__icon">
+                                    <use xlink:href="img/icons/icons.svg#filters-icon"></use>
+                                </svg>
+                                Edit
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="personal-filters">
+                                <button class="personal-filters__btn-back" type="button">Вернуться</button>
+                                <ul class="personal-filters__list">
+                                    <li class="personal-filters__item">
+                                        <button class="personal-filters__btn" type="button">02/02/02</button>
+                                    </li>
+                                    <li class="personal-filters__item">
+                                        <button class="personal-filters__btn" type="button">03/04/10</button>
+                                    </li>
+                                    <li class="personal-filters__item">
+                                        <button class="personal-filters__btn" type="button">03/05/17</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                            <ul class="accordion">
+                                <li class="accordion__item">
+                                    <a class="accordion__head">
+                                        <div class="accordion__head-wrapper">
+                                            <div class="accordion__head-headline">Заказ №2020765</div>
+                                            <svg class="accordion__head-icon d-none d-md-block">
+                                                <use xlink:href="img/icons/icons.svg#accordion-arr"></use>
+                                            </svg>
+                                            <div class="accordion__head-date">02/02/02</div>
+                                        </div>
+                                        <svg class="accordion__head-icon d-md-none">
+                                            <use xlink:href="img/icons/icons.svg#accordion-arr"></use>
+                                        </svg>
+                                    </a>
+                                    <div class="accordion__body">
+                                        <div class="personal-history-card">
+                                            <div class="personal-history-card__delete">
+                                                <button class="personal-history-card__delete-btn" type="button">
+                                                    <svg class="personal-history-card__delete-icon">
+                                                        <use xlink:href="img/icons/icons.svg#delete-icon"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="personal-history-card__inner">
+                                                <div class="personal-history-card__wrapper">
+                                                    <div class="personal-history-card__photo">
+                                                        <img class="personal-history-card__photo--img" src="img/product-photo-4.png" alt="Photo">
+                                                    </div>
+                                                    <div class="d-flex flex-column">
+                                                        <div class="personal-history-card__title">Набор Stanley Blond</div>
+                                                        <div class="personal-history-card__body">
+                                                            <div class="d-flex flex-column  justify-content-between pb-3 pb-lg-0">
+                                                                <div class="personal-history-card__subtitle">Табак</div>
+                                                            </div>
+                                                            <div class="d-flex flex-row align-items-center flex-wrap">
+                                                                <div class="product-quantity skin-1 pe-5">
+                                                                    <div class="product-quantity__wrapper">
+                                                                        <span class="minus dis"></span>
+                                                                        <input type="text" class="product-num" value="1" readonly="">
+                                                                        <span class="plus"></span>
+                                                                    </div>
+                                                                </div>
+                                                                <p class="product-price p-0 d-flex">
+                                                                    2500
+                                                                    <span class="product-price__symbol">₴</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="personal-history-card__trade">
+                                                    <button class="personal-history-card__btn" type="button">Повторить</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="personal-history-card">
+                                            <div class="personal-history-card__delete">
+                                                <button class="personal-history-card__delete-btn" type="button">
+                                                    <svg class="personal-history-card__delete-icon">
+                                                        <use xlink:href="img/icons/icons.svg#delete-icon"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="personal-history-card__inner">
+                                                <div class="personal-history-card__wrapper">
+                                                    <div class="personal-history-card__photo">
+                                                        <img class="personal-history-card__photo--img" src="img/product-photo-4.png" alt="Photo">
+                                                    </div>
+                                                    <div class="d-flex flex-column">
+                                                        <div class="personal-history-card__title">Набор Stanley Blond</div>
+                                                        <div class="personal-history-card__body">
+                                                            <div class="d-flex flex-column  justify-content-between pb-3 pb-lg-0">
+                                                                <div class="personal-history-card__subtitle">Табак</div>
+                                                            </div>
+                                                            <div class="d-flex flex-row align-items-center flex-wrap">
+                                                                <div class="product-quantity skin-1 pe-5">
+                                                                    <div class="product-quantity__wrapper">
+                                                                        <span class="minus dis"></span>
+                                                                        <input type="text" class="product-num" value="1" readonly="">
+                                                                        <span class="plus"></span>
+                                                                    </div>
+                                                                </div>
+                                                                <p class="product-price p-0 d-flex">
+                                                                    2500
+                                                                    <span class="product-price__symbol">₴</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="personal-history-card__trade">
+                                                    <button class="personal-history-card__btn" type="button">Повторить</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="accordion__item">
+                                    <a class="accordion__head">
+                                        <div class="accordion__head-wrapper">
+                                            <div class="accordion__head-headline">Заказ №2020765</div>
+                                            <svg class="accordion__head-icon d-none d-md-block">
+                                                <use xlink:href="img/icons/icons.svg#accordion-arr"></use>
+                                            </svg>
+                                            <div class="accordion__head-date">02/02/02</div>
+                                        </div>
+                                        <svg class="accordion__head-icon d-md-none">
+                                            <use xlink:href="img/icons/icons.svg#accordion-arr"></use>
+                                        </svg>
+                                    </a>
+                                    <div class="accordion__body">
+                                        <div class="personal-history-card">
+                                            <div class="personal-history-card__delete">
+                                                <button class="personal-history-card__delete-btn" type="button">
+                                                    <svg class="personal-history-card__delete-icon">
+                                                        <use xlink:href="img/icons/icons.svg#delete-icon"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="personal-history-card__inner">
+                                                <div class="personal-history-card__wrapper">
+                                                    <div class="personal-history-card__photo">
+                                                        <img class="personal-history-card__photo--img" src="img/product-photo-4.png" alt="Photo">
+                                                    </div>
+                                                    <div class="d-flex flex-column">
+                                                        <div class="personal-history-card__title">Набор Stanley Blond</div>
+                                                        <div class="personal-history-card__body">
+                                                            <div class="d-flex flex-column  justify-content-between pb-3 pb-lg-0">
+                                                                <div class="personal-history-card__subtitle">Табак</div>
+                                                            </div>
+                                                            <div class="d-flex flex-row align-items-center flex-wrap">
+                                                                <div class="product-quantity skin-1 pe-5">
+                                                                    <div class="product-quantity__wrapper">
+                                                                        <span class="minus dis"></span>
+                                                                        <input type="text" class="product-num" value="1" readonly="">
+                                                                        <span class="plus"></span>
+                                                                    </div>
+                                                                </div>
+                                                                <p class="product-price p-0 d-flex">
+                                                                    2500
+                                                                    <span class="product-price__symbol">₴</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="personal-history-card__trade">
+                                                    <button class="personal-history-card__btn" type="button">Повторить</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="personal-history-card">
+                                            <div class="personal-history-card__delete">
+                                                <button class="personal-history-card__delete-btn" type="button">
+                                                    <svg class="personal-history-card__delete-icon">
+                                                        <use xlink:href="img/icons/icons.svg#delete-icon"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="personal-history-card__inner">
+                                                <div class="personal-history-card__wrapper">
+                                                    <div class="personal-history-card__photo">
+                                                        <img class="personal-history-card__photo--img" src="img/product-photo-4.png" alt="Photo">
+                                                    </div>
+                                                    <div class="d-flex flex-column">
+                                                        <div class="personal-history-card__title">Набор Stanley Blond</div>
+                                                        <div class="personal-history-card__body">
+                                                            <div class="d-flex flex-column  justify-content-between pb-3 pb-lg-0">
+                                                                <div class="personal-history-card__subtitle">Табак</div>
+                                                            </div>
+                                                            <div class="d-flex flex-row align-items-center flex-wrap">
+                                                                <div class="product-quantity skin-1 pe-5">
+                                                                    <div class="product-quantity__wrapper">
+                                                                        <span class="minus dis"></span>
+                                                                        <input type="text" class="product-num" value="1" readonly="">
+                                                                        <span class="plus"></span>
+                                                                    </div>
+                                                                </div>
+                                                                <p class="product-price p-0 d-flex">
+                                                                    2500
+                                                                    <span class="product-price__symbol">₴</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="personal-history-card__trade">
+                                                    <button class="personal-history-card__btn" type="button">Повторить</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="accordion__item">
+                                    <a class="accordion__head">
+                                        <div class="accordion__head-wrapper">
+                                            <div class="accordion__head-headline">Заказ №2020765</div>
+                                            <svg class="accordion__head-icon d-none d-md-block">
+                                                <use xlink:href="img/icons/icons.svg#accordion-arr"></use>
+                                            </svg>
+                                            <div class="accordion__head-date">02/02/02</div>
+                                        </div>
+                                        <svg class="accordion__head-icon d-md-none">
+                                            <use xlink:href="img/icons/icons.svg#accordion-arr"></use>
+                                        </svg>
+                                    </a>
+                                    <div class="accordion__body">
+                                        <div class="personal-history-card">
+                                            <div class="personal-history-card__delete">
+                                                <button class="personal-history-card__delete-btn" type="button">
+                                                    <svg class="personal-history-card__delete-icon">
+                                                        <use xlink:href="img/icons/icons.svg#delete-icon"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="personal-history-card__inner">
+                                                <div class="personal-history-card__wrapper">
+                                                    <div class="personal-history-card__photo">
+                                                        <img class="personal-history-card__photo--img" src="img/product-photo-4.png" alt="Photo">
+                                                    </div>
+                                                    <div class="d-flex flex-column">
+                                                        <div class="personal-history-card__title">Набор Stanley Blond</div>
+                                                        <div class="personal-history-card__body">
+                                                            <div class="d-flex flex-column  justify-content-between pb-3 pb-lg-0">
+                                                                <div class="personal-history-card__subtitle">Табак</div>
+                                                            </div>
+                                                            <div class="d-flex flex-row align-items-center flex-wrap">
+                                                                <div class="product-quantity skin-1 pe-5">
+                                                                    <div class="product-quantity__wrapper">
+                                                                        <span class="minus dis"></span>
+                                                                        <input type="text" class="product-num" value="1" readonly="">
+                                                                        <span class="plus"></span>
+                                                                    </div>
+                                                                </div>
+                                                                <p class="product-price p-0 d-flex">
+                                                                    2500
+                                                                    <span class="product-price__symbol">₴</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="personal-history-card__trade">
+                                                    <button class="personal-history-card__btn" type="button">Повторить</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="personal-history-card">
+                                            <div class="personal-history-card__delete">
+                                                <button class="personal-history-card__delete-btn" type="button">
+                                                    <svg class="personal-history-card__delete-icon">
+                                                        <use xlink:href="img/icons/icons.svg#delete-icon"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="personal-history-card__inner">
+                                                <div class="personal-history-card__wrapper">
+                                                    <div class="personal-history-card__photo">
+                                                        <img class="personal-history-card__photo--img" src="img/product-photo-4.png" alt="Photo">
+                                                    </div>
+                                                    <div class="d-flex flex-column">
+                                                        <div class="personal-history-card__title">Набор Stanley Blond</div>
+                                                        <div class="personal-history-card__body">
+                                                            <div class="d-flex flex-column  justify-content-between pb-3 pb-lg-0">
+                                                                <div class="personal-history-card__subtitle">Табак</div>
+                                                            </div>
+                                                            <div class="d-flex flex-row align-items-center flex-wrap">
+                                                                <div class="product-quantity skin-1 pe-5">
+                                                                    <div class="product-quantity__wrapper">
+                                                                        <span class="minus dis"></span>
+                                                                        <input type="text" class="product-num" value="1" readonly="">
+                                                                        <span class="plus"></span>
+                                                                    </div>
+                                                                </div>
+                                                                <p class="product-price p-0 d-flex">
+                                                                    2500
+                                                                    <span class="product-price__symbol">₴</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="personal-history-card__trade">
+                                                    <button class="personal-history-card__btn" type="button">Повторить</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </div>
+    <footer class="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer-info">
+                <div class="footer-info__headline">Hookah Map.</div>
+                <div class="footer-info__descr d-none d-lg-block">
+                    <a class="footer-info__txt" href="#">Служба поддержки</a>
+                    <div class="footer-rights">@ 2020 Hookah Map</div>
+                </div>
+            </div>
+            <form class="footer-form" action="#">
+                <div class="footer-form__headline">For callaboration</div>
+                <input class="footer-form__field" type="text" placeholder="E-mail">
+                <button class="footer-form__btn" type="button">
+                    <svg class="footer-form__btn--icon">
+                        <use xlink:href="img/icons/icons.svg#btn-arr"></use>
+                    </svg>
+                </button>
+            </form>
+            <div class="footer-nav">
+                <ul class="footer-nav__list">
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link" href="#">
+                            Создать магазин
+                            <!-- <svg class="footer-nav__link--icon">
+                                <use xlink:href="img/icons/icons.svg#btn-arr"></use>
+                            </svg> -->
+                        </a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link" href="#">
+                            Служба поддержки                        
+                            <!-- <svg class="footer-nav__link--icon">
+                                <use xlink:href="img/icons/icons.svg#btn-arr"></use>
+                            </svg> -->
+                        </a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link" href="#">
+                            Зарегистрировать кальянную
+                            <!-- <svg class="footer-nav__link--icon">
+                                <use xlink:href="img/icons/icons.svg#btn-arr"></use>
+                            </svg> -->
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-rights d-lg-none">@ 2020 Hookah Map</div>
+        </div>
+        
+    </div>
+</footer>
+    <script src="js/jquery.min.js"></script>
+<!-- <script src="js/bootstrap.js"></script> -->
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

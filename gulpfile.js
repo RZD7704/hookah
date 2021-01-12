@@ -49,10 +49,6 @@ let { src, dest } = require('gulp'),
     imagemin = require("gulp-imagemin"),
     svgSprite = require("gulp-svg-sprite");
 
-
-
-
-
 function browserSync(params) {
     browsersync.init({
         server:{

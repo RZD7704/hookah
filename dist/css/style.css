@@ -533,6 +533,69 @@ table {
   height: 20px;
 }
 
+.select-hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.custom-select {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+}
+
+.custom-select__header {
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  position: relative;
+  width: 100%;
+  height: 35px;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 0 30px 0 15px;
+}
+
+.custom-select__header::after {
+  display: inline-block;
+  content: "";
+  border-top: 7px solid #CDCDCD;
+  border-right: 7px solid transparent;
+  border-bottom: 0;
+  border-left: 7px solid transparent;
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+}
+
+.select-options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  margin: 0;
+  list-style: none;
+  box-shadow: 0px 0px 10px -5px #000000;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 5px 0;
+}
+
+.select-options li {
+  padding: 5px 10px;
+  display: block;
+  font-weight: 500;
+  border-bottom: 1px solid #F7F7F5;
+  transition: 0.5s all ease;
+}
+
+.select-options li:last-child {
+  border-bottom: none;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -1771,6 +1834,215 @@ body {
   color: #090909;
 }
 
+.personal-history-card {
+  padding-bottom: 25px;
+}
+
+.personal-history-card__delete {
+  text-align: end;
+  padding-bottom: 10px;
+}
+
+.personal-history-card__delete-btn {
+  background: #fff;
+  cursor: pointer;
+}
+
+.personal-history-card__delete-icon {
+  fill: #E5E9EB;
+  width: 15px;
+  height: 15px;
+  transition: all .5s;
+}
+
+.personal-history-card__delete-icon:hover {
+  fill: #090909;
+}
+
+.personal-history-card__wrapper {
+  display: flex;
+}
+
+.personal-history-card__photo {
+  padding-right: 15px;
+}
+
+.personal-history-card__photo--img {
+  width: 100%;
+  height: auto;
+}
+
+.personal-history-card__title {
+  font-weight: normal;
+  letter-spacing: 0.01em;
+  color: #363636;
+  font-size: 14px;
+}
+
+.personal-history-card__body {
+  display: flex;
+  flex-direction: column;
+}
+
+.personal-history-card__subtitle {
+  font-weight: normal;
+  letter-spacing: 0.01em;
+  color: #909198;
+  font-size: 14px;
+}
+
+.personal-history-card__rate {
+  display: none;
+}
+
+.personal-history-card__rate-item--icon {
+  width: 20px;
+  height: 20px;
+}
+
+.personal-history-card__trade {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.personal-history-card__btn {
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  color: #FAFAFA;
+  background: #16B0A7;
+  padding: 7px 25px;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.personal-history-card__btn:hover {
+  background: #008078;
+}
+
+.personal-history-card__quantity {
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  color: #090909;
+  padding-top: 10px;
+}
+
+.personal-history-card__quantity--span {
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  color: #090909;
+}
+
+.accordion__item {
+  padding: 10px 0;
+  position: relative;
+  border-bottom: 2px solid #FAFAFA;
+}
+
+.accordion__head {
+  cursor: pointer;
+}
+
+.accordion__head-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.accordion__head-headline {
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  color: #090909;
+}
+
+.accordion__head-icon {
+  height: 20px;
+  width: 30px;
+  display: block;
+  margin: 0 auto;
+}
+
+.accordion__head-date {
+  font-weight: normal;
+  text-align: end;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  color: #090909;
+}
+
+.accordion__body {
+  display: none;
+  padding-top: 25px;
+}
+
+.accordion__head .accordion__head-icon {
+  transform: rotate(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.accordion__head.active .accordion__head-icon {
+  transform: rotate(180deg);
+  transition: all 0.3s ease-in-out;
+}
+
+.column-head {
+  display: flex;
+  align-items: center;
+  padding-bottom: 25px;
+}
+
+.column-head__num {
+  font-weight: normal;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  color: #FAFAFA;
+  background: #16B0A7;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.column-head__headline {
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  color: #090909;
+}
+
+.column-wgt {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+
+.column-wgt__title {
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  color: #000000;
+  padding-bottom: 5px;
+}
+
+.column-wgt__field {
+  width: 100%;
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  color: #000000;
+  padding: 5px;
+  border-bottom: 2px solid #F8F8F8;
+}
+
 @media (min-width: 768px) {
   .archive-head-filters__list {
     justify-content: space-around;
@@ -1815,6 +2087,48 @@ body {
 
   .personal-product-card__quantity--span {
     font-size: 16px;
+  }
+
+  .personal-history-card__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .personal-history-card__title {
+    font-size: 16px;
+  }
+
+  .personal-history-card__subtitle {
+    font-size: 16px;
+  }
+
+  .personal-history-card__rate {
+    display: block;
+  }
+
+  .personal-history-card__trade {
+    padding-top: 0;
+    padding-left: 15px;
+  }
+
+  .personal-history-card__btn {
+    font-size: 16px;
+  }
+
+  .personal-history-card__quantity {
+    font-size: 16px;
+  }
+
+  .personal-history-card__quantity--span {
+    font-size: 16px;
+  }
+
+  .accordion__head-headline {
+    width: 30%;
+  }
+
+  .accordion__head-date {
+    width: 30%;
   }
 }
 
@@ -2114,6 +2428,16 @@ body {
 
   .personal-product-card__trade {
     padding-top: 0;
+  }
+
+  .personal-history-card {
+    padding-bottom: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .accordion {
+    width: 80%;
   }
 }
 
