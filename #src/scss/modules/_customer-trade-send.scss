@@ -1,0 +1,175 @@
+.send-form {
+    &__btn {
+        font-weight: normal;
+        font-size: 16px;
+        letter-spacing: 0.01em;
+        color: #FAFAFA;
+        background: #16B0A7;
+        padding: 10px 30px;
+        cursor: pointer;
+        transition: all .5s;
+
+        &:hover {
+            background: #008078;
+        }
+    }
+}
+
+.customer-send-card {
+    padding-bottom: 25px;
+
+    @media (min-width: 992px) {
+        padding-bottom: 50px;
+    }
+
+    &__delete {
+        text-align: end;
+        padding-bottom: 10px;
+    }
+
+    &__delete-btn {
+        background: #fff;
+        cursor: pointer;
+    }
+
+    &__delete-icon {
+        fill: #E5E9EB;
+        width: 15px;
+        height: 15px;
+        transition: all .5s;
+
+        &:hover {
+            fill: #090909;
+        }
+    }
+
+    &__inner {
+        @media (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+    }
+
+    &__photo {
+        padding-right: 15px;
+
+        &--img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__title {
+        font-weight: normal;
+        letter-spacing: 0.01em;
+        color: #363636;
+        font-size: 14px;
+
+        @media (min-width: 768px) {
+            font-size: 16px;
+        }
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__subtitle {
+        font-weight: normal;
+        letter-spacing: 0.01em;
+        color: #909198;
+        font-size: 14px;
+
+        @media (min-width: 768px) {
+            font-size: 16px;
+        }
+    }
+
+    &__rate {
+        display: none;
+
+        @media (min-width: 768px) {
+            display: block;
+        }
+    }
+
+    &__rate-item {
+        &--icon {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    &__trade {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 15px;
+
+        @media (min-width: 768px) {
+            padding-top: 0;
+            padding-left: 15px;
+        }
+    }
+
+    &__btn {
+        font-weight: normal;
+        font-size: 14px;
+        letter-spacing: 0.01em;
+        color: #FAFAFA;
+        background: #16B0A7;
+        padding: 7px 25px;
+        cursor: pointer;
+        transition: all .5s;
+
+        @media (min-width: 768px) {
+            font-size: 16px;
+        }
+
+        &:hover {
+            background: #008078;
+        }
+    }
+
+    &__quantity {
+        font-weight: normal;
+        font-size: 14px;
+        letter-spacing: 0.01em;
+        color: #090909;
+        padding-top: 10px;
+
+        @media (min-width: 768px) {
+            font-size: 16px;
+        }
+
+        &--span {
+            font-weight: normal;
+            font-size: 14px;
+            letter-spacing: 0.01em;
+            color: #090909;
+
+            @media (min-width: 768px) {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.customer-send-total {
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+    color: #090909;
+
+    &__num {
+        font-weight: normal;
+        font-size: 16px;
+        letter-spacing: 0.01em;
+        color: #090909;
+    }
+}

@@ -31,7 +31,7 @@
                             </div>
                         </div>
                     </div>
-                    <form action="#">
+                    <form action="contacts-form">
                         <div class="row">
                             <div class="col-lg-3 ms-auto me-lg-3">
                                 <div class="contacts-column">
@@ -60,11 +60,11 @@
                             <div class="col-lg-3 me-auto ms-lg-3">
                                 <div class="contacts-column">
                                     <div class="column-head">
-                                        <div class="column-head__num">1</div>
-                                        <div class="column-head__headline">Личные данные</div>
+                                        <div class="column-head__num">2</div>
+                                        <div class="column-head__headline">Информация по доставке</div>
                                     </div>
                                     <div class="column-wgt">
-                                        <label class="column-wgt__title" for="city">Имя</label>
+                                        <label class="column-wgt__title" for="city">Город</label>
                                         <select class="select contacts-select" name="city" id="city">
                                             <option>Киев</option>
                                             <option>Полтава</option>
@@ -73,22 +73,45 @@
                                         </select>
                                     </div>
                                     <div class="column-wgt">
-                                        <label class="column-wgt__title" for="surname">Фамилия</label>
-                                        <input class="column-wgt__field" id="surname" type="text">
+                                        <label class="column-wgt__title" for="
+                                        delivery">Способ доставки</label>
+                                        <select class="select contacts-select" name="
+                                        delivery" id="
+                                        delivery">
+                                            <option>Новая почта</option>
+                                            <option>Новая почта</option>
+                                            <option>Новая почта</option>
+                                            <option>Донецк</option>
+                                        </select>                                    
                                     </div>
                                     <div class="column-wgt">
-                                        <label class="column-wgt__title" for="tel">Телефон</label>
-                                        <input class="column-wgt__field" id="tel" type="text">
+                                        <label class="column-wgt__title" for="branch">Отделение</label>
+                                        <select class="select contacts-select" name="branch" id="branch">
+                                            <option>Відділення №9</option>
+                                            <option>Відділення №11</option>
+                                            <option>Відділення №12</option>
+                                            <option>Відділення №1</option>
+                                        </select>                                    
                                     </div>
                                     <div class="column-wgt">
-                                        <label class="column-wgt__title" for="mail">E-mail</label>
-                                        <input class="column-wgt__field" id="mail" type="text">
+                                        <label class="column-wgt__title" for="
+                                        payment">Оплата</label>
+                                        <select class="select contacts-select" name="
+                                        payment" id="
+                                        payment">
+                                            <option>Наложенный платёж</option>
+                                            <option>Наложенный платёж</option>
+                                            <option>Наложенный платёж</option>
+                                            <option>Наложенный платёж</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-12 d-flex justify-content-center pt-4">
+                                <button class="contacts-form__btn" type="button">Применить</button>
+                            </div>
                         </div>
                     </form>
-                  
                 </div>
             </section>
         </main>

@@ -495,6 +495,14 @@
     transition: all 0.3s ease-in-out;
 }
 
+.contacts-column {
+    padding-top: 25px;
+
+    @media (min-width: 992px) {
+        padding-top: 35px;
+    }
+}
+
 .column-head {
     display: flex;
     align-items: center;
@@ -542,7 +550,24 @@
         font-size: 16px;
         letter-spacing: 0.01em;
         color: #000000;
-        padding: 5px;
+        padding: 10px 5px;
         border-bottom: 2px solid #F8F8F8;
+    }
+}
+
+.contacts-form {
+    &__btn {
+        font-weight: normal;
+        font-size: 16px;
+        letter-spacing: 0.01em;
+        color: #FAFAFA;
+        background: #16B0A7;
+        padding: 10px 30px;
+        cursor: pointer;
+        transition: all .5s;
+
+        &:hover {
+            background: #008078;
+        }
     }
 }

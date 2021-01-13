@@ -546,40 +546,52 @@ table {
 }
 
 .custom-select__header {
-  font-weight: 500;
-  letter-spacing: 0.03em;
   position: relative;
   width: 100%;
-  height: 35px;
   cursor: pointer;
-  border-radius: 5px;
-  padding: 0 30px 0 15px;
+  padding: 10px 5px;
+  border-bottom: 2px solid #F8F8F8;
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  color: #909198;
 }
 
 .custom-select__header::after {
   display: inline-block;
   content: "";
-  border-top: 7px solid #CDCDCD;
+  border-top: 7px solid #E5E9EB;
   border-right: 7px solid transparent;
   border-bottom: 0;
   border-left: 7px solid transparent;
   position: absolute;
-  top: 50%;
-  right: 5px;
-  transform: translateY(-50%);
+  right: 0;
+  top: 35%;
+  transform: rotate(180deg);
+}
+
+.custom-select__header::before {
+  display: inline-block;
+  content: "";
+  border-top: 7px solid #E5E9EB;
+  border-right: 7px solid transparent;
+  border-bottom: 0;
+  border-left: 7px solid transparent;
+  position: absolute;
+  right: 0;
+  top: 65%;
 }
 
 .select-options {
   display: none;
   position: absolute;
-  top: 100%;
+  top: 115%;
   right: 0;
   left: 0;
   z-index: 999;
   margin: 0;
   list-style: none;
-  box-shadow: 0px 0px 10px -5px #000000;
-  border-radius: 5px;
+  border: 2px solid #F8F8F8;
   background-color: #fff;
   padding: 5px 0;
 }
@@ -587,13 +599,80 @@ table {
 .select-options li {
   padding: 5px 10px;
   display: block;
-  font-weight: 500;
   border-bottom: 1px solid #F7F7F5;
   transition: 0.5s all ease;
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  color: #909198;
 }
 
 .select-options li:last-child {
   border-bottom: none;
+}
+
+.select-options li:hover {
+  color: #16B0A7;
+}
+
+.custom-radio__link {
+  font-weight: normal;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  color: #363636;
+  margin-left: 7px;
+  text-decoration: underline;
+  transition: all .5s;
+}
+
+.custom-radio__link:hover {
+  text-decoration: none;
+}
+
+/* для элемента input c type="radio" */
+
+.custom-radio > input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+/* для элемента label связанного с .custom-radio */
+
+.custom-radio > span {
+  align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-weight: normal;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  color: #363636;
+}
+
+/* создание в label псевдоэлемента  before со следующими стилями */
+
+.custom-radio > span::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 3px solid #909198;
+  background-color: #909198;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50% 50%;
+}
+
+/* стили для радиокнопки, находящейся в состоянии checked */
+
+.custom-radio > input:checked + span::before {
+  background-color: #fff;
 }
 
 * {
@@ -1991,6 +2070,10 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
+.contacts-column {
+  padding-top: 25px;
+}
+
 .column-head {
   display: flex;
   align-items: center;
@@ -2039,8 +2122,155 @@ body {
   font-size: 16px;
   letter-spacing: 0.01em;
   color: #000000;
-  padding: 5px;
+  padding: 10px 5px;
   border-bottom: 2px solid #F8F8F8;
+}
+
+.contacts-form__btn {
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  color: #FAFAFA;
+  background: #16B0A7;
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.contacts-form__btn:hover {
+  background: #008078;
+}
+
+.send-form__btn {
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  color: #FAFAFA;
+  background: #16B0A7;
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.send-form__btn:hover {
+  background: #008078;
+}
+
+.customer-send-card {
+  padding-bottom: 25px;
+}
+
+.customer-send-card__delete {
+  text-align: end;
+  padding-bottom: 10px;
+}
+
+.customer-send-card__delete-btn {
+  background: #fff;
+  cursor: pointer;
+}
+
+.customer-send-card__delete-icon {
+  fill: #E5E9EB;
+  width: 15px;
+  height: 15px;
+  transition: all .5s;
+}
+
+.customer-send-card__delete-icon:hover {
+  fill: #090909;
+}
+
+.customer-send-card__wrapper {
+  display: flex;
+}
+
+.customer-send-card__photo {
+  padding-right: 15px;
+}
+
+.customer-send-card__photo--img {
+  width: 100%;
+  height: auto;
+}
+
+.customer-send-card__title {
+  font-weight: normal;
+  letter-spacing: 0.01em;
+  color: #363636;
+  font-size: 14px;
+}
+
+.customer-send-card__body {
+  display: flex;
+  flex-direction: column;
+}
+
+.customer-send-card__subtitle {
+  font-weight: normal;
+  letter-spacing: 0.01em;
+  color: #909198;
+  font-size: 14px;
+}
+
+.customer-send-card__rate {
+  display: none;
+}
+
+.customer-send-card__rate-item--icon {
+  width: 20px;
+  height: 20px;
+}
+
+.customer-send-card__trade {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.customer-send-card__btn {
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  color: #FAFAFA;
+  background: #16B0A7;
+  padding: 7px 25px;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.customer-send-card__btn:hover {
+  background: #008078;
+}
+
+.customer-send-card__quantity {
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  color: #090909;
+  padding-top: 10px;
+}
+
+.customer-send-card__quantity--span {
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  color: #090909;
+}
+
+.customer-send-total {
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  color: #090909;
+}
+
+.customer-send-total__num {
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  color: #090909;
 }
 
 @media (min-width: 768px) {
@@ -2129,6 +2359,40 @@ body {
 
   .accordion__head-date {
     width: 30%;
+  }
+
+  .customer-send-card__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .customer-send-card__title {
+    font-size: 16px;
+  }
+
+  .customer-send-card__subtitle {
+    font-size: 16px;
+  }
+
+  .customer-send-card__rate {
+    display: block;
+  }
+
+  .customer-send-card__trade {
+    padding-top: 0;
+    padding-left: 15px;
+  }
+
+  .customer-send-card__btn {
+    font-size: 16px;
+  }
+
+  .customer-send-card__quantity {
+    font-size: 16px;
+  }
+
+  .customer-send-card__quantity--span {
+    font-size: 16px;
   }
 }
 
@@ -2431,6 +2695,14 @@ body {
   }
 
   .personal-history-card {
+    padding-bottom: 50px;
+  }
+
+  .contacts-column {
+    padding-top: 35px;
+  }
+
+  .customer-send-card {
     padding-bottom: 50px;
   }
 }

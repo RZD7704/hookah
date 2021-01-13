@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gulp</title>
+   
+    @@include('_links.html')
+<body>
+    <div class="content">
+        @@include('_header.html')
+        <main class="main general-content">
+            <section class="section section-customer-send">
+                <div class="container">
+                    <form action="send-form">
+                        <div class="row justify-content-between">
+                            <div class="col-lg-3">
+                                <div class="contacts-column">
+                                    <div class="column-head">
+                                        <div class="column-head__num">1</div>
+                                        <div class="column-head__headline">Личные данные</div>
+                                    </div>
+                                    <div class="column-wgt">
+                                        <label class="column-wgt__title" for="name">Имя</label>
+                                        <input class="column-wgt__field" id="name" type="text">
+                                    </div>
+                                    <div class="column-wgt">
+                                        <label class="column-wgt__title" for="surname">Фамилия</label>
+                                        <input class="column-wgt__field" id="surname" type="text">
+                                    </div>
+                                    <div class="column-wgt">
+                                        <label class="column-wgt__title" for="tel">Телефон</label>
+                                        <input class="column-wgt__field" id="tel" type="text">
+                                    </div>
+                                    <div class="column-wgt">
+                                        <label class="column-wgt__title" for="mail">E-mail</label>
+                                        <input class="column-wgt__field" id="mail" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3">
+                                <div class="contacts-column">
+                                    <div class="column-head">
+                                        <div class="column-head__num">2</div>
+                                        <div class="column-head__headline">Информация по доставке</div>
+                                    </div>
+                                    <div class="column-wgt">
+                                        <label class="column-wgt__title" for="city">Город</label>
+                                        <select class="select contacts-select" name="city" id="city">
+                                            <option>Киев</option>
+                                            <option>Полтава</option>
+                                            <option>Харьков</option>
+                                            <option>Донецк</option>
+                                        </select>
+                                    </div>
+                                    <div class="column-wgt">
+                                        <label class="column-wgt__title" for="
+                                        delivery">Способ доставки</label>
+                                        <select class="select contacts-select" name="
+                                        delivery" id="
+                                        delivery">
+                                            <option>Новая почта</option>
+                                            <option>Новая почта</option>
+                                            <option>Новая почта</option>
+                                            <option>Донецк</option>
+                                        </select>                                    
+                                    </div>
+                                    <div class="column-wgt">
+                                        <label class="column-wgt__title" for="branch">Отделение</label>
+                                        <select class="select contacts-select" name="branch" id="branch">
+                                            <option>Відділення №9</option>
+                                            <option>Відділення №11</option>
+                                            <option>Відділення №12</option>
+                                            <option>Відділення №1</option>
+                                        </select>                                    
+                                    </div>
+                                    <div class="column-wgt">
+                                        <label class="column-wgt__title" for="
+                                        payment">Оплата</label>
+                                        <select class="select contacts-select" name="
+                                        payment" id="
+                                        payment">
+                                            <option>Наложенный платёж</option>
+                                            <option>Наложенный платёж</option>
+                                            <option>Наложенный платёж</option>
+                                            <option>Наложенный платёж</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="contacts-column">
+                                    <div class="column-head">
+                                        <div class="column-head__num">3</div>
+                                        <div class="column-head__headline">Ваш заказ</div>
+                                    </div>
+                                    <div class="customer-send-card">
+                                        <div class="customer-send-card__inner">
+                                            <div class="customer-send-card__wrapper">
+                                                <div class="customer-send-card__photo">
+                                                    <img class="customer-send-card__photo--img" src="img/product-photo-4.png" alt="Photo">
+                                                </div>
+                                                <div class="d-flex flex-column">
+                                                    <div class="customer-send-card__title">Набор Stanley Blond</div>
+                                                    <div class="customer-send-card__body">
+                                                        <div class="d-flex flex-column  justify-content-between pb-3 pb-lg-0">
+                                                            <div class="customer-send-card__subtitle">Табак</div>
+                                                        </div>
+                                                        <div class="d-flex flex-row align-items-center flex-wrap">
+                                                            <div class="product-quantity skin-1 pe-5">
+                                                                <div class="product-quantity__wrapper">
+                                                                    <span class="minus dis"></span>
+                                                                    <input type="text" class="product-num" value="1" readonly="">
+                                                                    <span class="plus"></span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="product-price p-0 ps-sm-5 d-flex">
+                                                                2500
+                                                                <span class="product-price__symbol">₴</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="customer-send-card pb-3">
+                                        <div class="customer-send-card__inner">
+                                            <div class="customer-send-card__wrapper">
+                                                <div class="customer-send-card__photo">
+                                                    <img class="customer-send-card__photo--img" src="img/product-photo-4.png" alt="Photo">
+                                                </div>
+                                                <div class="d-flex flex-column">
+                                                    <div class="customer-send-card__title">Набор Stanley Blond</div>
+                                                    <div class="customer-send-card__body">
+                                                        <div class="d-flex flex-column  justify-content-between pb-3 pb-lg-0">
+                                                            <div class="customer-send-card__subtitle">Табак</div>
+                                                        </div>
+                                                        <div class="d-flex flex-row align-items-center flex-wrap">
+                                                            <div class="product-quantity skin-1 pe-5">
+                                                                <div class="product-quantity__wrapper">
+                                                                    <span class="minus dis"></span>
+                                                                    <input type="text" class="product-num" value="1" readonly="">
+                                                                    <span class="plus"></span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="product-price p-0 ps-sm-5 d-flex">
+                                                                2500
+                                                                <span class="product-price__symbol">₴</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="customer-send-total pb-3">
+                                        Итого:
+                                        <span class="customer-send-total__num">3100</span>
+                                        ₴
+                                    </div>
+                                    <div class="customer-send-conditions pb-5">
+                                        <div class="radio">
+                                            <label class="custom-radio">
+                                              <input type="checkbox" name="color" value="indigo">
+                                              <span>Я соглашаюсь с <a class="custom-radio__link" href="#">Условия маркетплейса</a></span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-center">
+                                        <button class="send-form__btn" type="button">Применить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+    </div>
+    @@include('_footer.html')
+    @@include('_scripts.html')
+</body>
+</html>
