@@ -5,8 +5,8 @@ $(document).ready(function() {
 		$('body').toggleClass('lock');
 	});
 
-	$('.archive-filter-btn,.archive-filters__btn-back,.personal-filters__btn-back').click(function(event) {
-		$('.archive-filter-btn,.archive-filters,.personal-filters').toggleClass('active');
+	$('.archive-filter-btn,.archive-filters__btn-back,.personal-filters__btn-back,.registration-filter-btn,.account-nav__btn-back').click(function(event) {
+		$('.archive-filter-btn,.archive-filters,.personal-filters,.registration-filter-btn,.account-nav').toggleClass('active');
 		$('body').toggleClass('lock');
 	});
 	

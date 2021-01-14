@@ -415,6 +415,157 @@ table {
   display: none;
 }
 
+.registration-head {
+  padding: 20px 0 15px 0;
+}
+
+.registration-head__headline {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.01em;
+  color: #090909;
+}
+
+.registration-head__action {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.registration-filter-btn {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  color: #909198;
+  transition: all .5s;
+}
+
+.registration-filter-btn:hover {
+  color: #363636;
+}
+
+.registration-filter-btn__icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+
+.account-nav__btn-back {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  background: #fff;
+  color: #909198;
+  display: block;
+  margin-left: auto;
+}
+
+.account-nav__item {
+  padding-bottom: 20px;
+}
+
+.account-nav__link {
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 0.01em;
+  color: #909198;
+  transition: all .5s;
+}
+
+.account-nav__link:hover {
+  color: #090909;
+}
+
+.account-nav__link.active {
+  margin-left: 20px;
+}
+
+.registration-title {
+  font-weight: normal;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  color: #363636;
+  padding-bottom: 20px;
+}
+
+.registration-subtitle {
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  color: #363636;
+  padding-bottom: 10px;
+}
+
+.registration-subtitle span {
+  color: #16B0A7;
+}
+
+.registration-wgt {
+  padding-bottom: 15px;
+}
+
+.registration-input {
+  background: #F5F5F5;
+  border-radius: 8px;
+  width: 100%;
+  padding: 7px 10px;
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: #363636;
+}
+
+.registration-textarea {
+  background: #F5F5F5;
+  border-radius: 8px;
+  width: 100%;
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: #363636;
+  resize: none;
+  height: 115px;
+}
+
+.registration-conditions {
+  padding-bottom: 15px;
+}
+
+.rules-required {
+  font-weight: normal;
+  font-size: 16px;
+  color: #909198;
+}
+
+.rules-required span {
+  color: #16B0A7;
+}
+
+.registration-confirm {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.registration-confirm__btn {
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  color: #FAFAFA;
+  background: #16B0A7;
+  padding: 7px 25px;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.registration-confirm__btn:hover {
+  background: #008078;
+}
+
 .single-head__headline {
   font-weight: normal;
   font-size: 16px;
@@ -617,7 +768,7 @@ table {
 
 .custom-radio__link {
   font-weight: normal;
-  font-size: 20px;
+  font-size: 16px;
   letter-spacing: 0.02em;
   color: #363636;
   margin-left: 7px;
@@ -646,7 +797,7 @@ table {
       -ms-user-select: none;
           user-select: none;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 16px;
   letter-spacing: 0.02em;
   color: #363636;
 }
@@ -673,6 +824,20 @@ table {
 
 .custom-radio > input:checked + span::before {
   background-color: #fff;
+}
+
+.btn {
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  color: #909198;
+  background: #fff;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.btn:hover {
+  color: #363636;
 }
 
 * {
@@ -2273,9 +2438,56 @@ body {
   color: #090909;
 }
 
+.registration-type-card {
+  padding-bottom: 20px;
+}
+
+.registration-type-card__link {
+  display: block;
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  color: #363636;
+  background: #FAFAFA;
+  box-shadow: 0px 4px 4px rgba(145, 145, 145, 0.25);
+  border-radius: 8px;
+  padding: 14px 0;
+  transition: all .5s;
+}
+
+.registration-type-card__link:hover {
+  box-shadow: none;
+}
+
 @media (min-width: 768px) {
   .archive-head-filters__list {
     justify-content: space-around;
+  }
+
+  .registration-subtitle {
+    font-size: 18px;
+  }
+
+  .registration-inner {
+    padding-left: 60px;
+    padding-bottom: 10px;
+  }
+
+  .rules-required {
+    font-size: 18px;
+  }
+
+  .registration-confirm__btn {
+    font-size: 16px;
+  }
+
+  .custom-radio__link {
+    font-size: 18px;
+  }
+
+  .custom-radio > span {
+    font-size: 18px;
   }
 
   .product-about__wgt {
@@ -2394,6 +2606,14 @@ body {
   .customer-send-card__quantity--span {
     font-size: 16px;
   }
+
+  .registration-type-card {
+    padding: 0;
+  }
+
+  .registration-type-card__link {
+    padding: 40px 0;
+  }
 }
 
 @media (min-width: 992px) {
@@ -2412,6 +2632,30 @@ body {
 
   .archive-more {
     margin: 40px auto 40px auto;
+  }
+
+  .registration-head__headline {
+    font-size: 20px;
+  }
+
+  .registration-filter-btn {
+    display: none;
+  }
+
+  .account-nav__btn-back {
+    display: none;
+  }
+
+  .registration-title {
+    font-size: 20px;
+  }
+
+  .registration-subtitle {
+    font-size: 20px;
+  }
+
+  .rules-required {
+    font-size: 20px;
   }
 
   .single-head__headline {
@@ -2449,6 +2693,14 @@ body {
   }
 
   .breadcrumbs__link {
+    font-size: 20px;
+  }
+
+  .custom-radio__link {
+    font-size: 20px;
+  }
+
+  .custom-radio > span {
     font-size: 20px;
   }
 
@@ -2737,6 +2989,22 @@ body {
   }
 
   .archive-filters.active {
+    left: 0;
+  }
+
+  .account-nav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    transition: all 0.3s ease 0s;
+    background-color: #fff;
+    padding: 70px 10px 20px 25px;
+  }
+
+  .account-nav.active {
     left: 0;
   }
 

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gulp</title>
+   
+    @@include('_links.html')
+<body>
+    <div class="content">
+        @@include('_header.html')
+        <main class="main general-content">
+            <section class="section section-registration-hookah">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="registration-head">
+                                <div class="registration-head__headline">HookahMap</div>
+                                <div class="registration-head__action">
+                                    <button class="registration-filter-btn" type="button">
+                                        <svg class="registration-filter-btn__icon">
+                                            <use xlink:href="img/icons/icons.svg#filters-icon"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="account-nav">
+                                <button class="account-nav__btn-back" type="button">Вернуться</button>
+                                <ul class="account-nav__list">
+                                    <li class="account-nav__item">
+                                        <a class="account-nav__link active" href="registration-page-type.html">Главная</a>
+                                    </li>
+                                    <li class="account-nav__item">
+                                        <a class="account-nav__link" href="#">Товары</a>
+                                    </li>
+                                    <li class="account-nav__item">
+                                        <a class="account-nav__link" href="#">Заказы</a>
+                                    </li>
+                                    <li class="account-nav__item">
+                                        <a class="account-nav__link" href="#">Реклама</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="breadcrumbs pt-lg-5 pb-4">
+                                <ul class="breadcrumbs__list">
+                                    <li class="breadcrumbs__item">
+                                        <a class="breadcrumbs__link" href="#">Главная</a>
+                                    </li>
+                                    <li class="breadcrumbs__item">
+                                        <a class="breadcrumbs__link breadcrumbs__link_active" href="#">Регистрация</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <form class="registration-shop-form" action="#">
+                                <h2 class="registration-title">Основная информация</h2>
+                                <div class="registration-inner">
+                                    <div class="registration-wgt">
+                                        <h2 class="registration-subtitle">Я хочу продавать свои товары на Hookah Map?</h2>
+                                        <div class="radio">
+                                            <label class="custom-radio">
+                                              <input type="checkbox" name="color" value="indigo">
+                                              <span>Да</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="registration-wgt">
+                                        <h2 class="registration-subtitle">Адрес вашего сайта?</h2>
+                                        <input class="registration-input" type="text">
+                                    </div>
+                                    <div class="registration-wgt">
+                                        <h2 class="registration-subtitle">Деятельность которой вы занимаетесь? <span>*</span></h2>
+                                        <div class="d-flex flex-wrap">
+                                            <div class="radio pb-2 pe-md-5">
+                                                <label class="custom-radio">
+                                                  <input type="checkbox" name="color" value="indigo">
+                                                  <span>Продажа через сайт</span>
+                                                </label>
+                                            </div>
+                                            <div class="radio pb-2 pe-md-5">
+                                                <label class="custom-radio">
+                                                  <input type="checkbox" name="color" value="indigo">
+                                                  <span>Продажа на интернет площадках</span>
+                                                </label>
+                                            </div>
+                                            <div class="radio pb-2 pe-md-3 pe-lg-5">
+                                                <label class="custom-radio">
+                                                  <input type="checkbox" name="color" value="indigo">
+                                                  <span>Продажа оффлайн</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="registration-wgt">
+                                        <h2 class="registration-subtitle">Другое</h2>
+                                        <input class="registration-input" type="text">
+                                    </div>
+                                    <div class="registration-wgt">
+                                        <h2 class="registration-subtitle">О магазине: <span>*</span></h2>
+                                        <textarea class="registration-textarea"></textarea>
+                                    </div>
+                                </div>
+                                <h2 class="registration-title">Контактная информация</h2>
+                                <div class="registration-inner">
+                                    <div class="registration-wgt">
+                                        <h2 class="registration-subtitle">ФИО <span>*</span></h2>
+                                        <input class="registration-input" type="text">
+                                    </div>
+                                    <div class="registration-wgt">
+                                        <h2 class="registration-subtitle">Название вашей компании <span>*</span></h2>
+                                        <input class="registration-input" type="text">
+                                    </div>
+                                    <div class="registration-wgt">
+                                        <h2 class="registration-subtitle">Почта <span>*</span></h2>
+                                        <input class="registration-input" type="text">
+                                    </div>
+                                    <div class="registration-wgt">
+                                        <h2 class="registration-subtitle">Номер телефона <span>*</span></h2>
+                                        <input class="registration-input" type="text">
+                                    </div>
+                                    <div class="registration-wgt">
+                                        <h2 class="registration-subtitle">Дополнительно: <span>*</span></h2>
+                                        <textarea class="registration-textarea"></textarea>
+                                    </div>
+                                </div>
+                                <div class="registration-conditions">
+                                    <div class="radio">
+                                        <label class="custom-radio">
+                                          <input type="checkbox" name="color" value="indigo">
+                                          <span>Я соглашаюсь с <a class="custom-radio__link" href="#">Условия маркетплейса</a></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="rules-required pb-4"><span>*</span> Обязательно к заполенению</div>
+                                <div class="registration-confirm">
+                                    <button class="registration-confirm__btn" type="button">Применить</button>
+                                </div>
+                            </form>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </div>
+    @@include('_footer.html')
+    @@include('_scripts.html')
+</body>
+</html>

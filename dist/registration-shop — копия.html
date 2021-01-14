@@ -84,25 +84,25 @@
     </div>
 </header>
         <main class="main general-content">
-            <section class="section section-registration-type">
+            <section class="section section-registration-shop">
                 <div class="container">
-                    <div class="registration-head">
-                        <div class="registration-head__headline">HookahMap</div>
-                        <div class="registration-head__action">
-                            <button class="registration-filter-btn" type="button">
-                                <svg class="registration-filter-btn__icon">
-                                    <use xlink:href="img/icons/icons.svg#filters-icon"></use>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
                     <div class="row">
                         <div class="col-lg-3">
+                            <div class="registration-head">
+                                <div class="registration-head__headline">HookahMap</div>
+                                <div class="registration-head__action">
+                                    <button class="registration-filter-btn" type="button">
+                                        <svg class="registration-filter-btn__icon">
+                                            <use xlink:href="img/icons/icons.svg#filters-icon"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
                             <div class="account-nav">
                                 <button class="account-nav__btn-back" type="button">Вернуться</button>
                                 <ul class="account-nav__list">
                                     <li class="account-nav__item">
-                                        <a class="account-nav__link active" href="registration-page-type.html">Главная</a>
+                                        <a class="account-nav__link active" href="#">Главная</a>
                                     </li>
                                     <li class="account-nav__item">
                                         <a class="account-nav__link" href="#">Товары</a>
@@ -117,108 +117,101 @@
                             </div>
                         </div>
                         <div class="col-lg-9">
-                            <h2 class="registration-title">Деятельность:</h2>
-                            <div class="row pb-5"> 
-                                <div class="col-10 col-md-4 mx-auto">
-                                    <div class="registration-type-card">
-                                        <a class="registration-type-card__link" href="registration-shop.html">Магазин</a>
-                                    </div>
-                                </div>
-                                <div class="col-10 col-md-4 mx-auto">
-                                    <div class="registration-type-card">
-                                        <a class="registration-type-card__link" href="registration-hookah.html">Кальянная</a>
-                                    </div>
-                                </div>
-                                <div class="col-10 col-md-4 mx-auto">
-                                    <div class="registration-type-card">
-                                        <a class="registration-type-card__link" href="registration-brand.html">Бренд</a>
-                                    </div>
-                                </div>
+                            <div class="breadcrumbs pt-lg-5 pb-4">
+                                <ul class="breadcrumbs__list">
+                                    <li class="breadcrumbs__item">
+                                        <a class="breadcrumbs__link" href="#">Главная</a>
+                                    </li>
+                                    <li class="breadcrumbs__item">
+                                        <a class="breadcrumbs__link breadcrumbs__link_active" href="#">Регистрация</a>
+                                    </li>
+                                </ul>
                             </div>
-                            <h2 class="registration-title">Мои аккаунты:</h2>
-                            <div class="row">
-                                <div class="col-6 col-md-4">
-                                    <div class="hookah-card">
-                                        <a class="hookah-card__link" href="#">
-                                            <img class="hookah-card__photo" src="img/main-card-1.png" alt="Photo">
-                                        </a>
-                                        <div class="hookah-card__descr">
-                                            <a class="hookah-card__link" href="#">
-                                                <div class="hookah-card__headline">V Loft'e</div>
-                                            </a>
-                                            <div class="hookah-card__txt">Истринская ул., 8к3</div>
+                            <form class="registration-shop-form" action="#">
+                                <h2 class="registration-title">Основная информация</h2>
+                                <div class="registration-inner">
+                                    <div class="registration-wgt">
+                                        <h2 class="registration-subtitle">Я хочу продавать свои товары на Hookah Map?</h2>
+                                        <div class="radio">
+                                            <label class="custom-radio">
+                                              <input type="checkbox" name="color" value="indigo">
+                                              <span>Да</span>
+                                            </label>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-6 col-md-4">
-                                    <div class="hookah-card">
-                                        <a class="hookah-card__link" href="#">
-                                            <img class="hookah-card__photo" src="img/main-card-2.png" alt="Photo">
-                                        </a>
-                                        <div class="hookah-card__descr">
-                                            <a class="hookah-card__link" href="#">
-                                                <div class="hookah-card__headline">V Loft'e</div>
-                                            </a>
-                                            <div class="hookah-card__txt">Истринская ул., 8к3</div>
+                                    <div class="registration-wgt">
+                                        <h2 class="registration-subtitle">Адрес вашего сайта?</h2>
+                                        <input class="registration-input" type="text">
+                                    </div>
+                                    <div class="registration-wgt">
+                                        <h2 class="registration-subtitle">Деятельность которой вы занимаетесь? <span>*</span></h2>
+                                        <div class="d-flex flex-wrap">
+                                            <div class="radio pb-2 pe-md-5">
+                                                <label class="custom-radio">
+                                                  <input type="checkbox" name="color" value="indigo">
+                                                  <span>Продажа через сайт</span>
+                                                </label>
+                                            </div>
+                                            <div class="radio pb-2 pe-md-5">
+                                                <label class="custom-radio">
+                                                  <input type="checkbox" name="color" value="indigo">
+                                                  <span>Продажа на интернет площадках</span>
+                                                </label>
+                                            </div>
+                                            <div class="radio pb-2 pe-md-3 pe-lg-5">
+                                                <label class="custom-radio">
+                                                  <input type="checkbox" name="color" value="indigo">
+                                                  <span>Продажа оффлайн</span>
+                                                </label>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-6 col-md-4">
-                                    <div class="hookah-card">
-                                        <a class="hookah-card__link" href="#">
-                                            <img class="hookah-card__photo" src="img/main-card-3.png" alt="Photo">
-                                        </a>
-                                        <div class="hookah-card__descr">
-                                            <a class="hookah-card__link" href="#">
-                                                <div class="hookah-card__headline">V Loft'e</div>
-                                            </a>
-                                            <div class="hookah-card__txt">Истринская ул., 8к3</div>
-                                        </div>
+                                    <div class="registration-wgt">
+                                        <h2 class="registration-subtitle">Другое</h2>
+                                        <input class="registration-input" type="text">
+                                    </div>
+                                    <div class="registration-wgt">
+                                        <h2 class="registration-subtitle">О магазине: <span>*</span></h2>
+                                        <textarea class="registration-textarea"></textarea>
                                     </div>
                                 </div>
-                                <div class="col-6 col-md-4">
-                                    <div class="hookah-card">
-                                        <a class="hookah-card__link" href="#">
-                                            <img class="hookah-card__photo" src="img/main-card-1.png" alt="Photo">
-                                        </a>
-                                        <div class="hookah-card__descr">
-                                            <a class="hookah-card__link" href="#">
-                                                <div class="hookah-card__headline">V Loft'e</div>
-                                            </a>
-                                            <div class="hookah-card__txt">Истринская ул., 8к3</div>
-                                        </div>
+                                <h2 class="registration-title">Контактная информация</h2>
+                                <div class="registration-inner">
+                                    <div class="registration-wgt">
+                                        <h2 class="registration-subtitle">ФИО <span>*</span></h2>
+                                        <input class="registration-input" type="text">
+                                    </div>
+                                    <div class="registration-wgt">
+                                        <h2 class="registration-subtitle">Название вашей компании <span>*</span></h2>
+                                        <input class="registration-input" type="text">
+                                    </div>
+                                    <div class="registration-wgt">
+                                        <h2 class="registration-subtitle">Почта <span>*</span></h2>
+                                        <input class="registration-input" type="text">
+                                    </div>
+                                    <div class="registration-wgt">
+                                        <h2 class="registration-subtitle">Номер телефона <span>*</span></h2>
+                                        <input class="registration-input" type="text">
+                                    </div>
+                                    <div class="registration-wgt">
+                                        <h2 class="registration-subtitle">Дополнительно: <span>*</span></h2>
+                                        <textarea class="registration-textarea"></textarea>
                                     </div>
                                 </div>
-                                <div class="col-6 col-md-4">
-                                    <div class="hookah-card">
-                                        <a class="hookah-card__link" href="#">
-                                            <img class="hookah-card__photo" src="img/main-card-2.png" alt="Photo">
-                                        </a>
-                                        <div class="hookah-card__descr">
-                                            <a class="hookah-card__link" href="#">
-                                                <div class="hookah-card__headline">V Loft'e</div>
-                                            </a>
-                                            <div class="hookah-card__txt">Истринская ул., 8к3</div>
-                                        </div>
+                                <div class="registration-conditions">
+                                    <div class="radio">
+                                        <label class="custom-radio">
+                                          <input type="checkbox" name="color" value="indigo">
+                                          <span>Я соглашаюсь с <a class="custom-radio__link" href="#">Условия маркетплейса</a></span>
+                                        </label>
                                     </div>
                                 </div>
-                                <div class="col-6 col-md-4">
-                                    <div class="hookah-card">
-                                        <a class="hookah-card__link" href="#">
-                                            <img class="hookah-card__photo" src="img/main-card-3.png" alt="Photo">
-                                        </a>
-                                        <div class="hookah-card__descr">
-                                            <a class="hookah-card__link" href="#">
-                                                <div class="hookah-card__headline">V Loft'e</div>
-                                            </a>
-                                            <div class="hookah-card__txt">Истринская ул., 8к3</div>
-                                        </div>
-                                    </div>
+                                <div class="rules-required pb-4"><span>*</span> Обязательно к заполенению</div>
+                                <div class="registration-confirm">
+                                    <button class="registration-confirm__btn" type="button">Применить</button>
                                 </div>
-                                <div class="d-flex justify-content-end pb-5">
-                                    <button class="btn" type="button">More filters</button>
-                                </div>
-                            </div>
+                            </form>
+                            
                         </div>
                     </div>
                 </div>

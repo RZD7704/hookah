@@ -1,3 +1,218 @@
 .registration-head {
-    &__headline {}
+    padding: 20px 0 15px 0;
+
+    &__headline {
+        font-weight: 600;
+        font-size: 18px;
+        letter-spacing: 0.01em;
+        color: #090909;
+        // display: none;
+
+        // @media (min-width: 992px) {
+        //     display: block;
+        // }
+
+        @media(min-width: 992px) {
+            font-size: 20px;
+        }
+    }
+
+    &__action {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.registration-filter-btn {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+    color: #909198;
+    transition: all .5s;
+
+    &:hover {
+        color: #363636;
+    }
+
+    @media (min-width: 992px) {
+        display: none;
+    }
+
+    &__icon {
+        width: 25px;
+        height: 25px;
+        margin-right: 5px;
+    }
+}
+
+.account-nav {
+    @media (max-width: 991px) {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        transition: all 0.3s ease 0s;
+        background-color: #fff;
+        padding: 70px 10px 20px 25px;
+
+        &.active {
+            left: 0;
+        }
+    }
+
+    &__btn-back {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0.01em;
+        background: #fff;
+        color: #909198;
+        display: block;
+        margin-left: auto;
+
+        @media(min-width: 992px) {
+            display: none;
+        }
+    }
+
+    &__list {}
+
+    &__item {
+        padding-bottom: 20px;
+    }
+
+    &__link {
+        font-weight: 600;
+        font-size: 20px;
+        letter-spacing: 0.01em;
+        color: #909198;
+        transition: all .5s;
+
+        &:hover {
+            color: #090909;
+        }
+
+        &.active {
+            margin-left: 20px;
+        }
+    }
+}
+
+.registration-title {
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    color: #363636;
+    padding-bottom: 20px;
+
+    @media(min-width: 992px) {
+        font-size: 20px;
+    }
+}
+
+.registration-subtitle {
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    color: #363636;
+    padding-bottom: 10px;
+
+    @media(min-width: 768px) {
+        font-size: 18px;
+    }
+
+    @media(min-width: 992px) {
+        font-size: 20px;
+    }
+
+    & span {
+        color: #16B0A7;
+    }
+}
+
+.registration-inner {
+    @media(min-width: 768px) {
+        padding-left: 60px;
+        padding-bottom: 10px;
+    }
+}
+
+.registration-wgt {
+    padding-bottom: 15px;
+}
+
+.registration-input {
+    background: #F5F5F5;
+    border-radius: 8px;
+    width: 100%;
+    padding: 7px 10px;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #363636;
+}
+
+.registration-textarea {
+    background: #F5F5F5;
+    border-radius: 8px;
+    width: 100%;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #363636;
+    resize: none;
+    height: 115px;
+}
+
+.registration-conditions {
+    padding-bottom: 15px;
+}
+
+.rules-required {
+    font-weight: normal;
+    font-size: 16px;
+    color: #909198;
+
+    @media (min-width: 768px) {
+        font-size: 18px;
+    }
+
+    @media (min-width: 992px) {
+        font-size: 20px;
+    }
+
+    & span {
+        color: #16B0A7;
+    }
+}
+
+.registration-confirm {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    &__btn {
+        font-weight: normal;
+        font-size: 14px;
+        letter-spacing: 0.01em;
+        color: #FAFAFA;
+        background: #16B0A7;
+        padding: 7px 25px;
+        cursor: pointer;
+        transition: all .5s;
+
+        &:hover {
+            background: #008078;
+        }
+
+        @media(min-width: 768px) {
+            font-size: 16px;
+        }
+    }
 }
