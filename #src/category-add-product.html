@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gulp</title>
+   
+    @@include('_links.html')
+<body>
+    <div class="content">
+        @@include('_header.html')
+        <main class="main general-content">
+            <section class="section section-add-product">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="registration-head">
+                                <div class="registration-head__headline">HookahMap</div>
+                                <div class="registration-head__action">
+                                    <button class="registration-filter-btn" type="button">
+                                        <svg class="registration-filter-btn__icon">
+                                            <use xlink:href="img/icons/icons.svg#filters-icon"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="account-nav">
+                                <button class="account-nav__btn-back" type="button">Вернуться</button>
+                                <ul class="account-nav__list">
+                                    <li class="account-nav__item">
+                                        <a class="account-nav__link active" href="registration-page-type.html">Главная</a>
+                                    </li>
+                                    <li class="account-nav__item">
+                                        <a class="account-nav__link" href="#">Товары</a>
+                                    </li>
+                                    <li class="account-nav__item">
+                                        <a class="account-nav__link" href="#">Заказы</a>
+                                    </li>
+                                    <li class="account-nav__item">
+                                        <a class="account-nav__link" href="#">Реклама</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-8 mx-auto mx-lg-0 col-lg-7 col-xl-6">
+                            <div class="breadcrumbs pt-lg-5 pb-4">
+                                <ul class="breadcrumbs__list">
+                                    <li class="breadcrumbs__item">
+                                        <a class="breadcrumbs__link" href="#">Главная</a>
+                                    </li>
+                                    <li class="breadcrumbs__item">
+                                        <a class="breadcrumbs__link" href="#">Товары</a>
+                                    </li>
+                                    <li class="breadcrumbs__item">
+                                        <a class="breadcrumbs__link" href="#">Табак</a>
+                                    </li>
+                                    <li class="breadcrumbs__item">
+                                        <a class="breadcrumbs__link breadcrumbs__link_active" href="#">Добавить товар</a>
+                                    </li>
+                                </ul>
+                            </div>  
+                            <form class="registration-product-form" action="#">
+                                <div class="registration-wgt">
+                                    <h2 class="registration-title">Название</h2>
+                                    <input type="file" name="file" id="file" class="product-inputfile" />
+                                    <label for="file">
+                                        <span class="product-inputfile__icon main">+</span>
+                                        <span class="product-inputfile__btn">Добавить фото товара</span>
+                                    </label>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <input type="file" name="file" id="file" class="product-inputfile" />
+                                            <label for="file">
+                                                <span class="product-inputfile__icon small">+</span>
+                                                <span class="product-inputfile__btn">Добавить товар</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-6">
+                                            <input type="file" name="file" id="file" class="product-inputfile" />
+                                            <label for="file">
+                                                <span class="product-inputfile__icon small">+</span>
+                                                <span class="product-inputfile__btn">Добавить товар</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="add-product-span pt-2 pb-3">Текст в каком формате загружать фото</div>
+                                </div>
+                                <div class="registration-wgt">
+                                    <h2 class="registration-subtitle">Дымность</h2>
+                                    <input class="registration-input" type="text">
+                                </div>
+                                <div class="registration-wgt">
+                                    <h2 class="registration-subtitle">Никотин</h2>
+                                    <input class="registration-input" type="text">
+                                </div>
+                                <div class="registration-wgt">
+                                    <h2 class="registration-subtitle">Бренд</h2>
+                                    <input class="registration-input" type="text">
+                                </div>
+                                <div class="registration-wgt">
+                                    <h2 class="registration-subtitle">Вес</h2>
+                                    <input class="registration-input" type="text">
+                                </div>
+                                <div class="registration-wgt">
+                                    <h2 class="registration-subtitle">Страна</h2>
+                                    <input class="registration-input" type="text">
+                                </div>
+                                <div class="registration-wgt">
+                                    <h2 class="registration-subtitle">Крепкость</h2>
+                                    <input class="registration-input" type="text">
+                                </div>
+                                <div class="registration-wgt">
+                                    <h2 class="registration-subtitle">Особенности</h2>
+                                    <textarea class="registration-textarea"></textarea>
+                                </div>
+                                <div class="registration-wgt">
+                                    <h2 class="registration-subtitle">Код товара</h2>
+                                    <input class="registration-input" type="text">
+                                </div>
+                                <div class="registration-wgt">
+                                    <h2 class="registration-subtitle">Кол-во товара</h2>
+                                    <input class="registration-input" type="text">
+                                </div>
+                                <div class="registration-wgt">
+                                    <h2 class="registration-subtitle">Способы доставки</h2>
+                                    <div class="checkbox-wgts justify-content-xl-around pb-4">
+                                        <div class="checkbox-wgts__col">
+                                            <ul class="checkbox-wgts__list">
+                                                <li class="checkbox-wgts__item">
+                                                    <div class="checkbox">
+                                                        <label class="custom-checkbox">
+                                                            <input type="checkbox" name="color-1" value="indigo">
+                                                             <span>
+                                                                <span class="custom-checkbox__txt">Новая почта</span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li class="checkbox-wgts__item">
+                                                    <div class="checkbox">
+                                                        <label class="custom-checkbox">
+                                                            <input type="checkbox" name="color-1" value="indigo">
+                                                             <span>
+                                                                <span class="custom-checkbox__txt">УкрПочта</span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                
+                                            </ul>
+                                        </div>
+                                        <div class="checkbox-wgts__col">
+                                            <ul class="checkbox-wgts__list">
+                                                <li class="checkbox-wgts__item">
+                                                    <div class="checkbox">
+                                                        <label class="custom-checkbox">
+                                                            <input type="checkbox" name="color-1" value="indigo">
+                                                             <span>
+                                                                <span class="custom-checkbox__txt">Курьер</span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="registration-wgt">
+                                    <h2 class="registration-subtitle">Способы оплаты</h2>
+                                    <div class="checkbox-wgts pb-4">
+                                        <div class="checkbox-wgts__col">
+                                            <ul class="checkbox-wgts__list">
+                                                <li class="checkbox-wgts__item">
+                                                    <div class="checkbox">
+                                                        <label class="custom-checkbox">
+                                                            <input type="checkbox" name="color-1" value="indigo">
+                                                             <span>
+                                                                <span class="custom-checkbox__txt">
+                                                                    <svg class="custom-checkbox__icon">
+                                                                        <use xlink:href="img/icons/icons.svg#MasterCard-icon"></use>
+                                                                    </svg>
+                                                                </span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li class="checkbox-wgts__item">
+                                                    <div class="checkbox">
+                                                        <label class="custom-checkbox">
+                                                            <input type="checkbox" name="color-1" value="indigo">
+                                                             <span>
+                                                                <span class="custom-checkbox__txt">
+                                                                    <svg class="custom-checkbox__icon">
+                                                                        <use xlink:href="img/icons/icons.svg#Visa-icon"></use>
+                                                                    </svg>
+                                                                </span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="checkbox-wgts__col">
+                                            <ul class="checkbox-wgts__list">
+                                                <li class="checkbox-wgts__item">
+                                                    <a href="#" class="registration-link">Другое</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="registration-confirm">
+                                    <button class="registration-confirm__btn" type="button">Применить</button>
+                                </div>
+                            </form>                          
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </div>
+    @@include('_footer.html')
+    @@include('_scripts.html')
+</body>
+</html>

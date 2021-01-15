@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gulp</title>
+   
+    @@include('_links.html')
+<body>
+    <div class="content">
+        @@include('_header.html')
+        <main class="main general-content">
+            <section class="section section-info-shop">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="registration-head">
+                                <div class="registration-head__headline">HookahMap</div>
+                                <div class="registration-head__action">
+                                    <button class="registration-filter-btn" type="button">
+                                        <svg class="registration-filter-btn__icon">
+                                            <use xlink:href="img/icons/icons.svg#filters-icon"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="account-nav">
+                                <button class="account-nav__btn-back" type="button">Вернуться</button>
+                                <ul class="account-nav__list">
+                                    <li class="account-nav__item">
+                                        <a class="account-nav__link active" href="registration-page-type.html">Главная</a>
+                                    </li>
+                                    <li class="account-nav__item">
+                                        <a class="account-nav__link" href="#">Товары</a>
+                                    </li>
+                                    <li class="account-nav__item">
+                                        <a class="account-nav__link" href="#">Заказы</a>
+                                    </li>
+                                    <li class="account-nav__item">
+                                        <a class="account-nav__link" href="#">Реклама</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mx-auto m-lg-0 col-md-6 col-xl-5">
+                            <div class="breadcrumbs pt-lg-5 pb-4">
+                                <ul class="breadcrumbs__list">
+                                    <li class="breadcrumbs__item">
+                                        <a class="breadcrumbs__link" href="#">Главная</a>
+                                    </li>
+                                    <li class="breadcrumbs__item">
+                                        <a class="breadcrumbs__link" href="#">Регистрация</a>
+                                    </li>
+                                    <li class="breadcrumbs__item">
+                                        <a class="breadcrumbs__link breadcrumbs__link_active" href="#">Заполнение профиля</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <form class="registration-info-shop-form" action="#">
+                                <h2 class="registration-title">Информация для пользователя</h2>
+                                <div class="registration-wgt">
+                                    <input type="file" name="file" id="file" class="logo-inputfile" />
+                                    <label for="file">
+                                        <span class="logo-inputfile__icon">+</span>
+                                        <span class="logo-inputfile__btn">Добавить логотип</span>
+                                    </label>
+                                </div>
+                                <h2 class="registration-title">Информация для пользователя</h2>
+                                <div class="registration-wgt">
+                                    <input class="registration-input" type="text">
+                                </div>
+                                <div class="registration-wgt pb-5">
+                                    <h2 class="registration-subtitle">Локация (google map)</h2>
+                                    <div class="info-location">
+                                        <a class="info-location__link" href="#">
+                                            <svg class="info-location__icon">
+                                                <use xlink:href="img/icons/icons.svg#geoposition-icon"></use>
+                                            </svg>
+                                            <div class="info-location__descr">
+                                                <p class="info-location__txt">Украина, Полтава, Полтавська область</p>
+                                                <p class="info-location__txt">вулиця Гагаріна, 1А</p>
+                                            </div>
+                                        </a>
+                                      
+                                    </div>
+                                    
+                                </div>
+                                <div class="registration-wgt">
+                                    <h2 class="registration-subtitle">Время работы</h2>
+                                    <div class="checkbox-wgts pb-4">
+                                        <div class="checkbox-wgts__col">
+                                            <ul class="checkbox-wgts__list">
+                                                <li class="checkbox-wgts__item">
+                                                    <div class="checkbox">
+                                                        <label class="custom-checkbox">
+                                                            <input type="checkbox" name="color-1" value="indigo">
+                                                             <span>
+                                                                <span class="custom-checkbox__txt">Понедельник</span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li class="checkbox-wgts__item">
+                                                    <div class="checkbox">
+                                                        <label class="custom-checkbox">
+                                                            <input type="checkbox" name="color-1" value="indigo">
+                                                             <span>
+                                                                <span class="custom-checkbox__txt">Вторник</span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li class="checkbox-wgts__item">
+                                                    <div class="checkbox">
+                                                        <label class="custom-checkbox">
+                                                            <input type="checkbox" name="color-1" value="indigo">
+                                                             <span>
+                                                                <span class="custom-checkbox__txt">Среда</span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li class="checkbox-wgts__item">
+                                                    <div class="checkbox">
+                                                        <label class="custom-checkbox">
+                                                            <input type="checkbox" name="color-1" value="indigo">
+                                                             <span>
+                                                                <span class="custom-checkbox__txt">Четверг</span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="checkbox-wgts__col">
+                                            <ul class="checkbox-wgts__list">
+                                                <li class="checkbox-wgts__item">
+                                                    <div class="checkbox">
+                                                        <label class="custom-checkbox">
+                                                            <input type="checkbox" name="color-1" value="indigo">
+                                                             <span>
+                                                                <span class="custom-checkbox__txt">Пятница</span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li class="checkbox-wgts__item">
+                                                    <div class="checkbox">
+                                                        <label class="custom-checkbox">
+                                                            <input type="checkbox" name="color-1" value="indigo">
+                                                             <span>
+                                                                <span class="custom-checkbox__txt">Суббота</span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li class="checkbox-wgts__item">
+                                                    <div class="checkbox">
+                                                        <label class="custom-checkbox">
+                                                            <input type="checkbox" name="color-1" value="indigo">
+                                                             <span>
+                                                                <span class="custom-checkbox__txt">Воскресенье</span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="schedule-time pb-3">
+                                        <div class="schedule-time__inner">
+                                            с
+                                            <div class="schedule-time__num">
+                                                <span>00</span>
+                                                :
+                                                <span>00</span>
+                                            </div>
+                                            до
+                                            <div class="schedule-time__num">
+                                                <span>00</span>
+                                                :
+                                                <span>00</span>
+                                            </div>
+                                        </div>
+                                        <button class="schedule-time__edit-btn" type="button">Edit</button>
+                                    </div>
+                                </div>
+                                <div class="registration-wgt">
+                                    <h2 class="registration-subtitle">Дополнительно</h2>
+                                    <div class="checkbox-wgts pb-4">
+                                        <div class="checkbox-wgts__col">
+                                            <ul class="checkbox-wgts__list">
+                                                <li class="checkbox-wgts__item">
+                                                    <div class="checkbox">
+                                                        <label class="custom-checkbox">
+                                                            <input type="checkbox" name="color-1" value="indigo">
+                                                             <span>
+                                                                <span class="custom-checkbox__txt">Доставка</span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li class="checkbox-wgts__item">
+                                                    <div class="checkbox">
+                                                        <label class="custom-checkbox">
+                                                            <input type="checkbox" name="color-1" value="indigo">
+                                                             <span>
+                                                                <span class="custom-checkbox__txt">Акции</span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                
+                                            </ul>
+                                        </div>
+                                        <div class="checkbox-wgts__col">
+                                            <ul class="checkbox-wgts__list">
+                                                <li class="checkbox-wgts__item">
+                                                    <div class="checkbox">
+                                                        <label class="custom-checkbox">
+                                                            <input type="checkbox" name="color-1" value="indigo">
+                                                             <span>
+                                                                <span class="custom-checkbox__txt">Наложенный платёж</span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="registration-wgt">
+                                    <h2 class="registration-title">Социальные сети</h2>
+                                    <div class="registration-networks">
+                                        <div class="network-wgt">
+                                            <svg class="network-wgt__icon">
+                                                <use xlink:href="img/icons/icons.svg#facebook-icon"></use>
+                                            </svg>
+                                            <input class="network-wgt__field" placeholder="вставьте ссылку на facebook" type="text">
+                                        </div>
+                                        <div class="network-wgt">
+                                            <svg class="network-wgt__icon">
+                                                <use xlink:href="img/icons/icons.svg#tripadvisor-icon"></use>
+                                            </svg>
+                                            <input class="network-wgt__field" placeholder="вставьте ссылку на tripadvisor" type="text">
+                                        </div>
+                                        <div class="network-wgt">
+                                            <svg class="network-wgt__icon">
+                                                <use xlink:href="img/icons/icons.svg#instagram-icon"></use>
+                                            </svg>
+                                            <input class="network-wgt__field" placeholder="вставьте ссылку на instagram" type="text">
+                                        </div>
+                                        <div class="d-inline-flex flex-column">
+                                            <a href="#" class="registration-networks__link">Ссылка на магазин</a>
+                                            <a href="#" class="registration-networks__link">Другое</a>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                                <div class="registration-wgt">
+                                    <h2 class="registration-subtitle">Способы доставки</h2>
+                                    <div class="checkbox-wgts pb-4">
+                                        <div class="checkbox-wgts__col">
+                                            <ul class="checkbox-wgts__list">
+                                                <li class="checkbox-wgts__item">
+                                                    <div class="checkbox">
+                                                        <label class="custom-checkbox">
+                                                            <input type="checkbox" name="color-1" value="indigo">
+                                                             <span>
+                                                                <span class="custom-checkbox__txt">Новая почта</span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li class="checkbox-wgts__item">
+                                                    <div class="checkbox">
+                                                        <label class="custom-checkbox">
+                                                            <input type="checkbox" name="color-1" value="indigo">
+                                                             <span>
+                                                                <span class="custom-checkbox__txt">УкрПочта</span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                
+                                            </ul>
+                                        </div>
+                                        <div class="checkbox-wgts__col">
+                                            <ul class="checkbox-wgts__list">
+                                                <li class="checkbox-wgts__item">
+                                                    <div class="checkbox">
+                                                        <label class="custom-checkbox">
+                                                            <input type="checkbox" name="color-1" value="indigo">
+                                                             <span>
+                                                                <span class="custom-checkbox__txt">Курьер</span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="registration-wgt">
+                                    <h2 class="registration-subtitle">Способы оплаты</h2>
+                                    <div class="checkbox-wgts pb-4">
+                                        <div class="checkbox-wgts__col">
+                                            <ul class="checkbox-wgts__list">
+                                                <li class="checkbox-wgts__item">
+                                                    <div class="checkbox">
+                                                        <label class="custom-checkbox">
+                                                            <input type="checkbox" name="color-1" value="indigo">
+                                                             <span>
+                                                                <span class="custom-checkbox__txt">
+                                                                    <svg class="custom-checkbox__icon">
+                                                                        <use xlink:href="img/icons/icons.svg#MasterCard-icon"></use>
+                                                                    </svg>
+                                                                </span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li class="checkbox-wgts__item">
+                                                    <div class="checkbox">
+                                                        <label class="custom-checkbox">
+                                                            <input type="checkbox" name="color-1" value="indigo">
+                                                             <span>
+                                                                <span class="custom-checkbox__txt">
+                                                                    <svg class="custom-checkbox__icon">
+                                                                        <use xlink:href="img/icons/icons.svg#Visa-icon"></use>
+                                                                    </svg>
+                                                                </span>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="checkbox-wgts__col">
+                                            <ul class="checkbox-wgts__list">
+                                                <li class="checkbox-wgts__item">
+                                                    <a href="#" class="registration-link">Другое</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="registration-confirm justify-content-xl-end">
+                                    <button class="registration-confirm__btn" type="button">Применить</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-12">
+                           
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </div>
+    @@include('_footer.html')
+    @@include('_scripts.html')
+</body>
+</html>

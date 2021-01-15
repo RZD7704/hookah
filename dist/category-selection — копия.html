@@ -84,20 +84,21 @@
     </div>
 </header>
         <main class="main general-content">
-            <section class="section section-registration-brand">
+            <section class="section section-registration-category">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-3">
-                            <div class="registration-head">
-                                <div class="registration-head__headline">HookahMap</div>
-                                <div class="registration-head__action">
-                                    <button class="registration-filter-btn" type="button">
-                                        <svg class="registration-filter-btn__icon">
-                                            <use xlink:href="img/icons/icons.svg#filters-icon"></use>
-                                        </svg>
-                                    </button>
-                                </div>
+                        <div class="registration-head">
+                            <div class="registration-head__headline">HookahMap</div>
+                            <div class="registration-head__action">
+                                <button class="registration-filter-btn" type="button">
+                                    <svg class="registration-filter-btn__icon">
+                                        <use xlink:href="img/icons/icons.svg#filters-icon"></use>
+                                    </svg>
+                                </button>
                             </div>
+                        </div>
+                        <div class="col-lg-3">
+                      
                             <div class="account-nav">
                                 <button class="account-nav__btn-back" type="button">Вернуться</button>
                                 <ul class="account-nav__list">
@@ -117,101 +118,77 @@
                             </div>
                         </div>
                         <div class="col-lg-9">
-                            <div class="breadcrumbs pt-lg-5 pb-4">
-                                <ul class="breadcrumbs__list">
-                                    <li class="breadcrumbs__item">
-                                        <a class="breadcrumbs__link" href="#">Главная</a>
-                                    </li>
-                                    <li class="breadcrumbs__item">
-                                        <a class="breadcrumbs__link breadcrumbs__link_active" href="#">Регистрация</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <form class="registration-brand-form" action="#">
-                                <h2 class="registration-title">Основная информация</h2>
-                                <div class="registration-inner">
-                                    <div class="registration-wgt">
-                                        <h2 class="registration-subtitle">Я хочу продавать свои товары на Hookah Map?</h2>
-                                        <div class="radio">
-                                            <label class="custom-radio">
-                                              <input type="checkbox" name="color" value="indigo">
-                                              <span>Да</span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="registration-wgt">
-                                        <h2 class="registration-subtitle">Адрес вашего сайта?</h2>
-                                        <input class="registration-input" type="text">
-                                    </div>
-                                    <div class="registration-wgt">
-                                        <h2 class="registration-subtitle">Деятельность которой вы занимаетесь? <span>*</span></h2>
-                                        <div class="d-flex flex-wrap">
-                                            <div class="radio pb-2 pe-md-5">
-                                                <label class="custom-radio">
-                                                  <input type="checkbox" name="color" value="indigo">
-                                                  <span>Продажа через сайт</span>
-                                                </label>
-                                            </div>
-                                            <div class="radio pb-2 pe-md-5">
-                                                <label class="custom-radio">
-                                                  <input type="checkbox" name="color" value="indigo">
-                                                  <span>Продажа на интернет площадках</span>
-                                                </label>
-                                            </div>
-                                            <div class="radio pb-2 pe-md-3 pe-lg-5">
-                                                <label class="custom-radio">
-                                                  <input type="checkbox" name="color" value="indigo">
-                                                  <span>Продажа оффлайн</span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="registration-wgt">
-                                        <h2 class="registration-subtitle">Другое</h2>
-                                        <input class="registration-input" type="text">
-                                    </div>
-                                    <div class="registration-wgt">
-                                        <h2 class="registration-subtitle">О бренде: <span>*</span></h2>
-                                        <textarea class="registration-textarea"></textarea>
-                                    </div>
-                                </div>
-                                <h2 class="registration-title">Контактная информация</h2>
-                                <div class="registration-inner">
-                                    <div class="registration-wgt">
-                                        <h2 class="registration-subtitle">ФИО <span>*</span></h2>
-                                        <input class="registration-input" type="text">
-                                    </div>
-                                    <div class="registration-wgt">
-                                        <h2 class="registration-subtitle">Название вашей компании <span>*</span></h2>
-                                        <input class="registration-input" type="text">
-                                    </div>
-                                    <div class="registration-wgt">
-                                        <h2 class="registration-subtitle">Почта <span>*</span></h2>
-                                        <input class="registration-input" type="text">
-                                    </div>
-                                    <div class="registration-wgt">
-                                        <h2 class="registration-subtitle">Номер телефона <span>*</span></h2>
-                                        <input class="registration-input" type="text">
-                                    </div>
-                                    <div class="registration-wgt">
-                                        <h2 class="registration-subtitle">Дополнительно: <span>*</span></h2>
-                                        <textarea class="registration-textarea"></textarea>
-                                    </div>
-                                </div>
-                                <div class="registration-conditions">
-                                    <div class="radio">
-                                        <label class="custom-radio">
-                                          <input type="checkbox" name="color" value="indigo">
-                                          <span>Я соглашаюсь с <a class="custom-radio__link" href="#">Условия маркетплейса</a></span>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="category-card">
+                                        <input type="file" name="file" id="file" class="category-inputfile" />
+                                        <label for="file">
+                                            <span class="category-inputfile__icon">+</span>
+                                            <span class="category-inputfile__btn">Добавить категорию</span>
                                         </label>
                                     </div>
                                 </div>
-                                <div class="rules-required pb-4"><span>*</span> Обязательно к заполенению</div>
-                                <div class="registration-confirm">
-                                    <button class="registration-confirm__btn" type="button">Применить</button>
+                                <div class="col-md-4">
+                                    <div class="category-card">
+                                        <a class="category-card__link" href="#">
+                                            <div class="category-card__photo">
+                                                <img class="category-card__img" src="img/product-photo-1.png" alt="Photo">
+                                            </div>
+                                            <div class="category-card__descr">
+                                                <div class="category-card__txt">Угли</div>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
-                            </form>
-                            
+                                <div class="col-md-4">
+                                    <div class="category-card">
+                                        <a class="category-card__link" href="#">
+                                            <div class="category-card__photo">
+                                                <img class="category-card__img" src="img/product-photo-2.png" alt="Photo">
+                                            </div>
+                                            <div class="category-card__descr">
+                                                <div class="category-card__txt">Кальяны</div>
+                                            </div>
+                                        </a>
+                                    </div>                                
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="category-card">
+                                        <a class="category-card__link" href="#">
+                                            <div class="category-card__photo">
+                                                <img class="category-card__img" src="img/product-photo-3.png" alt="Photo">
+                                            </div>
+                                            <div class="category-card__descr">
+                                                <div class="category-card__txt">Аксессуары</div>
+                                            </div>
+                                        </a>
+                                    </div>                                
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="category-card">
+                                        <a class="category-card__link" href="#">
+                                            <div class="category-card__photo">
+                                                <img class="category-card__img" src="img/product-photo-4.png" alt="Photo">
+                                            </div>
+                                            <div class="category-card__descr">
+                                                <div class="category-card__txt">Жидкости</div>
+                                            </div>
+                                        </a>
+                                    </div>                                
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="category-card">
+                                        <a class="category-card__link" href="#">
+                                            <div class="category-card__photo">
+                                                <img class="category-card__img" src="img/product-photo-5.png" alt="Photo">
+                                            </div>
+                                            <div class="category-card__descr">
+                                                <div class="category-card__txt">Электронные сигареты</div>
+                                            </div>
+                                        </a>
+                                    </div>                                
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

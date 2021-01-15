@@ -84,7 +84,7 @@
     </div>
 </header>
         <main class="main general-content">
-            <section class="section section-registration-brand">
+            <section class="section section-info-brand">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-3">
@@ -116,102 +116,87 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-9">
+                        <div class="mx-auto m-lg-0 col-md-6 col-xl-5">
                             <div class="breadcrumbs pt-lg-5 pb-4">
                                 <ul class="breadcrumbs__list">
                                     <li class="breadcrumbs__item">
                                         <a class="breadcrumbs__link" href="#">Главная</a>
                                     </li>
                                     <li class="breadcrumbs__item">
-                                        <a class="breadcrumbs__link breadcrumbs__link_active" href="#">Регистрация</a>
+                                        <a class="breadcrumbs__link" href="#">Регистрация</a>
+                                    </li>
+                                    <li class="breadcrumbs__item">
+                                        <a class="breadcrumbs__link breadcrumbs__link_active" href="#">Заполнение профиля</a>
                                     </li>
                                 </ul>
                             </div>
-                            <form class="registration-brand-form" action="#">
-                                <h2 class="registration-title">Основная информация</h2>
-                                <div class="registration-inner">
-                                    <div class="registration-wgt">
-                                        <h2 class="registration-subtitle">Я хочу продавать свои товары на Hookah Map?</h2>
-                                        <div class="radio">
-                                            <label class="custom-radio">
-                                              <input type="checkbox" name="color" value="indigo">
-                                              <span>Да</span>
-                                            </label>
+                            <form class="registration-info-brand-form" action="#">
+                                <h2 class="registration-title">Информация для пользователя</h2>
+                                <div class="registration-wgt">
+                                    <input type="file" name="file" id="file" class="logo-inputfile" />
+                                    <label for="file">
+                                        <span class="logo-inputfile__icon">+</span>
+                                        <span class="logo-inputfile__btn">Добавить логотип</span>
+                                    </label>
+                                </div>
+                                <h2 class="registration-title">Название бренда</h2>
+                                <div class="registration-wgt">
+                                    <input class="registration-input" type="text">
+                                </div>
+                                <div class="registration-wgt pb-5">
+                                    <h2 class="registration-subtitle">Локация (google map)</h2>
+                                    <div class="info-location">
+                                        <a class="info-location__link" href="#">
+                                            <svg class="info-location__icon">
+                                                <use xlink:href="img/icons/icons.svg#geoposition-icon"></use>
+                                            </svg>
+                                            <div class="info-location__descr">
+                                                <p class="info-location__txt">Украина, Полтава, Полтавська область</p>
+                                                <p class="info-location__txt">вулиця Гагаріна, 1А</p>
+                                            </div>
+                                        </a>
+                                      
+                                    </div>
+                                    
+                                </div>
+                                <div class="registration-wgt">
+                                    <h2 class="registration-title">Социальные сети</h2>
+                                    <div class="registration-networks">
+                                        <div class="network-wgt">
+                                            <svg class="network-wgt__icon">
+                                                <use xlink:href="img/icons/icons.svg#facebook-icon"></use>
+                                            </svg>
+                                            <input class="network-wgt__field" placeholder="вставьте ссылку на facebook" type="text">
+                                        </div>
+                                        <div class="network-wgt">
+                                            <svg class="network-wgt__icon">
+                                                <use xlink:href="img/icons/icons.svg#tripadvisor-icon"></use>
+                                            </svg>
+                                            <input class="network-wgt__field" placeholder="вставьте ссылку на tripadvisor" type="text">
+                                        </div>
+                                        <div class="network-wgt">
+                                            <svg class="network-wgt__icon">
+                                                <use xlink:href="img/icons/icons.svg#instagram-icon"></use>
+                                            </svg>
+                                            <input class="network-wgt__field" placeholder="вставьте ссылку на instagram" type="text">
+                                        </div>
+                                        <div class="d-inline-flex flex-column">
+                                            <a href="#" class="registration-networks__link">Ссылка на магазин</a>
+                                            <a href="#" class="registration-networks__link">Другое</a>
                                         </div>
                                     </div>
-                                    <div class="registration-wgt">
-                                        <h2 class="registration-subtitle">Адрес вашего сайта?</h2>
-                                        <input class="registration-input" type="text">
-                                    </div>
-                                    <div class="registration-wgt">
-                                        <h2 class="registration-subtitle">Деятельность которой вы занимаетесь? <span>*</span></h2>
-                                        <div class="d-flex flex-wrap">
-                                            <div class="radio pb-2 pe-md-5">
-                                                <label class="custom-radio">
-                                                  <input type="checkbox" name="color" value="indigo">
-                                                  <span>Продажа через сайт</span>
-                                                </label>
-                                            </div>
-                                            <div class="radio pb-2 pe-md-5">
-                                                <label class="custom-radio">
-                                                  <input type="checkbox" name="color" value="indigo">
-                                                  <span>Продажа на интернет площадках</span>
-                                                </label>
-                                            </div>
-                                            <div class="radio pb-2 pe-md-3 pe-lg-5">
-                                                <label class="custom-radio">
-                                                  <input type="checkbox" name="color" value="indigo">
-                                                  <span>Продажа оффлайн</span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="registration-wgt">
-                                        <h2 class="registration-subtitle">Другое</h2>
-                                        <input class="registration-input" type="text">
-                                    </div>
-                                    <div class="registration-wgt">
-                                        <h2 class="registration-subtitle">О бренде: <span>*</span></h2>
-                                        <textarea class="registration-textarea"></textarea>
-                                    </div>
                                 </div>
-                                <h2 class="registration-title">Контактная информация</h2>
-                                <div class="registration-inner">
-                                    <div class="registration-wgt">
-                                        <h2 class="registration-subtitle">ФИО <span>*</span></h2>
-                                        <input class="registration-input" type="text">
-                                    </div>
-                                    <div class="registration-wgt">
-                                        <h2 class="registration-subtitle">Название вашей компании <span>*</span></h2>
-                                        <input class="registration-input" type="text">
-                                    </div>
-                                    <div class="registration-wgt">
-                                        <h2 class="registration-subtitle">Почта <span>*</span></h2>
-                                        <input class="registration-input" type="text">
-                                    </div>
-                                    <div class="registration-wgt">
-                                        <h2 class="registration-subtitle">Номер телефона <span>*</span></h2>
-                                        <input class="registration-input" type="text">
-                                    </div>
-                                    <div class="registration-wgt">
-                                        <h2 class="registration-subtitle">Дополнительно: <span>*</span></h2>
-                                        <textarea class="registration-textarea"></textarea>
-                                    </div>
+                                <div class="registration-wgt pb-5">
+                                    <h2 class="registration-subtitle">Дополнительно: <span>*</span></h2>
+                                    <textarea class="registration-textarea"></textarea>
                                 </div>
-                                <div class="registration-conditions">
-                                    <div class="radio">
-                                        <label class="custom-radio">
-                                          <input type="checkbox" name="color" value="indigo">
-                                          <span>Я соглашаюсь с <a class="custom-radio__link" href="#">Условия маркетплейса</a></span>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="rules-required pb-4"><span>*</span> Обязательно к заполенению</div>
-                                <div class="registration-confirm">
+                                <div class="registration-confirm justify-content-xl-end">
                                     <button class="registration-confirm__btn" type="button">Применить</button>
                                 </div>
                             </form>
-                            
+                        </div>
+                        <div class="col-12">
+                           
                         </div>
                     </div>
                 </div>
