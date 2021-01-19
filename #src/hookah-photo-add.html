@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gulp</title>
+   
+    @@include('_links.html')
+<body>
+    <div class="content">
+        @@include('_header.html')
+        <main class="main general-content">
+            <section class="section section-hookah-add">
+                <div class="container">
+                    <div class="breadcrumbs pt-3 pt-lg-4 pb-4">
+                        <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__item">
+                                <a class="breadcrumbs__link" href="#">Главная</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a class="breadcrumbs__link" href="#">Регистрация</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a class="breadcrumbs__link" href="#">Заполнение профиля</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a class="breadcrumbs__link" href="#">Фильтрация</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a class="breadcrumbs__link breadcrumbs__link_active" href="#">Мой профиль</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="hookah-head pb-4 pb-lg-5">
+                        <h2 class="hookah-head__title">Название</h2>
+                        <p class="hookah-head__subtitle">О заведении:</p>
+                    </div>
+                    <form class="hookah-add-form" action="#">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="position-relative mb-2">
+                                    <input type="file" name="file" id="file" class="hookah-add-inputfile" />
+                                    <label for="file">
+                                        <span class="hookah-add-inputfile__icon main">+</span>
+                                    </label>
+                                    <div class="hookah-geoposition">
+                                        <svg class="hookah-geoposition__icon">
+                                            <use xlink:href="img/icons/icons.svg#geoposition-grey-icon"></use>
+                                        </svg>
+                                        <div class="hookah-geoposition__descr">
+                                            <div class="hookah-geoposition__txt">Москва, Пресненская наб., д. 6, стр. 2, Башня Империя, 53 этаж</div>
+                                            <div class="hookah-geoposition__txt">(Москва-Сити).</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex pb-3">
+                                    <div class="add-photo-wgt">
+                                        <input type="file" name="file" id="file" class="hookah-add-inputfile" />
+                                        <label for="file">
+                                            <span class="hookah-add-inputfile__icon small">+</span>
+                                        </label>
+                                    </div>
+                                    <div class="add-photo-wgt">
+                                        <input type="file" name="file" id="file" class="hookah-add-inputfile" />
+                                        <label for="file">
+                                            <span class="hookah-add-inputfile__icon small">+</span>
+                                        </label>
+                                    </div>
+                                    <div class="add-photo-wgt">
+                                        <input type="file" name="file" id="file" class="hookah-add-inputfile" />
+                                        <label for="file">
+                                            <span class="hookah-add-inputfile__icon small">+</span>
+                                        </label>
+                                    </div>
+                                    <div class="add-photo-wgt">
+                                        <input type="file" name="file" id="file" class="hookah-add-inputfile" />
+                                        <label for="file">
+                                            <span class="hookah-add-inputfile__icon small">+</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="hookah-characteristics pb-4 pb-lg-5 order-lg-1">
+                                    <ul class="hookah-characteristics__list">
+                                        <li class="hookah-characteristics__item">
+                                            <div class="hookah-characteristics__label">Крепкость кальяна</div>
+                                            <div class="hookah-characteristics__value">Light</div>
+                                        </li>
+                                        <li class="hookah-characteristics__item">
+                                            <div class="hookah-characteristics__label">Вкус кальяна</div>
+                                            <div class="hookah-characteristics__value">Свежий</div>
+                                        </li>
+                                        <li class="hookah-characteristics__item">
+                                            <div class="hookah-characteristics__label">Бренд</div>
+                                            <div class="hookah-characteristics__value">Daily Hookah</div>
+                                        </li>
+                                        <li class="hookah-characteristics__item">
+                                            <div class="hookah-characteristics__label">Интерьер</div>
+                                            <div class="hookah-characteristics__value">Лофт</div>
+                                        </li>
+                                        <li class="hookah-characteristics__item">
+                                            <div class="hookah-characteristics__label">Меню</div>
+                                            <div class="hookah-characteristics__value-list">
+                                                <div class="hookah-characteristics__value">Алкольная карта</div>
+                                                <div class="hookah-characteristics__value">Японская кухня</div>
+                                            </div>
+                                        </li>
+                                        <li class="hookah-characteristics__item">
+                                            <div class="hookah-characteristics__label">Цены</div>
+                                            <div class="hookah-characteristics__value">Дорого</div>
+                                        </li>
+                                        <li class="hookah-characteristics__item">
+                                            <div class="hookah-characteristics__label">Музыка</div>
+                                            <div class="hookah-characteristics__value">Поп</div>
+                                        </li>
+                                        <li class="hookah-characteristics__item">
+                                            <div class="hookah-characteristics__label">Расположение</div>
+                                            <div class="hookah-characteristics__value">Центр</div>
+                                        </li>
+                                        <li class="hookah-characteristics__item">
+                                            <div class="hookah-characteristics__label">Время работы</div>
+                                            <div class="hookah-characteristics__value">Открыто сейчас</div>
+                                        </li>
+                                        <li class="hookah-characteristics__item">
+                                            <div class="hookah-characteristics__label">Дополнительно</div>
+                                            <div class="hookah-characteristics__value">Паркинг</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="registration-confirm pb-4 pb-lg-5">
+                                    <button class="registration-confirm__btn" type="button">Применить</button>
+                                </div>
+                                <div class="hookah-inner">
+                                    <div class="hookah-headline">Ознакомтесь с информацией и забронирейте столик прямо сейчас!</div>
+                                    <div class="hookah-networks pb-4">
+                                        <ul class="hookah-networks__list">
+                                            <li class="hookah-networks__item">
+                                                <a class="hookah-networks__link" href="#">
+                                                    <svg class="hookah-networks__icon">
+                                                        <use xlink:href="img/icons/icons.svg#phone-icon"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li class="hookah-networks__item">
+                                                <a class="hookah-networks__link" href="#">
+                                                    <svg class="hookah-networks__icon">
+                                                        <use xlink:href="img/icons/icons.svg#facebook-icon"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li class="hookah-networks__item">
+                                                <a class="hookah-networks__link" href="#">
+                                                    <svg class="hookah-networks__icon">
+                                                        <use xlink:href="img/icons/icons.svg#tripadvisor-icon"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li class="hookah-networks__item">
+                                                <a class="hookah-networks__link" href="#">
+                                                    <svg class="hookah-networks__icon">
+                                                        <use xlink:href="img/icons/icons.svg#instagram-icon"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                 
+                </div>
+            </section>
+        </main>
+
+    </div>
+    @@include('_footer.html')
+    @@include('_scripts.html')
+</body>
+</html>

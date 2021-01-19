@@ -147,6 +147,15 @@ jQuery(document).ready(function($){
 	} else {
 		$('.show_hide_list').hide();
 	}
+
+	if ($('ul.archive-customers-filters__list').find('li').length > 2) {
+		$('.archive-customers-filters__more-btn').click(function(){
+			$(this).prev().children('li:nth-child(n+3)').slideToggle('');
+			$(this).toggleClass('opnd_g');
+		});
+	} else {
+		$('.show_hide_list').hide();
+	}
 });
 
 

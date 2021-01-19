@@ -1,0 +1,70 @@
+.hookah-add-inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+
+    &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #FAFAFA;
+        border-radius: 5px 5px 0px 0px;
+        font-weight: normal;
+        font-size: 20px;
+        letter-spacing: 0.02em;
+        color: #909198;
+    }
+
+    &__btn {
+        background: #FAFAFA;
+        border-radius: 0px 0px 5px 5px;
+        // text-align: center;
+        font-weight: normal;
+        font-size: 16px;
+        letter-spacing: 0.02em;
+        color: #363636;
+
+        @media (min-width: 768px) {
+            font-size: 18px;
+        }
+
+        @media (min-width: 992px) {
+            font-size: 20px;
+        }
+    }
+}
+
+.hookah-add-inputfile__icon.main {
+    height: 225px;
+
+    @media (min-width: 768px) {
+        height: 380px;
+    }
+}
+
+.hookah-add-inputfile__icon.small {
+    height: 90px;
+    width: 100%;
+
+    @media (min-width: 768px) {
+        height: 185px;
+    }
+}
+
+.hookah-add-inputfile+label {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.add-photo-wgt {
+    width: 25%;
+    margin-right: 10px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}

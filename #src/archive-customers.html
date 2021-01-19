@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gulp</title>
+   
+    @@include('_links.html')
+<body>
+    <div class="content">
+        @@include('_header.html')
+        <main class="main general-content">
+            <section class="section section-archive-customers">
+                <div class="container">
+                    <div class="row">
+                        <div class="registration-head">
+                            <div class="registration-head__headline">HookahMap</div>
+                            <div class="registration-head__action">
+                                <button class="registration-filter-btn" type="button">
+                                    <svg class="registration-filter-btn__icon">
+                                        <use xlink:href="img/icons/icons.svg#filters-icon"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="account-nav">
+                                <button class="account-nav__btn-back" type="button">Вернуться</button>
+                                <ul class="account-nav__list">
+                                    <li class="account-nav__item">
+                                        <a class="account-nav__link" href="registration-page-type.html">Главная</a>
+                                    </li>
+                                    <li class="account-nav__item">
+                                        <a class="account-nav__link" href="#">Товары</a>
+                                    </li>
+                                    <li class="account-nav__item">
+                                        <a class="account-nav__link active" href="#">Заказы</a>
+                                    </li>
+                                    <li class="account-nav__item">
+                                        <a class="account-nav__link" href="#">Реклама</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="archive-customers-filters pb-3 pb-md-0">
+                                <ul class="archive-customers-filters__list">
+                                    <li class="archive-customers-filters__item">
+                                        <button class="archive-customers-filters__btn active" type="button">
+                                            <div class="archive-customers-filters__btn-txt">Новые</div>
+                                            <div class="archive-customers-filters__btn-point archive-customers-filters__btn-point_theme_white"></div>
+                                        </button>
+                                    </li>
+                                    <li class="archive-customers-filters__item">
+                                        <button class="archive-customers-filters__btn" type="button">
+                                            <div class="archive-customers-filters__btn-txt">Обработанные</div>
+                                            <div class="archive-customers-filters__btn-point archive-customers-filters__btn-point_theme_yellow"></div>
+                                        </button>
+                                    </li>
+                                    <li class="archive-customers-filters__item">
+                                        <button class="archive-customers-filters__btn" type="button">
+                                            <div class="archive-customers-filters__btn-txt">В пути</div>
+                                            <div class="archive-customers-filters__btn-point archive-customers-filters__btn-point_theme_blue"></div>
+                                        </button>
+                                    </li>
+                                    <li class="archive-customers-filters__item">
+                                        <button class="archive-customers-filters__btn" type="button">
+                                            <div class="archive-customers-filters__btn-txt">Выполненные</div>
+                                            <div class="archive-customers-filters__btn-point archive-customers-filters__btn-point_theme_pink"></div>
+                                        </button>
+                                    </li>
+                                    <li class="archive-customers-filters__item">
+                                        <button class="archive-customers-filters__btn" type="button">
+                                            <div class="archive-customers-filters__btn-txt">Отказ</div>
+                                            <div class="archive-customers-filters__btn-point archive-customers-filters__btn-point_theme_green"></div>
+                                        </button>
+                                    </li>
+                                </ul>
+                                <div class="archive-customers-filters__more-btn">
+                                    <span class="archive-customers-filters__more-btn--point"></span>
+                                </div>
+                            </div>
+                            <div class="archive-customers-actions">
+                                <form class="archive-customers-form" action="#">
+                                    <input class="archive-customers-form__field" placeholder="Искать..." type="text">
+                                    <button class="archive-customers-form__btn" type="submit">
+                                        <svg class="archive-customers-form__btn--icon">
+                                            <use xlink:href="img/icons/icons.svg#filter-search-icon"></use>
+                                        </svg>
+                                    </button>
+                                </form>
+                                <button class="archive-customers-sort" type="button">
+                                    <svg class="archive-customers-sort__icon">
+                                        <use xlink:href="img/icons/icons.svg#sort-small-icon"></use>
+                                    </svg>
+                                </button>
+                               
+                            </div>
+                            <div class="archive-customers-card">
+                                <a class="archive-customers-card__link" href="#">
+                                    <div class="archive-customers-card__wrapper">
+                                        <div class="archive-customers-card__wgt">
+                                            <div class="archive-customers-card__headline">ФИО</div>
+                                            <div class="archive-customers-card__txt">Акопян Алина Суреновна</div>
+                                        </div>
+                                        <div class="archive-customers-card__wgt">
+                                            <div class="archive-customers-card__headline">Статус:</div>
+                                            <div class="archive-customers-card__txt">Новая</div>
+                                        </div>
+                                        <div class="archive-customers-card__wgt">
+                                            <div class="archive-customers-card__headline">Номер:</div>
+                                            <div class="archive-customers-card__txt">208022777334 </div>
+                                        </div>
+                                        <div class="archive-customers-card__wgt">
+                                            <div class="archive-customers-card__headline">Город</div>
+                                            <div class="archive-customers-card__txt">Львов</div>
+                                        </div>
+                                        <div class="archive-customers-card__wgt">
+                                            <div class="archive-customers-card__headline archive-customers-card__headline_theme_grey">Отзывы/Вопрос:</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="archive-customers-card">
+                                <a class="archive-customers-card__link" href="#">
+                                    <div class="archive-customers-card__wrapper">
+                                        <div class="archive-customers-card__wgt">
+                                            <div class="archive-customers-card__headline">ФИО</div>
+                                            <div class="archive-customers-card__txt">Акопян Алина Суреновна</div>
+                                        </div>
+                                        <div class="archive-customers-card__wgt">
+                                            <div class="archive-customers-card__headline">Статус:</div>
+                                            <div class="archive-customers-card__txt">Новая</div>
+                                        </div>
+                                        <div class="archive-customers-card__wgt">
+                                            <div class="archive-customers-card__headline">Номер:</div>
+                                            <div class="archive-customers-card__txt">208022777334 </div>
+                                        </div>
+                                        <div class="archive-customers-card__wgt">
+                                            <div class="archive-customers-card__headline">Город</div>
+                                            <div class="archive-customers-card__txt">Львов</div>
+                                        </div>
+                                        <div class="archive-customers-card__wgt">
+                                            <div class="archive-customers-card__headline archive-customers-card__headline_theme_grey">Отзывы/Вопрос:</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="archive-customers-card">
+                                <a class="archive-customers-card__link" href="#">
+                                    <div class="archive-customers-card__wrapper">
+                                        <div class="archive-customers-card__wgt">
+                                            <div class="archive-customers-card__headline">ФИО</div>
+                                            <div class="archive-customers-card__txt">Акопян Алина Суреновна</div>
+                                        </div>
+                                        <div class="archive-customers-card__wgt">
+                                            <div class="archive-customers-card__headline">Статус:</div>
+                                            <div class="archive-customers-card__txt">Новая</div>
+                                        </div>
+                                        <div class="archive-customers-card__wgt">
+                                            <div class="archive-customers-card__headline">Номер:</div>
+                                            <div class="archive-customers-card__txt">208022777334 </div>
+                                        </div>
+                                        <div class="archive-customers-card__wgt">
+                                            <div class="archive-customers-card__headline">Город</div>
+                                            <div class="archive-customers-card__txt">Львов</div>
+                                        </div>
+                                        <div class="archive-customers-card__wgt">
+                                            <div class="archive-customers-card__headline archive-customers-card__headline_theme_grey">Отзывы/Вопрос:</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="archive-customers-card">
+                                <a class="archive-customers-card__link" href="#">
+                                    <div class="archive-customers-card__wrapper">
+                                        <div class="archive-customers-card__wgt">
+                                            <div class="archive-customers-card__headline">ФИО</div>
+                                            <div class="archive-customers-card__txt">Акопян Алина Суреновна</div>
+                                        </div>
+                                        <div class="archive-customers-card__wgt">
+                                            <div class="archive-customers-card__headline">Статус:</div>
+                                            <div class="archive-customers-card__txt">Новая</div>
+                                        </div>
+                                        <div class="archive-customers-card__wgt">
+                                            <div class="archive-customers-card__headline">Номер:</div>
+                                            <div class="archive-customers-card__txt">208022777334 </div>
+                                        </div>
+                                        <div class="archive-customers-card__wgt">
+                                            <div class="archive-customers-card__headline">Город</div>
+                                            <div class="archive-customers-card__txt">Львов</div>
+                                        </div>
+                                        <div class="archive-customers-card__wgt">
+                                            <div class="archive-customers-card__headline archive-customers-card__headline_theme_grey">Отзывы/Вопрос:</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="archive-customers-card">
+                                <a class="archive-customers-card__link" href="#">
+                                    <div class="archive-customers-card__wrapper">
+                                        <div class="archive-customers-card__wgt">
+                                            <div class="archive-customers-card__headline">ФИО</div>
+                                            <div class="archive-customers-card__txt">Акопян Алина Суреновна</div>
+                                        </div>
+                                        <div class="archive-customers-card__wgt">
+                                            <div class="archive-customers-card__headline">Статус:</div>
+                                            <div class="archive-customers-card__txt">Новая</div>
+                                        </div>
+                                        <div class="archive-customers-card__wgt">
+                                            <div class="archive-customers-card__headline">Номер:</div>
+                                            <div class="archive-customers-card__txt">208022777334 </div>
+                                        </div>
+                                        <div class="archive-customers-card__wgt">
+                                            <div class="archive-customers-card__headline">Город</div>
+                                            <div class="archive-customers-card__txt">Львов</div>
+                                        </div>
+                                        <div class="archive-customers-card__wgt">
+                                            <div class="archive-customers-card__headline archive-customers-card__headline_theme_grey">Отзывы/Вопрос:</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="archive-customers-card">
+                                <a class="archive-customers-card__link" href="#">
+                                    <div class="archive-customers-card__wrapper">
+                                        <div class="archive-customers-card__wgt">
+                                            <div class="archive-customers-card__headline">ФИО</div>
+                                            <div class="archive-customers-card__txt">Акопян Алина Суреновна</div>
+                                        </div>
+                                        <div class="archive-customers-card__wgt">
+                                            <div class="archive-customers-card__headline">Статус:</div>
+                                            <div class="archive-customers-card__txt">Новая</div>
+                                        </div>
+                                        <div class="archive-customers-card__wgt">
+                                            <div class="archive-customers-card__headline">Номер:</div>
+                                            <div class="archive-customers-card__txt">208022777334 </div>
+                                        </div>
+                                        <div class="archive-customers-card__wgt">
+                                            <div class="archive-customers-card__headline">Город</div>
+                                            <div class="archive-customers-card__txt">Львов</div>
+                                        </div>
+                                        <div class="archive-customers-card__wgt">
+                                            <div class="archive-customers-card__headline archive-customers-card__headline_theme_grey">Отзывы/Вопрос:</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="archive-customers-card">
+                                <a class="archive-customers-card__link" href="#">
+                                    <div class="archive-customers-card__wrapper">
+                                        <div class="archive-customers-card__wgt">
+                                            <div class="archive-customers-card__headline">ФИО</div>
+                                            <div class="archive-customers-card__txt">Акопян Алина Суреновна</div>
+                                        </div>
+                                        <div class="archive-customers-card__wgt">
+                                            <div class="archive-customers-card__headline">Статус:</div>
+                                            <div class="archive-customers-card__txt">Новая</div>
+                                        </div>
+                                        <div class="archive-customers-card__wgt">
+                                            <div class="archive-customers-card__headline">Номер:</div>
+                                            <div class="archive-customers-card__txt">208022777334 </div>
+                                        </div>
+                                        <div class="archive-customers-card__wgt">
+                                            <div class="archive-customers-card__headline">Город</div>
+                                            <div class="archive-customers-card__txt">Львов</div>
+                                        </div>
+                                        <div class="archive-customers-card__wgt">
+                                            <div class="archive-customers-card__headline archive-customers-card__headline_theme_grey">Отзывы/Вопрос:</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="d-flex justify-content-end pb-4">
+                                <button class="btn" type="button">Lead more</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </div>
+    @@include('_footer.html')
+    @@include('_scripts.html')
+</body>
+</html>

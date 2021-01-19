@@ -1,0 +1,146 @@
+.general-filter {
+    padding-bottom: 25px;
+
+    &__headline {
+        font-weight: 600;
+        font-size: 16px;
+        letter-spacing: 0.01em;
+        color: #363636;
+        padding-bottom: 5px;
+    }
+
+    &__wrapper {
+        @media (min-width: 992px) {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__col {}
+}
+
+.general-checkbox {
+    padding-bottom: 3px;
+}
+
+.general-custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+
+    &+label {
+        font-weight: normal;
+        font-size: 16px;
+        letter-spacing: 0.01em;
+        color: #909198;
+        cursor: pointer;
+    }
+
+    &:checked+label {
+        color: #16B0A7;
+    }
+}
+
+.general-filter-scroll {
+    padding-bottom: 23px;
+
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__headline {
+        font-weight: 600;
+        font-size: 16px;
+        letter-spacing: 0.01em;
+        color: #090909;
+        display: inline-block;
+        cursor: pointer;
+        padding-right: 10px;
+    }
+
+    &__list {
+        display: none;
+        margin-top: 15px;
+
+        height: 180px;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar-track {
+            border-radius: 8px;
+        }
+
+        &::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            border-radius: 8px;
+            background: #f0f2f5;
+        }
+
+        &:hover::-webkit-scrollbar-thumb {
+            background: #909198;
+        }
+    }
+
+
+
+    &__list.show {
+        display: block;
+    }
+
+    &__item {
+        padding-bottom: 8px;
+    }
+
+    &__btn {
+        font-weight: normal;
+        font-size: 16px;
+        letter-spacing: 0.01em;
+        color: #363636;
+        background: #fff;
+        cursor: pointer;
+        transition: all .5s;
+
+        &:hover {
+            color: #16B0A7;
+        }
+    }
+}
+
+.general-filter-form {
+    position: relative;
+
+    &__field {
+        border: 1px solid #909198;
+        border-radius: 5px;
+        width: 100%;
+        padding: 3px 20px 3px 5px;
+        font-weight: normal;
+        font-size: 12px;
+        color: #909198;
+
+        &::placeholder {
+            font-weight: normal;
+            font-size: 12px;
+            color: #909198;
+        }
+    }
+
+    &__btn {
+        line-height: 0;
+        position: absolute;
+        top: 8px;
+        right: 7px;
+        background: #fff;
+        cursor: pointer;
+
+        &--icon {
+            width: 15px;
+            height: 15px;
+        }
+    }
+}

@@ -137,7 +137,7 @@
     }
 }
 
-.select {
+.select-heart {
     text-align: right;
     line-height: 0;
 
@@ -322,4 +322,8 @@
     &:hover {
         color: #363636;
     }
+}
+
+.position-relative {
+    position: relative;
 }

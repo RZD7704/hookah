@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gulp</title>
+   
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/bootstrap-grid.css">
+<link rel="stylesheet" href="css/swiper-bundle.min.css">
+<link rel="stylesheet" href="css/jquery.fancybox.css">
+<link rel="stylesheet" href="css/style.css"></head>
+<body>
+    <div class="content">
+        <header class="header">
+    <div class="container">
+        <div class="header__body">
+            <div class="header__burger">
+                <span></span>
+            </div>
+            <a href="index.html" class="header__logo">
+                <img src="img/icons/icons.svg#header-logo" alt="Logo">        
+            </a>
+            <div class="header__wrapper">
+                <div class="header-menu">
+                    <ul class="header-menu__list">
+                        <li class="header-menu__item">
+                            <a href="archive-all.html" class="header-menu__link">Карта</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="hookah-filters.html" class="header-menu__link">Кальянные</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="archive-customers.html" class="header-menu__link">Товары</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="archive-shop.html" class="header-menu__link">Магазины</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <span class="header-menu__list-span">Ваш город:</span>
+                            <a href="registration-page-type.html" class="header-menu__link">Москва</a>
+                        </li>
+                    </ul>
+
+                    <div class="header-mobile-btns">
+                        <div class="header-help">
+                            <a class="header-help__btn" href="#">
+                                <svg class="header-help__btn--icon">
+                                    <use xlink:href="img/icons/icons.svg#ask-icon-grey"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <ul class="lang-switcher">
+                            <li class="lang-switcher__item">
+                                <a class="lang-switcher__link" href="#">EN</a>
+                            </li>
+                            <li class="lang-switcher__item">
+                                <a class="lang-switcher__link active" href="#">RU</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header-btns">
+                    <div class="header-btn">
+                        <a class="header-btn__link" href="customer-account-products.html">
+                            <svg class="header-btn__link--icon">
+                                <use xlink:href="img/icons/icons.svg#persone-icon-grey"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="header-btn">
+                        <a class="header-btn__link" href="category-selection.html">
+                            <svg class="header-btn__link--icon">
+                                <use xlink:href="img/icons/icons.svg#shop-icon-grey"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</header>
+        <main class="main general-content">
+            <section class="section section-hookah-add">
+                <div class="container">
+                    <div class="breadcrumbs pt-3 pt-lg-4 pb-4">
+                        <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__item">
+                                <a class="breadcrumbs__link" href="#">Главная</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a class="breadcrumbs__link" href="#">Регистрация</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a class="breadcrumbs__link" href="#">Заполнение профиля</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a class="breadcrumbs__link" href="#">Фильтрация</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a class="breadcrumbs__link breadcrumbs__link_active" href="#">Мой профиль</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="hookah-head pb-4 pb-lg-5">
+                        <h2 class="hookah-head__title">Название</h2>
+                        <p class="hookah-head__subtitle">О заведении:</p>
+                    </div>
+                    <form class="hookah-add-form" action="#">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="position-relative mb-2">
+                                    <input type="file" name="file" id="file" class="hookah-add-inputfile" />
+                                    <label for="file">
+                                        <span class="hookah-add-inputfile__icon main">+</span>
+                                    </label>
+                                    <div class="hookah-geoposition">
+                                        <svg class="hookah-geoposition__icon">
+                                            <use xlink:href="img/icons/icons.svg#geoposition-grey-icon"></use>
+                                        </svg>
+                                        <div class="hookah-geoposition__descr">
+                                            <div class="hookah-geoposition__txt">Москва, Пресненская наб., д. 6, стр. 2, Башня Империя, 53 этаж</div>
+                                            <div class="hookah-geoposition__txt">(Москва-Сити).</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex pb-3">
+                                    <div class="add-photo-wgt">
+                                        <input type="file" name="file" id="file" class="hookah-add-inputfile" />
+                                        <label for="file">
+                                            <span class="hookah-add-inputfile__icon small">+</span>
+                                        </label>
+                                    </div>
+                                    <div class="add-photo-wgt">
+                                        <input type="file" name="file" id="file" class="hookah-add-inputfile" />
+                                        <label for="file">
+                                            <span class="hookah-add-inputfile__icon small">+</span>
+                                        </label>
+                                    </div>
+                                    <div class="add-photo-wgt">
+                                        <input type="file" name="file" id="file" class="hookah-add-inputfile" />
+                                        <label for="file">
+                                            <span class="hookah-add-inputfile__icon small">+</span>
+                                        </label>
+                                    </div>
+                                    <div class="add-photo-wgt">
+                                        <input type="file" name="file" id="file" class="hookah-add-inputfile" />
+                                        <label for="file">
+                                            <span class="hookah-add-inputfile__icon small">+</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="hookah-characteristics pb-4 pb-lg-5 order-lg-1">
+                                    <ul class="hookah-characteristics__list">
+                                        <li class="hookah-characteristics__item">
+                                            <div class="hookah-characteristics__label">Крепкость кальяна</div>
+                                            <div class="hookah-characteristics__value">Light</div>
+                                        </li>
+                                        <li class="hookah-characteristics__item">
+                                            <div class="hookah-characteristics__label">Вкус кальяна</div>
+                                            <div class="hookah-characteristics__value">Свежий</div>
+                                        </li>
+                                        <li class="hookah-characteristics__item">
+                                            <div class="hookah-characteristics__label">Бренд</div>
+                                            <div class="hookah-characteristics__value">Daily Hookah</div>
+                                        </li>
+                                        <li class="hookah-characteristics__item">
+                                            <div class="hookah-characteristics__label">Интерьер</div>
+                                            <div class="hookah-characteristics__value">Лофт</div>
+                                        </li>
+                                        <li class="hookah-characteristics__item">
+                                            <div class="hookah-characteristics__label">Меню</div>
+                                            <div class="hookah-characteristics__value-list">
+                                                <div class="hookah-characteristics__value">Алкольная карта</div>
+                                                <div class="hookah-characteristics__value">Японская кухня</div>
+                                            </div>
+                                        </li>
+                                        <li class="hookah-characteristics__item">
+                                            <div class="hookah-characteristics__label">Цены</div>
+                                            <div class="hookah-characteristics__value">Дорого</div>
+                                        </li>
+                                        <li class="hookah-characteristics__item">
+                                            <div class="hookah-characteristics__label">Музыка</div>
+                                            <div class="hookah-characteristics__value">Поп</div>
+                                        </li>
+                                        <li class="hookah-characteristics__item">
+                                            <div class="hookah-characteristics__label">Расположение</div>
+                                            <div class="hookah-characteristics__value">Центр</div>
+                                        </li>
+                                        <li class="hookah-characteristics__item">
+                                            <div class="hookah-characteristics__label">Время работы</div>
+                                            <div class="hookah-characteristics__value">Открыто сейчас</div>
+                                        </li>
+                                        <li class="hookah-characteristics__item">
+                                            <div class="hookah-characteristics__label">Дополнительно</div>
+                                            <div class="hookah-characteristics__value">Паркинг</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="registration-confirm pb-4 pb-lg-5">
+                                    <button class="registration-confirm__btn" type="button">Применить</button>
+                                </div>
+                                <div class="hookah-inner">
+                                    <div class="hookah-headline">Ознакомтесь с информацией и забронирейте столик прямо сейчас!</div>
+                                    <div class="hookah-networks pb-4">
+                                        <ul class="hookah-networks__list">
+                                            <li class="hookah-networks__item">
+                                                <a class="hookah-networks__link" href="#">
+                                                    <svg class="hookah-networks__icon">
+                                                        <use xlink:href="img/icons/icons.svg#phone-icon"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li class="hookah-networks__item">
+                                                <a class="hookah-networks__link" href="#">
+                                                    <svg class="hookah-networks__icon">
+                                                        <use xlink:href="img/icons/icons.svg#facebook-icon"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li class="hookah-networks__item">
+                                                <a class="hookah-networks__link" href="#">
+                                                    <svg class="hookah-networks__icon">
+                                                        <use xlink:href="img/icons/icons.svg#tripadvisor-icon"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li class="hookah-networks__item">
+                                                <a class="hookah-networks__link" href="#">
+                                                    <svg class="hookah-networks__icon">
+                                                        <use xlink:href="img/icons/icons.svg#instagram-icon"></use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                 
+                </div>
+            </section>
+        </main>
+
+    </div>
+    <footer class="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer-info">
+                <div class="footer-info__headline">Hookah Map.</div>
+                <div class="footer-info__descr d-none d-lg-block">
+                    <a class="footer-info__txt" href="#">Служба поддержки</a>
+                    <div class="footer-rights">@ 2020 Hookah Map</div>
+                </div>
+            </div>
+            <form class="footer-form" action="#">
+                <div class="footer-form__headline">For callaboration</div>
+                <input class="footer-form__field" type="text" placeholder="E-mail">
+                <button class="footer-form__btn" type="submit">
+                    <svg class="footer-form__btn--icon">
+                        <use xlink:href="img/icons/icons.svg#btn-arr"></use>
+                    </svg>
+                </button>
+            </form>
+            <div class="footer-nav">
+                <ul class="footer-nav__list">
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link" href="#">
+                            Создать магазин
+                            <!-- <svg class="footer-nav__link--icon">
+                                <use xlink:href="img/icons/icons.svg#btn-arr"></use>
+                            </svg> -->
+                        </a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link" href="#">
+                            Служба поддержки                        
+                            <!-- <svg class="footer-nav__link--icon">
+                                <use xlink:href="img/icons/icons.svg#btn-arr"></use>
+                            </svg> -->
+                        </a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link" href="#">
+                            Зарегистрировать кальянную
+                            <!-- <svg class="footer-nav__link--icon">
+                                <use xlink:href="img/icons/icons.svg#btn-arr"></use>
+                            </svg> -->
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-rights d-lg-none">@ 2020 Hookah Map</div>
+        </div>
+        
+    </div>
+</footer>
+    <script src="js/jquery.min.js"></script>
+<!-- <script src="js/bootstrap.js"></script> -->
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
