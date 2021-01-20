@@ -136,6 +136,22 @@
     }
 }
 
+.registration-txt {
+    font-weight: normal;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 0.01em;
+    color: #909198;
+
+    @media(min-width: 768px) {
+        font-size: 16px;
+    }
+
+    &_theme_dark {
+        color: #363636;
+    }
+}
+
 .registration-inner {
     @media(min-width: 768px) {
         padding-left: 60px;

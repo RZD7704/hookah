@@ -327,3 +327,30 @@
 .position-relative {
     position: relative;
 }
+
+
+.editing-registration-label {
+    display: flex;
+    flex-direction: column;
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+    color: #363636;
+}
+
+.editing-registration-field {
+    margin-bottom: 15px;
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+    color: #909198;
+    padding: 5px;
+    border-bottom: 2px solid #FAFAFA;
+
+    &::placeholder {
+        font-weight: normal;
+        font-size: 16px;
+        letter-spacing: 0.01em;
+        color: #909198;
+    }
+}

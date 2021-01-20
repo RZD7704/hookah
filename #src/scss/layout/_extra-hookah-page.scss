@@ -177,3 +177,122 @@
         transition: all .5s;
     }
 }
+
+.hookah-user-head {
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+
+.hookah-user-search {
+    display: flex;
+    padding-bottom: 15px;
+
+    &__txt {
+        font-weight: normal;
+        font-size: 16px;
+        letter-spacing: 0.01em;
+        color: #909198;
+    }
+
+    &__link {
+        font-weight: normal;
+        font-size: 16px;
+        letter-spacing: 0.01em;
+        color: #909198;
+        transition: all .5s;
+        margin-left: 15px;
+
+        &:hover {
+            color: #363636;
+        }
+
+        &.active {
+            color: #363636;
+        }
+    }
+}
+
+.hookah-selects {
+
+    @media (max-width: 767px) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+.select-general-hidden {
+    display: none;
+    visibility: hidden;
+}
+
+.custom-general-select {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    font-size: 16px;
+}
+
+.custom-general-select__header {
+    position: relative;
+    width: 128px;
+    height: 25px;
+    cursor: pointer;
+    padding: 0 5px;
+    border: 1px solid #909198;
+    border-radius: 5px;
+
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+    color: #909198;
+
+    @media (min-width: 768px) {
+        width: 164px;
+        margin-right: 20px;
+    }
+
+    &::after {
+        display: inline-block;
+        content: "";
+        border-top: 7px solid #909198;
+        border-right: 7px solid transparent;
+        border-bottom: 0;
+        border-left: 7px solid transparent;
+        position: absolute;
+        top: 50%;
+        right: 5px;
+        transform: translateY(-50%);
+    }
+}
+
+.select-general-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    margin: 0;
+    list-style: none;
+    box-shadow: 0px 0px 10px -5px #000000;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 5px 0;
+
+    li {
+        padding: 5px 10px;
+        display: block;
+        font-weight: 500;
+        border-bottom: 1px solid #F7F7F5;
+        transition: 0.5s all ease;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        &:hover {
+            color: #16B0A7;
+        }
+    }
+}

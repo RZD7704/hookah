@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gulp</title>
+   
+    @@include('_links.html')
+<body>
+    <div class="content">
+        @@include('_header.html')
+        <main class="main general-content">
+            <section class="section section-advertising-type">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="registration-head">
+                                <div class="registration-head__headline">HookahMap</div>
+                                <div class="registration-head__action">
+                                    <button class="registration-filter-btn" type="button">
+                                        <svg class="registration-filter-btn__icon">
+                                            <use xlink:href="img/icons/icons.svg#filters-icon"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="account-nav">
+                                <button class="account-nav__btn-back" type="button">Вернуться</button>
+                                <ul class="account-nav__list">
+                                    <li class="account-nav__item">
+                                        <a class="account-nav__link" href="registration-page-type.html">Главная</a>
+                                    </li>
+                                    <li class="account-nav__item">
+                                        <a class="account-nav__link" href="#">Товары</a>
+                                    </li>
+                                    <li class="account-nav__item">
+                                        <a class="account-nav__link" href="#">Заказы</a>
+                                    </li>
+                                    <li class="account-nav__item">
+                                        <a class="account-nav__link active" href="#">Реклама</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                            <form class="single-customer-form" action="#">
+                                <div class="advertising-wgt pt-lg-5">
+                                    <h2 class="registration-title">Деятельность:</h2>
+                                    <div class="row"> 
+                                        <div class="col-10 col-md-4 mx-auto ms-md-0">
+                                            <div class="checkbox pb-4">
+                                                <input class="advertising-checkbox" type="checkbox" id="advertising-3" name="advertising-3" value="advertising">
+                                                <label for="advertising-3">Определённую услугу</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="advertising-wgt">
+                                    <input type="file" name="file" id="file" class="product-inputfile" />
+                                    <label for="file">
+                                        <span class="product-inputfile__icon main">+</span>
+                                        <span class="product-inputfile__btn">Добавить баннер</span>
+                                    </label>
+                                </div>
+                                <div class="advertising-wgt pb-4">
+                                    <h2 class="registration-subtitle">Добавить описание:</h2>
+                                    <textarea class="registration-textarea"></textarea>
+                                </div>
+                                <div class="advertising-wgt">
+                                    <div class="advertising-type__wrapper advertising-type__wrapper-js pb-4">
+                                        <div class="advertising-type__inner advertising-type__inner-js">
+                                            <div class="registration-wgt pb-3">
+                                                <h2 class="registration-subtitle">Локация (google map)</h2>
+                                                <div class="info-location">
+                                                    <a class="info-location__link" href="#">
+                                                        <svg class="info-location__icon">
+                                                            <use xlink:href="img/icons/icons.svg#geoposition-icon"></use>
+                                                        </svg>
+                                                        <div class="info-location__descr">
+                                                            <p class="info-location__txt">Украина, Полтава, Полтавська область</p>
+                                                            <p class="info-location__txt">вулиця Гагаріна, 1А</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="advertising-mobile_pl_34 registration-wgt pb-3">
+                                                <h2 class="registration-subtitle">Возраст</h2>
+                                               <div class="registration-txt">18-55 лет</div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-end justify-content-lg-start align-items-center ps-lg-5 advertising-btn-js">
+                                            <button class="btn btn-edit-js" type="button">Edit</button>
+                                        </div>
+                                    </div>
+                                    <div class="advertising-conditions">
+                                        <h2 class="registration-subtitle">Бюджет и сроки:</h2>
+                                        <div class="advertising-type__inner">
+                                            <div class="advertising-conditions-wgt">
+                                                <div class="advertising-conditions-wgt__title">Кол-во дней</div>
+                                                <div class="product-quantity skin-1 p-0">
+                                                    <div class="product-quantity__wrapper">
+                                                        <span class="minus dis"></span>
+                                                        <input type="text" class="product-num" value="1" readonly="">
+                                                        <span class="plus"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="advertising-conditions-wgt">
+                                                <div class="advertising-conditions-wgt__title">Бюджет</div>
+                                                <div class="product-rate">
+                                                    <form>
+                                                        <input class="product-rate__num" id="rangevalue" type="text" onchange="rng.value=value" >
+                                                        <input id="rng" name="rng" type="range" min="1" max="100" value="50" onchange="rangevalue.value=value">
+                                                    </form>  
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="registration-confirm pt-4 pb-4">
+                                    <button class="registration-confirm__btn" type="submit">Применить</button>
+                                </div> 
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </div>
+    @@include('_footer.html')
+    @@include('_scripts.html')
+</body>
+</html>

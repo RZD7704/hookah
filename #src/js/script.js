@@ -226,3 +226,161 @@ $( document ).ready(function() {
 	
 	});
 });
+
+$( document ).ready(function() {
+	$('.hookah-select').each(function(){
+		var $this = $(this), numberOfOptions = $(this).children('option').length;
+	  
+		$this.addClass('select-general-hidden'); 
+		$this.wrap('<div class="custom-general-select"></div>');
+		$this.after('<div class="custom-general-select__header"></div>');
+	
+		var $styledSelect = $this.next('div.custom-general-select__header');
+		$styledSelect.text($this.children('option').eq(0).text());
+	  
+		var $list = $('<ul />', {
+			'class': 'select-general-options'
+		}).insertAfter($styledSelect);
+	  
+		for (var i = 0; i < numberOfOptions; i++) {
+			$('<li />', {
+				text: $this.children('option').eq(i).text(),
+				rel: $this.children('option').eq(i).val()
+			}).appendTo($list);
+		}
+	  
+		var $listItems = $list.children('li');
+	  
+		$styledSelect.click(function(e) {
+			e.stopPropagation();
+			$('div.custom-general-select__header.active').not(this).each(function(){
+				$(this).removeClass('active').next('ul.select-general-options').hide();
+			});
+			$(this).toggleClass('active').next('ul.select-general-options').toggle();
+		});
+	  
+		$listItems.click(function(e) {
+			e.stopPropagation();
+			$styledSelect.text($(this).text()).removeClass('active');
+			$this.val($(this).attr('rel'));
+			$list.hide();
+		});
+	  
+		$(document).click(function() {
+			$styledSelect.removeClass('active');
+			$list.hide();
+		});
+	
+	});
+});
+
+$(function() {
+	var el;
+	$("#rng").change(function() {
+	el = $(this);
+	el
+	.next("#ong")
+	.text(el.val());
+	})
+	.trigger('change');
+});
+
+function addAdvertisingEditing() {
+	let editBtn = document.querySelectorAll('.btn-edit-js');
+
+	editBtn.forEach(item => {
+		item.addEventListener('click', () => editingAdvertisingEditing());
+	});
+}
+
+addAdvertisingEditing();
+
+function editingAdvertisingEditing () {
+	const parent = document.querySelector('.advertising-type__wrapper-js'),
+		archiveBlock = document.querySelector('.advertising-type__inner-js'),
+		archiveBtn = document.querySelector('.advertising-btn-js');
+
+	let saveBtn;
+
+	archiveBlock.remove ();	
+	archiveBtn.remove ();
+	parent.innerHTML = `
+		<form class="editing-advertising-form" action="#">
+			<div class="advertising-type__inner">
+				<div class="registration-wgt pb-3">
+					<h2 class="registration-subtitle">Локация (google map)</h2>
+					<div class="info-location d-flex">
+						<svg class="info-location__icon">
+							<use xlink:href="img/icons/icons.svg#geoposition-icon"></use>
+						</svg>
+						<div class="d-flex flex-column">
+							<label class="editing-registration-label">
+								Введите страну, город
+								<input class="editing-registration-field" type="text">
+							</label>
+							<label class="editing-registration-label">
+								Введите улицу
+								<input class="editing-registration-field" type="text">
+							</label>                                                       
+						</div>                                                        
+					</div>
+				</div>
+				<div class="registration-wgt pb-3">
+					<div class="advertising-mobile_pl_34 d-flex">
+						<label class="editing-registration-label">
+							Введите возраст
+							<input class="editing-registration-field" type="text">
+						</label>
+					</div>
+				
+				</div>
+			</div>
+			<div class="d-flex justify-content-end justify-content-lg-start align-items-center ps-lg-5">
+				<button class="btn btn-save-js" type="button">Save</button>
+			</div>
+		</form>
+	`;	
+	saveBtn = document.querySelector('.btn-save-js');
+	saveBtn.addEventListener('click', function(e) {
+		e.preventDefault();
+		inputVal = document.querySelectorAll('.editing-registration-field');
+		let valueArr = [];
+		inputVal.forEach((item) => {
+			valueArr.push(item.value);
+			console.log(valueArr);
+		});
+		creatingEditedFields(valueArr);
+		
+	});
+}
+
+function creatingEditedFields (valueArr) {
+	const parent = document.querySelector('.advertising-type__wrapper-js');
+
+	parent.innerHTML = `
+	<div class="advertising-type__inner advertising-type__inner-js">
+		<div class="registration-wgt pb-3">
+			<h2 class="registration-subtitle">Локация (google map)</h2>
+			<div class="info-location">
+				<a class="info-location__link" href="#">
+					<svg class="info-location__icon">
+						<use xlink:href="img/icons/icons.svg#geoposition-icon"></use>
+					</svg>
+					<div class="info-location__descr">
+						<p class="info-location__txt">${valueArr[0]}</p>
+						<p class="info-location__txt">${valueArr[1]}</p>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="advertising-mobile_pl_34 registration-wgt pb-3">
+			<h2 class="registration-subtitle">Возраст</h2>
+		<div class="registration-txt">${valueArr[2]} лет</div>
+		</div>
+	</div>
+	<div class="d-flex justify-content-end justify-content-lg-start align-items-center ps-lg-5 advertising-btn-js">
+		<button class="btn btn-edit-js" type="button">Edit</button>
+	</div>
+	`;
+	addAdvertisingEditing();
+}

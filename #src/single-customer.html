@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gulp</title>
+   
+    @@include('_links.html')
+<body>
+    <div class="content">
+        @@include('_header.html')
+        <main class="main general-content">
+            <section class="section section-single-customer">
+                <div class="container">
+                    <div class="row">
+                        
+                        <div class="col-lg-3">
+                            <div class="registration-head">
+                                <div class="registration-head__headline">HookahMap</div>
+                                <div class="registration-head__action">
+                                    <button class="registration-filter-btn" type="button">
+                                        <svg class="registration-filter-btn__icon">
+                                            <use xlink:href="img/icons/icons.svg#filters-icon"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="account-nav">
+                                <button class="account-nav__btn-back" type="button">Вернуться</button>
+                                <ul class="account-nav__list">
+                                    <li class="account-nav__item">
+                                        <a class="account-nav__link" href="registration-page-type.html">Главная</a>
+                                    </li>
+                                    <li class="account-nav__item">
+                                        <a class="account-nav__link" href="#">Товары</a>
+                                    </li>
+                                    <li class="account-nav__item">
+                                        <a class="account-nav__link active" href="#">Заказы</a>
+                                    </li>
+                                    <li class="account-nav__item">
+                                        <a class="account-nav__link" href="#">Реклама</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="breadcrumbs pt-lg-5 pb-4">
+                                <ul class="breadcrumbs__list">
+                                    <li class="breadcrumbs__item">
+                                        <a class="breadcrumbs__link" href="#">Заказы</a>
+                                    </li>
+                                    <li class="breadcrumbs__item">
+                                        <a class="breadcrumbs__link breadcrumbs__link_active" href="#">Новая заявка</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <form class="single-customer-form" action="#">
+                                <div class="single-customer">
+                                    <div class="single-customer__col">
+                                        <div class="single-customer-info">
+                                            <!-- <div class="single-customer-info__name">Аниченко Алина Суреновна</div> -->
+    
+                                            <div class="column-head d-md-none">
+                                                <div class="column-head__num">1</div>
+                                                <div class="column-head__headline">Личные данные</div>
+                                            </div>
+                                            <div class="single-customer-wgt">
+                                                <div class="single-customer-wgt__headline">Имя:</div>
+                                                <div class="single-customer-wgt__value">Роман</div>
+                                            </div>
+                                            <div class="single-customer-wgt">
+                                                <div class="single-customer-wgt__headline">Фамилия:</div>
+                                                <div class="single-customer-wgt__value">Гриневич</div>
+                                            </div>
+                                            <div class="single-customer-wgt">
+                                                <div class="single-customer-wgt__headline">Телефон:</div>
+                                                <div class="single-customer-wgt__value">+38 066 310 89 90</div>
+                                            </div>
+                                            <div class="single-customer-wgt">
+                                                <div class="single-customer-wgt__headline">E-mail:</div>
+                                                <div class="single-customer-wgt__value">grinfiel_66@gmail.com</div>
+                                            </div>
+    
+                                            <div class="column-head d-md-none">
+                                                <div class="column-head__num">2</div>
+                                                <div class="column-head__headline">Информация по доставке</div>
+                                            </div>
+                                            <div class="single-customer-wgt">
+                                                <div class="single-customer-wgt__headline">Город:</div>
+                                                <div class="single-customer-wgt__value">Киев</div>
+                                            </div>
+                                            <div class="single-customer-wgt">
+                                                <div class="single-customer-wgt__headline">Способ доставки:</div>
+                                                <div class="single-customer-wgt__value">Новая почта</div>
+                                            </div>
+                                            <div class="single-customer-wgt">
+                                                <div class="single-customer-wgt__headline">Отдел:</div>
+                                                <div class="single-customer-wgt__value">Відділення №9 вулиця Гог..</div>
+                                            </div>
+                                            <div class="single-customer-wgt">
+                                                <div class="single-customer-wgt__headline">Оплата:</div>
+                                                <div class="single-customer-wgt__value">Наложенный платёж</div>
+                                            </div>
+                                           
+                                        </div>                                      
+                                    </div>
+                                    <div class="single-customer__col single-customer__col_mob_w_100">
+                                        <div class="column-head d-md-none">
+                                            <div class="column-head__num">3</div>
+                                            <div class="column-head__headline">Ваш заказ</div>
+                                        </div>
+                                        <div class="customer-send-card pb-3">
+                                            <div class="customer-send-card__inner">
+                                                <div class="customer-send-card__wrapper">
+                                                    <div class="customer-send-card__photo">
+                                                        <img class="customer-send-card__photo--img" src="img/product-photo-4.png" alt="Photo">
+                                                    </div>
+                                                    <div class="d-flex flex-column">
+                                                        <div class="customer-send-card__title">Набор Stanley Blond</div>
+                                                        <div class="customer-send-card__body">
+                                                            <div class="d-flex flex-column  justify-content-between pb-3 pb-lg-0">
+                                                                <div class="customer-send-card__subtitle">Табак</div>
+                                                            </div>
+                                                            <div class="d-flex flex-row align-items-center flex-wrap">
+                                                                <div class="product-quantity skin-1 pe-5">
+                                                                    <div class="product-quantity__wrapper">
+                                                                        <span class="minus dis"></span>
+                                                                        <input type="text" class="product-num" value="1" readonly="">
+                                                                        <span class="plus"></span>
+                                                                    </div>
+                                                                </div>
+                                                                <p class="product-price p-0 ps-sm-5 d-flex">
+                                                                    2500
+                                                                    <span class="product-price__symbol">₴</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="customer-send-card pb-3">
+                                            <div class="customer-send-card__inner">
+                                                <div class="customer-send-card__wrapper">
+                                                    <div class="customer-send-card__photo">
+                                                        <img class="customer-send-card__photo--img" src="img/product-photo-4.png" alt="Photo">
+                                                    </div>
+                                                    <div class="d-flex flex-column">
+                                                        <div class="customer-send-card__title">Набор Stanley Blond</div>
+                                                        <div class="customer-send-card__body">
+                                                            <div class="d-flex flex-column  justify-content-between pb-3 pb-lg-0">
+                                                                <div class="customer-send-card__subtitle">Табак</div>
+                                                            </div>
+                                                            <div class="d-flex flex-row align-items-center flex-wrap">
+                                                                <div class="product-quantity skin-1 pe-5">
+                                                                    <div class="product-quantity__wrapper">
+                                                                        <span class="minus dis"></span>
+                                                                        <input type="text" class="product-num" value="1" readonly="">
+                                                                        <span class="plus"></span>
+                                                                    </div>
+                                                                </div>
+                                                                <p class="product-price p-0 ps-sm-5 d-flex">
+                                                                    2500
+                                                                    <span class="product-price__symbol">₴</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="customer-send-card pb-3">
+                                            <div class="customer-send-card__inner">
+                                                <div class="customer-send-card__wrapper">
+                                                    <div class="customer-send-card__photo">
+                                                        <img class="customer-send-card__photo--img" src="img/product-photo-4.png" alt="Photo">
+                                                    </div>
+                                                    <div class="d-flex flex-column">
+                                                        <div class="customer-send-card__title">Набор Stanley Blond</div>
+                                                        <div class="customer-send-card__body">
+                                                            <div class="d-flex flex-column  justify-content-between pb-3 pb-lg-0">
+                                                                <div class="customer-send-card__subtitle">Табак</div>
+                                                            </div>
+                                                            <div class="d-flex flex-row align-items-center flex-wrap">
+                                                                <div class="product-quantity skin-1 pe-5">
+                                                                    <div class="product-quantity__wrapper">
+                                                                        <span class="minus dis"></span>
+                                                                        <input type="text" class="product-num" value="1" readonly="">
+                                                                        <span class="plus"></span>
+                                                                    </div>
+                                                                </div>
+                                                                <p class="product-price p-0 ps-sm-5 d-flex">
+                                                                    2500
+                                                                    <span class="product-price__symbol">₴</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="registration-confirm pt-4 pt-lg-5">
+                                            <button class="registration-confirm__btn" type="button">Применить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </div>
+    @@include('_footer.html')
+    @@include('_scripts.html')
+</body>
+</html>
