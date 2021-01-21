@@ -110,6 +110,10 @@
             font-size: 16px;
             padding-right: 10px;
         }
+
+        &_theme_bold {
+            font-weight: 600;
+        }
     }
 
     &__value {
@@ -117,12 +121,13 @@
         font-size: 14px;
         letter-spacing: 0.02em;
         color: #909198;
-        // width: 50%;
 
         @media (min-width: 992px) {
-            font-size: 20px;
             font-size: 16px;
+        }
 
+        &_theme_dark {
+            color: #363636;
         }
     }
 }

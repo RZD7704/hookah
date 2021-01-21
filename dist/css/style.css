@@ -924,11 +924,19 @@ input[type=range]:focus::-ms-fill-upper {
   padding-right: 5px;
 }
 
+.hookah-characteristics__label_theme_bold {
+  font-weight: 600;
+}
+
 .hookah-characteristics__value {
   font-weight: normal;
   font-size: 14px;
   letter-spacing: 0.02em;
   color: #909198;
+}
+
+.hookah-characteristics__value_theme_dark {
+  color: #363636;
 }
 
 .hookah-inner {
@@ -1064,6 +1072,44 @@ input[type=range]:focus::-ms-fill-upper {
 
 .select-general-options li:hover {
   color: #16B0A7;
+}
+
+#map {
+  height: 500px;
+  width: 100%;
+}
+
+.custom-container-mobile {
+  padding: 0 18px;
+}
+
+.custom-container-desktop {
+  padding-left: 30px;
+}
+
+.hookah-map {
+  width: 100%;
+}
+
+.general-checkbox {
+  padding-bottom: 3px;
+}
+
+.hookah-filter-wgt {
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.hookah-filter-wgt__headline {
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  color: #4F4F4F;
+  padding-bottom: 10px;
+}
+
+.hookah-filter-wgt__col {
+  width: 100%;
 }
 
 .general-head {
@@ -3491,6 +3537,14 @@ body {
   opacity: 0;
 }
 
+.general-custom-checkbox_theme_dark + label {
+  color: #363636 !important;
+}
+
+.general-custom-checkbox_theme_dark:checked + label {
+  color: #16B0A7 !important;
+}
+
 .general-custom-checkbox + label {
   font-weight: normal;
   font-size: 16px;
@@ -3675,6 +3729,10 @@ body {
     font-size: 14px;
     color: #090909;
   }
+
+  .hookah-filter-wgt__col {
+    width: 50%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -3751,6 +3809,35 @@ body {
   .custom-general-select__header {
     width: 164px;
     margin-right: 20px;
+  }
+
+  #map {
+    height: 765px;
+  }
+
+  .section-hookah {
+    padding-top: 20px;
+  }
+
+  .section-hookah__inner {
+    display: flex;
+  }
+
+  .hookah-map {
+    width: 45%;
+  }
+
+  .hookah-content {
+    width: 55%;
+  }
+
+  .hookah-filter-wgt {
+    padding-bottom: 25px;
+    padding-top: 0;
+  }
+
+  .hookah-filter-wgt__col {
+    width: 100%;
   }
 
   .custom-radio__link {
@@ -4018,12 +4105,23 @@ body {
   }
 
   .hookah-characteristics__value {
-    font-size: 20px;
     font-size: 16px;
   }
 
   .hookah-inner {
     width: 100%;
+  }
+
+  .hookah-map {
+    width: 50%;
+  }
+
+  .hookah-content {
+    width: 40%;
+  }
+
+  .hookah-filter-wgt__col {
+    width: 50%;
   }
 
   .general-head {
@@ -4375,8 +4473,22 @@ body {
     width: 80%;
   }
 
+  .hookah-map {
+    width: 55%;
+  }
+
+  .hookah-content {
+    width: 35%;
+  }
+
   .accordion {
     width: 80%;
+  }
+}
+
+@media (min-width: 1640px) {
+  .hookah-content {
+    width: 25%;
   }
 }
 

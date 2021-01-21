@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gulp</title>
+   
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/bootstrap-grid.css">
+<link rel="stylesheet" href="css/swiper-bundle.min.css">
+<link rel="stylesheet" href="css/jquery.fancybox.css">
+<link rel="stylesheet" href="css/style.css"></head>
+<body>
+    <div class="content">
+        <header class="header">
+    <div class="container">
+        <div class="header__body">
+            <div class="header__burger">
+                <span></span>
+            </div>
+            <a href="index.html" class="header__logo">
+                <img src="img/icons/icons.svg#header-logo" alt="Logo">        
+            </a>
+            <div class="header__wrapper">
+                <div class="header-menu">
+                    <ul class="header-menu__list">
+                        <li class="header-menu__item">
+                            <a href="archive-all.html" class="header-menu__link">Карта</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="hookah-map-result.html" class="header-menu__link">Кальянные</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="advertising-type.html" class="header-menu__link">Товары</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="archive-shop.html" class="header-menu__link">Магазины</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <span class="header-menu__list-span">Ваш город:</span>
+                            <a href="registration-page-type.html" class="header-menu__link">Москва</a>
+                        </li>
+                    </ul>
+
+                    <div class="header-mobile-btns">
+                        <div class="header-help">
+                            <a class="header-help__btn" href="#">
+                                <svg class="header-help__btn--icon">
+                                    <use xlink:href="img/icons/icons.svg#ask-icon-grey"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <ul class="lang-switcher">
+                            <li class="lang-switcher__item">
+                                <a class="lang-switcher__link" href="#">EN</a>
+                            </li>
+                            <li class="lang-switcher__item">
+                                <a class="lang-switcher__link active" href="#">RU</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header-btns">
+                    <div class="header-btn">
+                        <a class="header-btn__link" href="customer-account-products.html">
+                            <svg class="header-btn__link--icon">
+                                <use xlink:href="img/icons/icons.svg#persone-icon-grey"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="header-btn">
+                        <a class="header-btn__link" href="category-selection.html">
+                            <svg class="header-btn__link--icon">
+                                <use xlink:href="img/icons/icons.svg#shop-icon-grey"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</header>
+        <main class="main general-content">
+            <section class="section section-hookah section-hookah-map-filters">
+                <form class="hookah-map-filters-form" action="#"></form>
+                <div class="section-hookah__inner">
+                    <div class="hookah-content custom-container-mobile d-md-none">
+                        <div class="hookah-user-head">
+                            <div class="hookah-user-search">
+                                <div class="hookah-user-search__txt">Вы ищите:</div>
+                                <a class="hookah-user-search__link active" href="#">Кальянные</a>
+                                <a class="hookah-user-search__link" href="#">Магазины</a>
+                            </div>
+                            <div class="hookah-selects">
+                                <select class="hookah-select" name="delivery" id="delivery">
+                                    <option>Германия</option>
+                                    <option>Германия</option>
+                                    <option>Германия</option>
+                                    <option>Донецк</option>
+                                </select>   
+                                <select class="hookah-select" name="delivery" id="delivery">
+                                    <option>Мюнхен</option>
+                                    <option>Мюнхен</option>
+                                    <option>Мюнхен</option>
+                                    <option>Донецк</option>
+                                </select> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hookah-map">
+                        <section class="map" id="map">
+                        </section>
+                    </div>
+                    <div class="hookah-content custom-container-desktop">
+                        <div class="hookah-user-head d-none d-md-block">
+                            <div class="hookah-user-search">
+                                <div class="hookah-user-search__txt">Вы ищите:</div>
+                                <a class="hookah-user-search__link active" href="#">Кальянные</a>
+                                <a class="hookah-user-search__link" href="#">Магазины</a>
+                            </div>
+                            <div class="hookah-selects">
+                                <select class="hookah-select" name="delivery" id="delivery">
+                                    <option>Германия</option>
+                                    <option>Германия</option>
+                                    <option>Германия</option>
+                                    <option>Донецк</option>
+                                </select>   
+                                <select class="hookah-select" name="delivery" id="delivery">
+                                    <option>Мюнхен</option>
+                                    <option>Мюнхен</option>
+                                    <option>Мюнхен</option>
+                                    <option>Донецк</option>
+                                </select> 
+                            </div>
+                        </div>
+                        <div class="hookah-filter-wgt">
+                            <div class="hookah-filter-wgt__headline">Расположение</div>
+                            <div class="d-flex flex-wrap">
+                                <div class="hookah-filter-wgt__col">
+                                    <div class="general-checkbox">
+                                        <input class="general-custom-checkbox general-custom-checkbox_theme_dark" type="checkbox" id="location-1" name="location-1" value="indigo">
+                                        <label for="location-1"> 1 km</label>
+                                    </div>
+                                    <div class="general-checkbox">
+                                        <input class="general-custom-checkbox general-custom-checkbox_theme_dark" type="checkbox" id="location-2" name="location-2" value="indigo">
+                                        <label for="location-2">5 km</label>
+                                    </div>
+                                </div>
+                                <div class="hookah-filter-wgt__col">
+                                    <div class="general-checkbox">
+                                        <input class="general-custom-checkbox general-custom-checkbox_theme_dark" type="checkbox" id="location-3" name="location-3" value="indigo">
+                                        <label for="location-3">10 km</label>
+                                    </div>
+                                    <div class="general-checkbox">
+                                        <input class="general-custom-checkbox general-custom-checkbox_theme_dark" type="checkbox" id="location-4" name="location-4" value="indigo">
+                                        <label for="location-4">15 km +</label>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        <div class="hookah-filter-wgt">
+                            <div class="hookah-filter-wgt__headline">Интерьер</div>
+                            <div class="d-flex flex-wrap">
+                                <div class="hookah-filter-wgt__col">
+                                    <div class="general-checkbox">
+                                        <input class="general-custom-checkbox general-custom-checkbox_theme_dark" type="checkbox" id="interior-1" name="interior-1" value="indigo">
+                                        <label for="interior-1">Лофт</label>
+                                    </div>
+                                    <div class="general-checkbox">
+                                        <input class="general-custom-checkbox general-custom-checkbox_theme_dark" type="checkbox" id="interior-2" name="interior-2" value="indigo">
+                                        <label for="interior-2">Киберпанк</label>
+                                    </div>
+                                </div>
+                                <div class="hookah-filter-wgt__col">
+                                    <div class="general-checkbox">
+                                        <input class="general-custom-checkbox general-custom-checkbox_theme_dark" type="checkbox" id="interior-3" name="interior-3" value="indigo">
+                                        <label for="interior-3">Минимализм</label>
+                                    </div>
+                                    <div class="general-checkbox">
+                                        <input class="general-custom-checkbox general-custom-checkbox_theme_dark" type="checkbox" id="interior-4" name="interior-4" value="indigo">
+                                        <label for="interior-4">Стимпанк</label>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        <div class="hookah-filter-wgt">
+                            <div class="hookah-filter-wgt__headline">Меню</div>
+                            <div class="d-flex flex-wrap">
+                                <div class="hookah-filter-wgt__col">
+                                    <div class="general-checkbox">
+                                        <input class="general-custom-checkbox general-custom-checkbox_theme_dark" type="checkbox" id="menu-1" name="menu-1" value="indigo">
+                                        <label for="menu-1">Только кальяны</label>
+                                    </div>
+                                    <div class="general-checkbox">
+                                        <input class="general-custom-checkbox general-custom-checkbox_theme_dark" type="checkbox" id="menu-2" name="menu-2" value="indigo">
+                                        <label for="menu-2">Итальянская кухня</label>
+                                    </div>
+                                    <div class="general-checkbox">
+                                        <input class="general-custom-checkbox general-custom-checkbox_theme_dark" type="checkbox" id="menu-3" name="menu-3" value="indigo">
+                                        <label for="menu-3">Есть детское меню</label>
+                                    </div>
+                                </div>
+                                <div class="hookah-filter-wgt__col">
+                                    <div class="general-checkbox">
+                                        <input class="general-custom-checkbox general-custom-checkbox_theme_dark" type="checkbox" id="menu-4" name="menu-4" value="indigo">
+                                        <label for="menu-4">Алкольная карта</label>
+                                    </div>
+                                    <div class="general-checkbox">
+                                        <input class="general-custom-checkbox general-custom-checkbox_theme_dark" type="checkbox" id="menu-5" name="menu-5" value="indigo">
+                                        <label for="menu-5">Японская кухня</label>
+                                    </div>
+                                    <div class="general-checkbox">
+                                        <input class="general-custom-checkbox general-custom-checkbox_theme_dark" type="checkbox" id="menu-6" name="menu-6" value="indigo">
+                                        <label for="menu-6">Китайский чай</label>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        <div class="hookah-filter-wgt">
+                            <div class="hookah-filter-wgt__headline">Цены</div>
+                            <div class="d-flex flex-wrap">
+                                <div class="hookah-filter-wgt__col">
+                                    <div class="general-checkbox">
+                                        <input class="general-custom-checkbox general-custom-checkbox_theme_dark" type="checkbox" id="price-1" name="price-1" value="indigo">
+                                        <label for="price-1">Недорого</label>
+                                    </div>
+                                    <div class="general-checkbox">
+                                        <input class="general-custom-checkbox general-custom-checkbox_theme_dark" type="checkbox" id="price-2" name="price-2" value="indigo">
+                                        <label for="price-2">Дорого</label>
+                                    </div>
+                                </div>
+                                <div class="hookah-filter-wgt__col">
+                                    <div class="general-checkbox">
+                                        <input class="general-custom-checkbox general-custom-checkbox_theme_dark" type="checkbox" id="price-3" name="price-3" value="indigo">
+                                        <label for="price-3">Умеренные цены</label>
+                                    </div>
+                                    <div class="general-checkbox">
+                                        <input class="general-custom-checkbox general-custom-checkbox_theme_dark" type="checkbox" id="price-4" name="price-4" value="indigo">
+                                        <label for="price-4">Очень дорого</label>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        <div class="hookah-filter-wgt">
+                            <div class="hookah-filter-wgt__headline">Время работы</div>
+                            <div class="d-flex flex-wrap">
+                                <div class="hookah-filter-wgt__col">
+                                    <div class="general-checkbox">
+                                        <input class="general-custom-checkbox general-custom-checkbox_theme_dark" type="checkbox" id="time-1" name="time-1" value="indigo">
+                                        <label for="time-1">Открыто сейчас</label>
+                                    </div>
+                                    <div class="general-checkbox">
+                                        <input class="general-custom-checkbox general-custom-checkbox_theme_dark" type="checkbox" id="time-2" name="time-2" value="indigo">
+                                        <label for="time-2">Стандартное время работы</label>
+                                    </div>
+                                </div>
+                                <div class="hookah-filter-wgt__col">
+                                    <div class="general-checkbox">
+                                        <input class="general-custom-checkbox general-custom-checkbox_theme_dark" type="checkbox" id="time-3" name="time-3" value="indigo">
+                                        <label for="time-3">Открывается вечером</label>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <button class="btn" type="button">More filters</button>
+                        </div>
+                        <div class="registration-confirm pt-4 pt-lg-5">
+                            <button class="registration-confirm__btn" type="button">Применить</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </div>
+    <footer class="footer">
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer-info">
+                <div class="footer-info__headline">Hookah Map.</div>
+                <div class="footer-info__descr d-none d-lg-block">
+                    <a class="footer-info__txt" href="#">Служба поддержки</a>
+                    <div class="footer-rights">@ 2020 Hookah Map</div>
+                </div>
+            </div>
+            <form class="footer-form" action="#">
+                <div class="footer-form__headline">For callaboration</div>
+                <input class="footer-form__field" type="text" placeholder="E-mail">
+                <button class="footer-form__btn" type="submit">
+                    <svg class="footer-form__btn--icon">
+                        <use xlink:href="img/icons/icons.svg#btn-arr"></use>
+                    </svg>
+                </button>
+            </form>
+            <div class="footer-nav">
+                <ul class="footer-nav__list">
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link" href="#">
+                            Создать магазин
+                            <!-- <svg class="footer-nav__link--icon">
+                                <use xlink:href="img/icons/icons.svg#btn-arr"></use>
+                            </svg> -->
+                        </a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link" href="#">
+                            Служба поддержки                        
+                            <!-- <svg class="footer-nav__link--icon">
+                                <use xlink:href="img/icons/icons.svg#btn-arr"></use>
+                            </svg> -->
+                        </a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link" href="#">
+                            Зарегистрировать кальянную
+                            <!-- <svg class="footer-nav__link--icon">
+                                <use xlink:href="img/icons/icons.svg#btn-arr"></use>
+                            </svg> -->
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-rights d-lg-none">@ 2020 Hookah Map</div>
+        </div>
+        
+    </div>
+</footer>
+    <script src="js/jquery.min.js"></script>
+<!-- <script src="js/bootstrap.js"></script> -->
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_bCxCu4Vdx87syd2U_RqqzBUIV6G0EgA&callback=initMap"async defer></script> -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJvReVdjYk7SUBA8MmHWWSa7xekuLc7OI&callback=initMap"
+async defer></script>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -84,113 +84,110 @@
     </div>
 </header>
         <main class="main general-content">
-            <section class="section section-registration-category">
-                <div class="container">
-                    <div class="row">
-                        <div class="registration-head">
-                            <div class="registration-head__headline">HookahMap</div>
-                            <div class="registration-head__action">
-                                <button class="registration-filter-btn" type="button">
-                                    <svg class="registration-filter-btn__icon">
-                                        <use xlink:href="img/icons/icons.svg#filters-icon"></use>
-                                    </svg>
-                                </button>
+            <section class="section section-hookah section-hookah-map-result">
+                <form class="hookah-map-filters-form" action="#"></form>
+                <div class="section-hookah__inner">
+                    <div class="hookah-content custom-container-mobile d-md-none">
+                        <div class="hookah-user-head">
+                            <div class="hookah-user-search">
+                                <div class="hookah-user-search__txt">Вы ищите:</div>
+                                <a class="hookah-user-search__link active" href="#">Кальянные</a>
+                                <a class="hookah-user-search__link" href="#">Магазины</a>
+                            </div>
+                            <div class="hookah-selects">
+                                <select class="hookah-select" name="delivery" id="delivery">
+                                    <option>Германия</option>
+                                    <option>Германия</option>
+                                    <option>Германия</option>
+                                    <option>Донецк</option>
+                                </select>   
+                                <select class="hookah-select" name="delivery" id="delivery">
+                                    <option>Мюнхен</option>
+                                    <option>Мюнхен</option>
+                                    <option>Мюнхен</option>
+                                    <option>Донецк</option>
+                                </select> 
                             </div>
                         </div>
-                        <div class="col-lg-3">
-                      
-                            <div class="account-nav">
-                                <button class="account-nav__btn-back" type="button">Вернуться</button>
-                                <ul class="account-nav__list">
-                                    <li class="account-nav__item">
-                                        <a class="account-nav__link active" href="registration-page-type.html">Главная</a>
-                                    </li>
-                                    <li class="account-nav__item">
-                                        <a class="account-nav__link" href="#">Товары</a>
-                                    </li>
-                                    <li class="account-nav__item">
-                                        <a class="account-nav__link" href="#">Заказы</a>
-                                    </li>
-                                    <li class="account-nav__item">
-                                        <a class="account-nav__link" href="#">Реклама</a>
-                                    </li>
-                                </ul>
+                    </div>
+                    <div class="hookah-map">
+                        <section class="map" id="map">
+                        </section>
+                    </div>
+                    <div class="hookah-content custom-container-desktop">
+                        <div class="hookah-user-head d-none d-md-block">
+                            <div class="hookah-user-search">
+                                <div class="hookah-user-search__txt">Вы ищите:</div>
+                                <a class="hookah-user-search__link active" href="#">Кальянные</a>
+                                <a class="hookah-user-search__link" href="#">Магазины</a>
+                            </div>
+                            <div class="hookah-selects">
+                                <select class="hookah-select" name="delivery" id="delivery">
+                                    <option>Германия</option>
+                                    <option>Германия</option>
+                                    <option>Германия</option>
+                                    <option>Донецк</option>
+                                </select>   
+                                <select class="hookah-select" name="delivery" id="delivery">
+                                    <option>Мюнхен</option>
+                                    <option>Мюнхен</option>
+                                    <option>Мюнхен</option>
+                                    <option>Донецк</option>
+                                </select> 
                             </div>
                         </div>
-                        <div class="col-lg-9">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="category-card">
-                                        <div class="category-add">
-                                            <a class="category-add__link" href="category-products.html">
-                                                <div class="category-add__icon">+</div>
-                                                <div class="category-add__btn">Добавить категорию</div>
-                                            </a>
-                                        </div>
-                                    </div> 
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="category-card">
-                                        <a class="category-card__link" href="category-product.html">
-                                            <div class="category-card__photo">
-                                                <img class="category-card__img" src="img/product-photo-1.png" alt="Photo">
-                                            </div>
-                                            <div class="category-card__descr">
-                                                <div class="category-card__txt">Угли</div>
-                                            </div>
-                                        </a>
+                        <div class="hookah-filter-wgt">
+                            <div class="hookah-filter-wgt__headline">Расположение</div>
+                            <div class="d-flex flex-wrap">
+                                <div class="hookah-filter-wgt__col">
+                                    <div class="general-checkbox">
+                                        <input class="general-custom-checkbox general-custom-checkbox_theme_dark" type="checkbox" id="location-1" name="location-1" value="indigo">
+                                        <label for="location-1"> 1 km</label>
+                                    </div>
+                                    <div class="general-checkbox">
+                                        <input class="general-custom-checkbox general-custom-checkbox_theme_dark" type="checkbox" id="location-2" name="location-2" value="indigo">
+                                        <label for="location-2">5 km</label>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
-                                    <div class="category-card">
-                                        <a class="category-card__link" href="#">
-                                            <div class="category-card__photo">
-                                                <img class="category-card__img" src="img/product-photo-2.png" alt="Photo">
-                                            </div>
-                                            <div class="category-card__descr">
-                                                <div class="category-card__txt">Кальяны</div>
-                                            </div>
-                                        </a>
-                                    </div>                                
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="category-card">
-                                        <a class="category-card__link" href="#">
-                                            <div class="category-card__photo">
-                                                <img class="category-card__img" src="img/product-photo-3.png" alt="Photo">
-                                            </div>
-                                            <div class="category-card__descr">
-                                                <div class="category-card__txt">Аксессуары</div>
-                                            </div>
-                                        </a>
-                                    </div>                                
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="category-card">
-                                        <a class="category-card__link" href="#">
-                                            <div class="category-card__photo">
-                                                <img class="category-card__img" src="img/product-photo-4.png" alt="Photo">
-                                            </div>
-                                            <div class="category-card__descr">
-                                                <div class="category-card__txt">Жидкости</div>
-                                            </div>
-                                        </a>
-                                    </div>                                
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="category-card">
-                                        <a class="category-card__link" href="#">
-                                            <div class="category-card__photo">
-                                                <img class="category-card__img" src="img/product-photo-5.png" alt="Photo">
-                                            </div>
-                                            <div class="category-card__descr">
-                                                <div class="category-card__txt">Электронные сигареты</div>
-                                            </div>
-                                        </a>
-                                    </div>                                
+                                <div class="hookah-filter-wgt__col">
+                                    <div class="general-checkbox">
+                                        <input class="general-custom-checkbox general-custom-checkbox_theme_dark" type="checkbox" id="location-3" name="location-3" value="indigo">
+                                        <label for="location-3">10 km</label>
+                                    </div>
+                                    <div class="general-checkbox">
+                                        <input class="general-custom-checkbox general-custom-checkbox_theme_dark" type="checkbox" id="location-4" name="location-4" value="indigo">
+                                        <label for="location-4">15 km +</label>
+                                    </div>
                                 </div>
                             </div>
+                           
                         </div>
+                        <div class="hookah-characteristics">
+                            <ul class="hookah-characteristics__list">
+                                <li class="hookah-characteristics__item">
+                                    <div class="hookah-characteristics__label hookah-characteristics__label_theme_bold">Расположение</div>
+                                    <div class="hookah-characteristics__value hookah-characteristics__value_theme_dark"> 1 km</div>
+                                </li>
+                                <li class="hookah-characteristics__item">
+                                    <div class="hookah-characteristics__label hookah-characteristics__label_theme_bold">Интерьер</div>
+                                    <div class="hookah-characteristics__value hookah-characteristics__value_theme_dark">Стимпанк</div>
+                                </li>
+                                <li class="hookah-characteristics__item">
+                                    <div class="hookah-characteristics__label hookah-characteristics__label_theme_bold">Меню</div>
+                                    <div class="hookah-characteristics__value hookah-characteristics__value_theme_dark">Японская кухня</div>
+                                </li>
+                                <li class="hookah-characteristics__item">
+                                    <div class="hookah-characteristics__label hookah-characteristics__label_theme_bold">Цены</div>
+                                    <div class="hookah-characteristics__value hookah-characteristics__value_theme_dark">Умеренные цены</div>
+                                </li>
+                                <li class="hookah-characteristics__item">
+                                    <div class="hookah-characteristics__label hookah-characteristics__label_theme_bold">Время работы</div>
+                                    <div class="hookah-characteristics__value hookah-characteristics__value_theme_dark">Открыто сейчас</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="hookah-headline mb-3 mt-4">Это заведение подходит под 5/5 критериев:</div>
+                        <div class="hookah-result-card"></div>
                     </div>
                 </div>
             </section>

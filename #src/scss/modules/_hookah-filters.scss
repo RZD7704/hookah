@@ -29,6 +29,16 @@
     z-index: -1;
     opacity: 0;
 
+    &_theme_dark {
+        &+label {
+            color: #363636 !important;
+        }
+
+        &:checked+label {
+            color: #16B0A7 !important;
+        }
+    }
+
     &+label {
         font-weight: normal;
         font-size: 16px;
@@ -40,6 +50,7 @@
     &:checked+label {
         color: #16B0A7;
     }
+
 }
 
 .general-filter-scroll {
