@@ -887,6 +887,20 @@ input[type=range]:focus::-ms-fill-upper {
   background: #FAFAFA;
 }
 
+.hookah-geoposition_theme_blur {
+  background: rgba(255, 255, 255, 0.04);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.hookah-geoposition_theme_blur .hookah-geoposition__icon {
+  fill: #FAFAFA;
+}
+
+.hookah-geoposition_theme_blur .hookah-geoposition__txt {
+  color: #FAFAFA;
+}
+
 .hookah-geoposition__icon {
   fill: #909198;
   height: 35px;
@@ -1079,14 +1093,6 @@ input[type=range]:focus::-ms-fill-upper {
   width: 100%;
 }
 
-.custom-container-mobile {
-  padding: 0 18px;
-}
-
-.custom-container-desktop {
-  padding-left: 30px;
-}
-
 .hookah-map {
   width: 100%;
 }
@@ -1110,6 +1116,72 @@ input[type=range]:focus::-ms-fill-upper {
 
 .hookah-filter-wgt__col {
   width: 100%;
+}
+
+.hookah-result-card__wrapper {
+  background: #FAFAFA;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.hookah-result-card__photo {
+  margin: 0 auto;
+  line-height: 0;
+}
+
+.hookah-result-card__photo-img {
+  width: 100%;
+  max-height: 100%;
+}
+
+.hookah-result-card__descr {
+  padding: 20px 15px 5px 15px;
+}
+
+.hookah-result-card__link {
+  margin-bottom: 10px;
+}
+
+.hookah-result-card__title {
+  font-weight: normal;
+  font-size: 22px;
+  color: #363636;
+}
+
+.hookah-result-card__subtitle {
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  color: #909198;
+  margin-bottom: 10px;
+}
+
+.hookah-result-card__action {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hookah-result-card__rate {
+  display: flex;
+}
+
+.hookah-result-card__rate-item {
+  margin-right: 3px;
+}
+
+.hookah-result-card__rate-item--icon {
+  width: 20px;
+  height: 20px;
+}
+
+.hookah-result-card__select-btn {
+  background: #fff;
+  cursor: pointer;
+}
+
+.hookah-result-card__select-btn--icon {
+  width: 20px;
+  height: 20px;
 }
 
 .general-head {
@@ -1377,6 +1449,12 @@ input[type=range]:focus::-ms-fill-upper {
 
 .btn:hover {
   color: #363636;
+}
+
+.btn__icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
 }
 
 .position-relative {
@@ -3723,11 +3801,63 @@ body {
   margin-right: 0;
 }
 
+.hookah-single-swiper__geoposition {
+  position: absolute;
+  z-index: 999;
+  bottom: 4px;
+  width: 100%;
+}
+
+.hookah-single-swiper__slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.hookah-single-swiper__img {
+  width: 100%;
+  max-height: auto;
+}
+
+.hookah-rate__item {
+  display: flex;
+  padding-bottom: 10px;
+}
+
+.hookah-rate__label {
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: #090909;
+  width: 50%;
+  padding-right: 5px;
+}
+
+.hookah-rate__label_theme_bold {
+  font-weight: 600;
+}
+
+.hookah-rate__value {
+  display: flex;
+}
+
+.hookah-rate__value-item {
+  margin-right: 3px;
+}
+
+.hookah-rate__value-icon {
+  width: 20px;
+  height: 20px;
+}
+
 @media (min-width: 576px) {
   .hookah-geoposition__txt {
     color: #FAFAFA;
     font-size: 14px;
     color: #090909;
+  }
+
+  .custom-container-mobile {
+    max-width: 540px;
   }
 
   .hookah-filter-wgt__col {
@@ -3815,6 +3945,15 @@ body {
     height: 765px;
   }
 
+  .custom-container-mobile {
+    max-width: auto;
+  }
+
+  .custom-container-desktop {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
   .section-hookah {
     padding-top: 20px;
   }
@@ -3838,6 +3977,11 @@ body {
 
   .hookah-filter-wgt__col {
     width: 100%;
+  }
+
+  .hookah-result-card {
+    width: 85%;
+    margin-left: auto;
   }
 
   .custom-radio__link {
@@ -4112,12 +4256,16 @@ body {
     width: 100%;
   }
 
+  .custom-container-desktop {
+    padding-right: 0;
+  }
+
   .hookah-map {
     width: 50%;
   }
 
   .hookah-content {
-    width: 40%;
+    width: 42%;
   }
 
   .hookah-filter-wgt__col {
@@ -4462,6 +4610,15 @@ body {
   .hookah-add-inputfile__btn {
     font-size: 20px;
   }
+
+  .hookah-rate__item {
+    padding-bottom: 15px;
+  }
+
+  .hookah-rate__label {
+    font-size: 16px;
+    padding-right: 10px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -4720,6 +4877,11 @@ body {
   .hookah-selects {
     display: flex;
     justify-content: space-between;
+  }
+
+  .custom-container-mobile {
+    padding: 0 12px;
+    margin: 0 auto;
   }
 
   .main-cards {

@@ -46,6 +46,21 @@
         border-radius: 5px;
     }
 
+    &_theme_blur {
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(10px);
+
+        & .hookah-geoposition__icon {
+            fill: #FAFAFA;
+        }
+
+        & .hookah-geoposition__descr {}
+
+        & .hookah-geoposition__txt {
+            color: #FAFAFA;
+        }
+    }
+
     &__icon {
         fill: #909198;
         height: 35px;

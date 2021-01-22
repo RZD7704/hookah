@@ -30,7 +30,7 @@
                             <a href="archive-all.html" class="header-menu__link">Карта</a>
                         </li>
                         <li class="header-menu__item">
-                            <a href="hookah-map-result.html" class="header-menu__link">Кальянные</a>
+                            <a href="hookah-single.html" class="header-menu__link">Кальянные</a>
                         </li>
                         <li class="header-menu__item">
                             <a href="advertising-type.html" class="header-menu__link">Товары</a>
@@ -108,13 +108,21 @@
                                     <option>Донецк</option>
                                 </select> 
                             </div>
+                            <div class="d-flex justify-content-end pt-3">
+                                <button class="btn d-flex align-items-center" type="button">
+                                    <svg class="btn__icon">
+                                        <use xlink:href="img/icons/icons.svg#filters-icon"></use>
+                                    </svg>
+                                    Edit
+                                </button>
+                            </div>
                         </div>
                     </div>
                     <div class="hookah-map">
                         <section class="map" id="map">
                         </section>
                     </div>
-                    <div class="hookah-content custom-container-desktop">
+                    <div class="hookah-content  custom-container-mobile custom-container-desktop">
                         <div class="hookah-user-head d-none d-md-block">
                             <div class="hookah-user-search">
                                 <div class="hookah-user-search__txt">Вы ищите:</div>
@@ -135,34 +143,16 @@
                                     <option>Донецк</option>
                                 </select> 
                             </div>
-                        </div>
-                        <div class="hookah-filter-wgt">
-                            <div class="hookah-filter-wgt__headline">Расположение</div>
-                            <div class="d-flex flex-wrap">
-                                <div class="hookah-filter-wgt__col">
-                                    <div class="general-checkbox">
-                                        <input class="general-custom-checkbox general-custom-checkbox_theme_dark" type="checkbox" id="location-1" name="location-1" value="indigo">
-                                        <label for="location-1"> 1 km</label>
-                                    </div>
-                                    <div class="general-checkbox">
-                                        <input class="general-custom-checkbox general-custom-checkbox_theme_dark" type="checkbox" id="location-2" name="location-2" value="indigo">
-                                        <label for="location-2">5 km</label>
-                                    </div>
-                                </div>
-                                <div class="hookah-filter-wgt__col">
-                                    <div class="general-checkbox">
-                                        <input class="general-custom-checkbox general-custom-checkbox_theme_dark" type="checkbox" id="location-3" name="location-3" value="indigo">
-                                        <label for="location-3">10 km</label>
-                                    </div>
-                                    <div class="general-checkbox">
-                                        <input class="general-custom-checkbox general-custom-checkbox_theme_dark" type="checkbox" id="location-4" name="location-4" value="indigo">
-                                        <label for="location-4">15 km +</label>
-                                    </div>
-                                </div>
+                            <div class="d-flex justify-content-end pt-3">
+                                <button class="btn d-flex align-items-center" type="button">
+                                    <svg class="btn__icon">
+                                        <use xlink:href="img/icons/icons.svg#filters-icon"></use>
+                                    </svg>
+                                    Edit
+                                </button>
                             </div>
-                           
                         </div>
-                        <div class="hookah-characteristics">
+                        <div class="hookah-characteristics pt-3 pt-md-0">
                             <ul class="hookah-characteristics__list">
                                 <li class="hookah-characteristics__item">
                                     <div class="hookah-characteristics__label hookah-characteristics__label_theme_bold">Расположение</div>
@@ -187,7 +177,116 @@
                             </ul>
                         </div>
                         <div class="hookah-headline mb-3 mt-4">Это заведение подходит под 5/5 критериев:</div>
-                        <div class="hookah-result-card"></div>
+                        <div class="hookah-result-card">
+                            <div class="hookah-result-card__wrapper">
+                                <div class="hookah-result-card__photo">
+                                    <img class="hookah-result-card__photo-img" src="img/hookah-card.png" alt="Photo">
+                                </div>
+                                <div class="hookah-result-card__descr">
+                                    <a class="hookah-result-card__link" href="#">
+                                        <h4 class="hookah-result-card__title">Hookah XV</h4>
+                                    </a>
+                                    <p class="hookah-result-card__subtitle">Новинский бульвар, 15</p>
+                                    <div class="hookah-result-card__action">
+                                        <div class="hookah-result-card__rate">
+                                            <div class="hookah-result-card__rate-item">
+                                                <svg class="hookah-result-card__rate-item--icon">
+                                                    <use xlink:href="img/icons/icons.svg#rate-star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="hookah-result-card__rate-item">
+                                                <svg class="hookah-result-card__rate-item--icon">
+                                                    <use xlink:href="img/icons/icons.svg#rate-star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="hookah-result-card__rate-item">
+                                                <svg class="hookah-result-card__rate-item--icon">
+                                                    <use xlink:href="img/icons/icons.svg#rate-star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="hookah-result-card__rate-item">
+                                                <svg class="hookah-result-card__rate-item--icon">
+                                                    <use xlink:href="img/icons/icons.svg#rate-star-icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="hookah-result-card__rate-item">
+                                                <svg class="hookah-result-card__rate-item--icon">
+                                                    <use xlink:href="img/icons/icons.svg#rate-star-icon"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="hookah-result-card__select">
+                                            <button class="hookah-result-card__select-btn" type="button">
+                                                <svg class="hookah-result-card__select-btn--icon">
+                                                    <use xlink:href="img/icons/icons.svg#heart-icon"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section-archive-hookahs">
+                <div class="container">
+                    <div class="hookah-headline mb-3 mt-4">Также вам понравится:</div>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="hookah-card">
+                                <a class="hookah-card__link" href="#">
+                                    <img class="hookah-card__photo" src="img/main-card-1.png" alt="Photo">
+                                </a>
+                                <div class="hookah-card__descr">
+                                    <a class="hookah-card__link" href="#">
+                                        <div class="hookah-card__headline">V Loft'e</div>
+                                    </a>
+                                    <div class="hookah-card__txt">Истринская ул., 8к3</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="hookah-card">
+                                <a class="hookah-card__link" href="#">
+                                    <img class="hookah-card__photo" src="img/main-card-2.png" alt="Photo">
+                                </a>
+                                <div class="hookah-card__descr">
+                                    <a class="hookah-card__link" href="#">
+                                        <div class="hookah-card__headline">V Loft'e</div>
+                                    </a>
+                                    <div class="hookah-card__txt">Истринская ул., 8к3</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="hookah-card">
+                                <a class="hookah-card__link" href="#">
+                                    <img class="hookah-card__photo" src="img/main-card-3.png" alt="Photo">
+                                </a>
+                                <div class="hookah-card__descr">
+                                    <a class="hookah-card__link" href="#">
+                                        <div class="hookah-card__headline">V Loft'e</div>
+                                    </a>
+                                    <div class="hookah-card__txt">Истринская ул., 8к3</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="hookah-card">
+                                <a class="hookah-card__link" href="#">
+                                    <img class="hookah-card__photo" src="img/main-card-1.png" alt="Photo">
+                                </a>
+                                <div class="hookah-card__descr">
+                                    <a class="hookah-card__link" href="#">
+                                        <div class="hookah-card__headline">V Loft'e</div>
+                                    </a>
+                                    <div class="hookah-card__txt">Истринская ул., 8к3</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>

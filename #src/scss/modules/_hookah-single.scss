@@ -1,0 +1,64 @@
+.hookah-single-swiper {
+    &__wrapper {}
+
+    &__geoposition {
+        position: absolute;
+        z-index: 999;
+        bottom: 4px;
+        width: 100%;
+    }
+
+    &__slide {
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__img {
+        width: 100%;
+        max-height: auto;
+    }
+}
+
+.hookah-rate {
+    &__list {}
+
+    &__item {
+        display: flex;
+        padding-bottom: 10px;
+
+        @media (min-width: 992px) {
+            padding-bottom: 15px;
+        }
+    }
+
+    &__label {
+        font-weight: normal;
+        font-size: 14px;
+        letter-spacing: 0.02em;
+        color: #090909;
+        width: 50%;
+        padding-right: 5px;
+
+        @media (min-width: 992px) {
+            font-size: 16px;
+            padding-right: 10px;
+        }
+
+        &_theme_bold {
+            font-weight: 600;
+        }
+    }
+
+    &__value {
+        display: flex;
+    }
+
+    &__value-item {
+        margin-right: 3px;
+    }
+
+    &__value-icon {
+        width: 20px;
+        height: 20px;
+    }
+}

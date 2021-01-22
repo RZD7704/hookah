@@ -85,6 +85,20 @@ $(document).ready(function() {
 		},
 	});
 
+	var galleryThumbs = new Swiper('.single-gallery-thumbs', {
+		spaceBetween: 10,
+		slidesPerView: 4,
+		freeMode: true,
+		watchSlidesVisibility: true,
+		watchSlidesProgress: true,
+	});
+	var galleryTop = new Swiper('.single-gallery-top', {
+		spaceBetween: 10,
+		thumbs: {
+		  swiper: galleryThumbs
+		}
+	});
+
 	$('.archive-filter').on('click', '.archive-filter__headline', function() {
 		$(this).toggleClass('active').siblings('.archive-filter__list').slideToggle();
 	});

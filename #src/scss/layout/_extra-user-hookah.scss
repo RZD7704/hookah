@@ -8,11 +8,29 @@
 }
 
 .custom-container-mobile {
-    padding: 0 18px;
+    @media (min-width: 576px) {
+        max-width: 540px;
+    }
+
+    @media (min-width: 768px) {
+        max-width: auto;
+    }
+
+    @media (max-width: 767px) {
+        padding: 0 12px;
+        margin: 0 auto;
+    }
 }
 
 .custom-container-desktop {
-    padding-left: 30px;
+    @media (min-width: 768px) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    @media (min-width: 992px) {
+        padding-right: 0;
+    }
 }
 
 .section-hookah {
@@ -49,7 +67,7 @@
     }
 
     @media (min-width: 992px) {
-        width: 40%;
+        width: 42%;
     }
 
     @media (min-width: 1200px) {
@@ -95,6 +113,82 @@
 
         @media (min-width: 992px) {
             width: 50%;
+        }
+    }
+}
+
+.hookah-result-card {
+
+    @media (min-width: 768px) {
+        width: 85%;
+        margin-left: auto;
+    }
+
+    &__wrapper {
+        background: #FAFAFA;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    &__photo {
+        margin: 0 auto;
+        line-height: 0;
+    }
+
+    &__photo-img {
+        width: 100%;
+        max-height: 100%;
+    }
+
+    &__descr {
+        padding: 20px 15px 5px 15px;
+    }
+
+    &__link {
+        margin-bottom: 10px;
+    }
+
+    &__title {
+        font-weight: normal;
+        font-size: 22px;
+        color: #363636;
+    }
+
+    &__subtitle {
+        font-weight: normal;
+        font-size: 16px;
+        letter-spacing: 0.01em;
+        color: #909198;
+        margin-bottom: 10px;
+    }
+
+    &__action {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__rate {
+        display: flex;
+    }
+
+    &__rate-item {
+        margin-right: 3px;
+
+        &--icon {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    &__select {}
+
+    &__select-btn {
+        background: #fff;
+        cursor: pointer;
+
+        &--icon {
+            width: 20px;
+            height: 20px;
         }
     }
 }
