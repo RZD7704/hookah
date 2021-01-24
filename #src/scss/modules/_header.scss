@@ -44,6 +44,7 @@
         height: 100%;
         background-color: #FAFAFA;
         z-index: 2;
+        transition: all .5s;
     }
 
 }
@@ -67,13 +68,17 @@
         flex: 0 0 40px;
     }
 
+    .header-btns {
+        z-index: 10;
+    }
+
     .header__burger {
         display: block;
         position: relative;
         width: 30px;
         height: 20px;
         position: relative;
-        z-index: 3;
+        z-index: 10;
     }
 
     .header__burger span {
@@ -98,27 +103,30 @@
         transition: all 0.3s ease 0s;
     }
 
-    .header__burger_theme_white span {
-        position: absolute;
-        background-color: #FAFAFA;
+    .header_theme_main {
+        .header__burger_theme_white span {
+            position: absolute;
+            background-color: #FAFAFA;
+        }
+
+        .header__burger_theme_white:before,
+        .header__burger_theme_white:after {
+            content: '';
+            background-color: #FAFAFA;
+        }
+
+        .header__burger_theme_white.active span {
+            position: absolute;
+            background-color: #909198;
+        }
+
+        .header__burger_theme_white.active:before,
+        .header__burger_theme_white.active:after {
+            content: '';
+            background-color: #909198;
+        }
     }
 
-    .header__burger_theme_white:before,
-    .header__burger_theme_white:after {
-        content: '';
-        background-color: #FAFAFA;
-    }
-
-    .header__burger_theme_white.active span {
-        position: absolute;
-        background-color: #909198;
-    }
-
-    .header__burger_theme_white.active:before,
-    .header__burger_theme_white.active:after {
-        content: '';
-        background-color: #909198;
-    }
 
     .header__burger:before {
         top: 0;
@@ -147,10 +155,31 @@
     display: flex;
     position: relative;
     z-index: 3;
+
+    &.active {
+
+        .header-btn {
+            &__button {
+                &--icon {
+                    fill: #363636;
+                    transition: fill .5s;
+                }
+            }
+
+            &__link {
+                &--icon {
+                    fill: #363636;
+                    transition: fill .5s;
+                }
+            }
+        }
+    }
+
 }
 
 .header-btn {
     padding-left: 15px;
+    position: relative;
 
     @media (min-width: 992px) {
         padding-left: 40px;
@@ -164,10 +193,122 @@
         }
     }
 
+    &__button {
+        background: transparent;
+        cursor: pointer;
+
+        &--icon {
+            width: 20px;
+            height: 20px;
+            fill: #363636;
+            transition: fill .5s;
+        }
+    }
+
     &__link {
         &--icon {
             width: 20px;
             height: 20px;
+            fill: #363636;
+            transition: fill .5s;
+        }
+    }
+
+    &__log-dropdown {
+        position: absolute;
+        right: -40px;
+        bottom: -160px;
+        width: 300px;
+        background: #fff;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, .25);
+
+        @media (min-width: 768px) {
+            right: 0;
+        }
+
+        &.hide {
+            display: none;
+        }
+    }
+
+    &__log-dropdown-list {
+        padding: 7px 15px;
+    }
+
+    &__log-dropdown-item {
+        padding-bottom: 15px;
+
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+
+    &__log-dropdown-link {
+        display: block;
+        font-weight: normal;
+        font-size: 14px;
+        letter-spacing: 0.01em;
+        color: #363636;
+        transition: all .5s;
+
+        @media (min-width: 768px) {
+            font-size: 16px;
+        }
+
+        &:hover {
+            color: #16B0A7;
+        }
+    }
+}
+
+.basket-dropdown {
+    position: absolute;
+    right: -6px;
+    // bottom: -220px;
+    width: 310px;
+    background: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, .25);
+    padding: 10px;
+
+    @media (min-width: 576px) {
+        width: 410px;
+    }
+
+    @media (min-width: 768px) {
+        right: 0;
+        // bottom: -220px;
+        width: 520px;
+        padding: 30px;
+    }
+
+    @media (min-width: 992px) {
+        // bottom: -255px;
+    }
+
+    &.hide {
+        display: none;
+    }
+
+    &__headline {
+        font-weight: normal;
+        font-size: 14px;
+        letter-spacing: 0.01em;
+        color: #090909;
+        padding-bottom: 20px;
+
+        @media (min-width: 768px) {
+            font-size: 16px;
+        }
+    }
+}
+
+.header-btn.active {
+
+
+    &__link {
+        &--icon {
+            fill: #363636;
+            transition: fill .5s;
         }
     }
 }
@@ -184,11 +325,17 @@
 }
 
 .header-help {
+    z-index: 9;
 
     &__btn {
+        background: transparent;
+        cursor: pointer;
+
         &--icon {
             width: 25px;
             height: 25px;
+            fill: #363636;
+            transition: fill .5s;
         }
     }
 
@@ -215,6 +362,8 @@
     }
 
     &.active {
+        z-index: 5;
+
         @media (max-width:991px) {
             left: 0;
         }
@@ -252,24 +401,13 @@
         }
     }
 
-    &__link_theme_white {
-        @media (min-width: 992px) {
-            color: #FAFAFA;
-        }
-    }
-
     &__list-span {
         font-weight: normal;
         font-size: 20px;
         line-height: 30px;
         letter-spacing: 0.02em;
         color: #363636;
-    }
-
-    &__list-span_theme_white {
-        @media (min-width: 992px) {
-            color: #FAFAFA;
-        }
+        transition: color .5s;
     }
 }
 
@@ -311,4 +449,45 @@
     .general-content {
         padding: 50px 0px 0px 0px;
     }
+}
+
+.header_theme_main {
+    .header-btn {
+        &__link {
+            &--icon {
+                fill: #FAFAFA;
+            }
+        }
+    }
+
+    .header-btn {
+        &__button {
+            &--icon {
+                fill: #FAFAFA;
+            }
+        }
+    }
+
+    .header-help {
+        &__btn {
+            &--icon {
+                fill: #FAFAFA;
+            }
+        }
+    }
+
+    .header-menu {
+        &__link {
+            @media (min-width: 992px) {
+                color: #FAFAFA;
+            }
+        }
+
+        &__list-span {
+            @media (min-width: 992px) {
+                color: #FAFAFA;
+            }
+        }
+    }
+
 }

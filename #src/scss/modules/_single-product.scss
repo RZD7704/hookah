@@ -1,3 +1,25 @@
+.single-product-swiper {
+    &__wrapper {}
+
+    &__geoposition {
+        position: absolute;
+        z-index: 999;
+        bottom: 4px;
+        width: 100%;
+    }
+
+    &__slide {
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__img {
+        width: 100%;
+        max-height: auto;
+        cursor: pointer;
+    }
+}
+
 .section-single-product {
     padding-top: 20px;
 }

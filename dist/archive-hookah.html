@@ -30,7 +30,7 @@
                             <a href="archive-all.html" class="header-menu__link">Карта</a>
                         </li>
                         <li class="header-menu__item">
-                            <a href="hookah-single.html" class="header-menu__link">Кальянные</a>
+                            <a href="archive-products.html" class="header-menu__link">Кальянные</a>
                         </li>
                         <li class="header-menu__item">
                             <a href="advertising-type.html" class="header-menu__link">Товары</a>
@@ -40,17 +40,17 @@
                         </li>
                         <li class="header-menu__item">
                             <span class="header-menu__list-span">Ваш город:</span>
-                            <a href="registration-page-type.html" class="header-menu__link">Москва</a>
+                            <a href="registration-info-hookah.html" class="header-menu__link">Москва</a>
                         </li>
                     </ul>
 
                     <div class="header-mobile-btns">
                         <div class="header-help">
-                            <a class="header-help__btn" href="#">
+                            <button data-modal class="header-help__btn" type="button">
                                 <svg class="header-help__btn--icon">
-                                    <use xlink:href="img/icons/icons.svg#ask-icon-grey"></use>
+                                    <use xlink:href="img/icons/icons.svg#ask-icon"></use>
                                 </svg>
-                            </a>
+                            </button>
                         </div>
                         <ul class="lang-switcher">
                             <li class="lang-switcher__item">
@@ -64,18 +64,108 @@
                 </div>
                 <div class="header-btns">
                     <div class="header-btn">
-                        <a class="header-btn__link" href="customer-account-products.html">
-                            <svg class="header-btn__link--icon">
-                                <use xlink:href="img/icons/icons.svg#persone-icon-grey"></use>
+                        <button class="header-btn__button log-dropdown-btn" type="button">
+                            <svg class="header-btn__button--icon">
+                                <use xlink:href="img/icons/icons.svg#persone-icon"></use>
                             </svg>
-                        </a>
+                        </button>
+
+                        <div class="header-btn__log-dropdown log-dropdown-js hide">
+                            <ul class="header-btn__log-dropdown-list">
+                                <li class="header-btn__log-dropdown-item">
+                                    <a class="header-btn__log-dropdown-link" href="#">Зарегистрировать бренд</a>
+                                </li>
+                                <li class="header-btn__log-dropdown-item">
+                                    <a class="header-btn__log-dropdown-link" href="#">Зарегистрировать магазин</a>
+                                </li>
+                                <li class="header-btn__log-dropdown-item">
+                                    <a class="header-btn__log-dropdown-link" href="#">Зарегистрировать кальянную</a>
+                                </li>
+                                <li class="header-btn__log-dropdown-item">
+                                    <a class="header-btn__log-dropdown-link" href="#">Я обычный пользователь</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="header-btn">
-                        <a class="header-btn__link" href="category-selection.html">
+                        <button class="header-btn__button basket-dropdown-btn" type="button">
                             <svg class="header-btn__link--icon">
-                                <use xlink:href="img/icons/icons.svg#shop-icon-grey"></use>
+                                <use xlink:href="img/icons/icons.svg#shop-icon"></use>
                             </svg>
-                        </a>
+                        </button>
+
+                        <div class="header-btn__basket-dropdown basket-dropdown basket-dropdown-js hide">
+                            <form class="basket-dropdown-form" action="#">
+                                <div class="basket-dropdown__headline">Ваш заказ</div>
+                                <div class="basket-dropdown__item">
+                                    <div class="customer-send-card p-0">
+                                        <div class="customer-send-card__inner">
+                                            <div class="customer-send-card__wrapper">
+                                                <div class="customer-send-card__photo">
+                                                    <img class="customer-send-card__photo--img" src="img/product-photo-4.png" alt="Photo">
+                                                </div>
+                                                <div class="d-flex flex-column">
+                                                    <div class="customer-send-card__title">Набор Stanley Blond</div>
+                                                    <div class="customer-send-card__body">
+                                                        <div class="d-flex flex-column  justify-content-between pb-3 pb-lg-0">
+                                                            <div class="customer-send-card__subtitle">Табак</div>
+                                                        </div>
+                                                        <div class="d-flex flex-row align-items-center flex-wrap">
+                                                            <div class="product-quantity skin-1 pe-5">
+                                                                <div class="product-quantity__wrapper">
+                                                                    <span class="minus dis"></span>
+                                                                    <input type="text" class="product-num" value="1" readonly="">
+                                                                    <span class="plus"></span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="product-price pt-2 pb-0 pe-0 ps-0 pt-sm-0 ps-sm-5 d-flex">
+                                                                2500
+                                                                <span class="product-price__symbol">₴</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="basket-dropdown__item">
+                                    <div class="customer-send-card p-0">
+                                        <div class="customer-send-card__inner">
+                                            <div class="customer-send-card__wrapper">
+                                                <div class="customer-send-card__photo">
+                                                    <img class="customer-send-card__photo--img" src="img/product-photo-4.png" alt="Photo">
+                                                </div>
+                                                <div class="d-flex flex-column">
+                                                    <div class="customer-send-card__title">Набор Stanley Blond</div>
+                                                    <div class="customer-send-card__body">
+                                                        <div class="d-flex flex-column  justify-content-between pb-3 pb-lg-0">
+                                                            <div class="customer-send-card__subtitle">Табак</div>
+                                                        </div>
+                                                        <div class="d-flex flex-row align-items-center flex-wrap">
+                                                            <div class="product-quantity skin-1 pe-5">
+                                                                <div class="product-quantity__wrapper">
+                                                                    <span class="minus dis"></span>
+                                                                    <input type="text" class="product-num" value="1" readonly="">
+                                                                    <span class="plus"></span>
+                                                                </div>
+                                                            </div>
+                                                            <p class="product-price pt-2 pb-0 pe-0 ps-0 pt-sm-0 ps-sm-5 d-flex">
+                                                                2500
+                                                                <span class="product-price__symbol">₴</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="registration-confirm pt-4 pt-lg-5 m-0">
+                                    <button class="registration-confirm__btn" type="button">Применить</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -108,19 +198,31 @@
                             <div class="archive-filters">
                                 <button class="archive-filters__btn-back" type="button">Вернуться</button>
                                 <div class="archive-filter">
-                                    <div class="archive-filter__headline">Расположение</div>
+                                    <div class="archive-filter__headline">Крепкость кальяна</div>
                                     <ul class="archive-filter__list show">
                                         <li class="archive-filter__item">
-                                            <button class="archive-filter__btn" type="button">1 km</button>
+                                            <div class="general-checkbox pb-0">
+                                                <input class="general-custom-checkbox general-custom-checkbox_theme_dark" type="checkbox" id="sturdiness-1" name="sturdiness-1" value="indigo">
+                                                <label for="sturdiness-1">light</label>
+                                            </div>
                                         </li>
                                         <li class="archive-filter__item">
-                                            <button class="archive-filter__btn" type="button">5 km</button>
+                                            <div class="general-checkbox pb-0">
+                                                <input class="general-custom-checkbox general-custom-checkbox_theme_dark" type="checkbox" id="sturdiness-2" name="sturdiness-2" value="indigo">
+                                                <label for="sturdiness-2">medium</label>
+                                            </div>
                                         </li>
                                         <li class="archive-filter__item">
-                                            <button class="archive-filter__btn" type="button">10 km</button>
+                                            <div class="general-checkbox pb-0">
+                                                <input class="general-custom-checkbox general-custom-checkbox_theme_dark" type="checkbox" id="sturdiness-3" name="sturdiness-3" value="indigo">
+                                                <label for="sturdiness-3">strong</label>
+                                            </div>
                                         </li>
                                         <li class="archive-filter__item">
-                                            <button class="archive-filter__btn" type="button">15 km +</button>
+                                            <div class="general-checkbox pb-0">
+                                                <input class="general-custom-checkbox general-custom-checkbox_theme_dark" type="checkbox" id="sturdiness-4" name="sturdiness-4" value="indigo">
+                                                <label for="sturdiness-4">extra strong</label>
+                                            </div>
                                         </li>
                                     </ul>
                                 </div>
@@ -128,39 +230,28 @@
                                     <div class="archive-filter__headline">Интерьер</div>
                                     <ul class="archive-filter__list show">
                                         <li class="archive-filter__item">
-                                            <button class="archive-filter__btn" type="button">Лофт</button>
+                                            <div class="general-checkbox pb-0">
+                                                <input class="general-custom-checkbox general-custom-checkbox_theme_dark" type="checkbox" id="interior-1" name="interior-1" value="indigo">
+                                                <label for="interior-1">Лофт</label>
+                                            </div>
                                         </li>
                                         <li class="archive-filter__item">
-                                            <button class="archive-filter__btn" type="button">Киберпанк</button>
+                                            <div class="general-checkbox pb-0">
+                                                <input class="general-custom-checkbox general-custom-checkbox_theme_dark" type="checkbox" id="interior-2" name="interior-2" value="indigo">
+                                                <label for="interior-2">Киберпанк</label>
+                                            </div>
                                         </li>
                                         <li class="archive-filter__item">
-                                            <button class="archive-filter__btn" type="button">Минимализм</button>
+                                            <div class="general-checkbox pb-0">
+                                                <input class="general-custom-checkbox general-custom-checkbox_theme_dark" type="checkbox" id="interior-3" name="interior-3" value="indigo">
+                                                <label for="interior-3">Минимализм</label>
+                                            </div>
                                         </li>
                                         <li class="archive-filter__item">
-                                            <button class="archive-filter__btn" type="button">Стимпанк</button>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="archive-filter">
-                                    <div class="archive-filter__headline">Меню</div>
-                                    <ul class="archive-filter__list show">
-                                        <li class="archive-filter__item">
-                                            <button class="archive-filter__btn" type="button">Только кальяны</button>
-                                        </li>
-                                        <li class="archive-filter__item">
-                                            <button class="archive-filter__btn" type="button">Итальянская кухня</button>
-                                        </li>
-                                        <li class="archive-filter__item">
-                                            <button class="archive-filter__btn" type="button">Есть детское меню</button>
-                                        </li>
-                                        <li class="archive-filter__item">
-                                            <button class="archive-filter__btn" type="button">Алкольная карта</button>
-                                        </li>
-                                        <li class="archive-filter__item">
-                                            <button class="archive-filter__btn" type="button">Японская кухня</button>
-                                        </li>
-                                        <li class="archive-filter__item">
-                                            <button class="archive-filter__btn" type="button">Китайский чай</button>
+                                            <div class="general-checkbox pb-0">
+                                                <input class="general-custom-checkbox general-custom-checkbox_theme_dark" type="checkbox" id="interior-4" name="interior-4" value="indigo">
+                                                <label for="interior-4">Стимпанк</label>
+                                            </div>
                                         </li>
                                     </ul>
                                 </div>
@@ -168,16 +259,28 @@
                                     <div class="archive-filter__headline">Цены</div>
                                     <ul class="archive-filter__list show">
                                         <li class="archive-filter__item">
-                                            <button class="archive-filter__btn" type="button">Недорого</button>
+                                            <div class="general-checkbox pb-0">
+                                                <input class="general-custom-checkbox general-custom-checkbox_theme_dark" type="checkbox" id="price-1" name="price-1" value="indigo">
+                                                <label for="price-1">Недорого</label>
+                                            </div>
                                         </li>
                                         <li class="archive-filter__item">
-                                            <button class="archive-filter__btn" type="button">Дорого</button>
+                                            <div class="general-checkbox pb-0">
+                                                <input class="general-custom-checkbox general-custom-checkbox_theme_dark" type="checkbox" id="price-2" name="price-2" value="indigo">
+                                                <label for="price-2">Дорого</label>
+                                            </div>
                                         </li>
                                         <li class="archive-filter__item">
-                                            <button class="archive-filter__btn" type="button">Умеренные цены</button>
+                                            <div class="general-checkbox pb-0">
+                                                <input class="general-custom-checkbox general-custom-checkbox_theme_dark" type="checkbox" id="price-3" name="price-3" value="indigo">
+                                                <label for="price-3">Умеренные цены</label>
+                                            </div>
                                         </li>
                                         <li class="archive-filter__item">
-                                            <button class="archive-filter__btn" type="button">Очень дорого</button>
+                                            <div class="general-checkbox pb-0">
+                                                <input class="general-custom-checkbox general-custom-checkbox_theme_dark" type="checkbox" id="price-4" name="price-4" value="indigo">
+                                                <label for="price-4">Очень дорого</label>
+                                            </div>
                                         </li>
                                     </ul>
                                 </div>
@@ -185,13 +288,22 @@
                                     <div class="archive-filter__headline">Время работы</div>
                                     <ul class="archive-filter__list">
                                         <li class="archive-filter__item">
-                                            <button class="archive-filter__btn" type="button">Открыто сейчас</button>
+                                            <div class="general-checkbox">
+                                                <input class="general-custom-checkbox general-custom-checkbox_theme_dark" type="checkbox" id="time-1" name="time-1" value="indigo">
+                                                <label for="time-1">Открыто сейчас</label>
+                                            </div>
                                         </li>
                                         <li class="archive-filter__item">
-                                            <button class="archive-filter__btn" type="button">Стандартное время работы</button>
+                                            <div class="general-checkbox">
+                                                <input class="general-custom-checkbox general-custom-checkbox_theme_dark" type="checkbox" id="time-2" name="time-2" value="indigo">
+                                                <label for="time-2">Стандартное время работы</label>
+                                            </div>
                                         </li>
                                         <li class="archive-filter__item">
-                                            <button class="archive-filter__btn" type="button">Открывается вечером</button>
+                                            <div class="general-checkbox">
+                                                <input class="general-custom-checkbox general-custom-checkbox_theme_dark" type="checkbox" id="time-3" name="time-3" value="indigo">
+                                                <label for="time-3">Открывается вечером</label>
+                                            </div>
                                         </li>
                                     </ul>
                                 </div>
@@ -199,13 +311,22 @@
                                     <div class="archive-filter__headline">Музыка</div>
                                     <ul class="archive-filter__list">
                                         <li class="archive-filter__item">
-                                            <button class="archive-filter__btn" type="button">Открыто сейчас</button>
+                                            <div class="general-checkbox">
+                                                <input class="general-custom-checkbox general-custom-checkbox_theme_dark" type="checkbox" id="music-1" name="music-1" value="indigo">
+                                                <label for="music-1">Джаз</label>
+                                            </div>
                                         </li>
                                         <li class="archive-filter__item">
-                                            <button class="archive-filter__btn" type="button">Стандартное время работы</button>
+                                            <div class="general-checkbox">
+                                                <input class="general-custom-checkbox general-custom-checkbox_theme_dark" type="checkbox" id="music-2" name="music-2" value="indigo">
+                                                <label for="music-2">Регги</label>
+                                            </div>
                                         </li>
                                         <li class="archive-filter__item">
-                                            <button class="archive-filter__btn" type="button">Открывается вечером</button>
+                                            <div class="general-checkbox">
+                                                <input class="general-custom-checkbox general-custom-checkbox_theme_dark" type="checkbox" id="music-3" name="music-3" value="indigo">
+                                                <label for="music-3">Рок</label>
+                                            </div>
                                         </li>
                                     </ul>
                                 </div>
@@ -213,13 +334,17 @@
                                     <div class="archive-filter__headline">Расположение</div>
                                     <ul class="archive-filter__list">
                                         <li class="archive-filter__item">
-                                            <button class="archive-filter__btn" type="button">Открыто сейчас</button>
+                                            <div class="general-checkbox">
+                                                <input class="general-custom-checkbox general-custom-checkbox_theme_dark" type="checkbox" id="location-1" name="location-1" value="indigo">
+                                                <label for="location-1">Центр</label>
+                                            </div>
+                                           
                                         </li>
                                         <li class="archive-filter__item">
-                                            <button class="archive-filter__btn" type="button">Стандартное время работы</button>
-                                        </li>
-                                        <li class="archive-filter__item">
-                                            <button class="archive-filter__btn" type="button">Открывается вечером</button>
+                                            <div class="general-checkbox">
+                                                <input class="general-custom-checkbox general-custom-checkbox_theme_dark" type="checkbox" id="location-2" name="location-2" value="indigo">
+                                                <label for="location-2">По кольцу</label>
+                                            </div>
                                         </li>
                                     </ul>
                                 </div>
@@ -227,13 +352,22 @@
                                     <div class="archive-filter__headline">Дополнительно</div>
                                     <ul class="archive-filter__list">
                                         <li class="archive-filter__item">
-                                            <button class="archive-filter__btn" type="button">Открыто сейчас</button>
+                                            <div class="general-checkbox">
+                                                <input class="general-custom-checkbox general-custom-checkbox_theme_dark" type="checkbox" id="extra-1" name="extra-1" value="indigo">
+                                                <label for="extra-1">Паркинг</label>
+                                            </div>
                                         </li>
                                         <li class="archive-filter__item">
-                                            <button class="archive-filter__btn" type="button">Стандартное время работы</button>
+                                            <div class="general-checkbox">
+                                                <input class="general-custom-checkbox general-custom-checkbox_theme_dark" type="checkbox" id="extra-2" name="extra-2" value="indigo">
+                                                <label for="extra-2">Караоке</label>
+                                            </div>
                                         </li>
                                         <li class="archive-filter__item">
-                                            <button class="archive-filter__btn" type="button">Открывается вечером</button>
+                                            <div class="general-checkbox">
+                                                <input class="general-custom-checkbox general-custom-checkbox_theme_dark" type="checkbox" id="extra-3" name="extra-3" value="indigo">
+                                                <label for="extra-3">Инстазона</label>
+                                            </div>
                                         </li>
                                     </ul>
                                 </div>
@@ -421,7 +555,50 @@
         
     </div>
 </footer>
-    <script src="js/jquery.min.js"></script>
+    <div class="modal hide">
+    <div class="modal__dialog">
+        <div class="modal__content">
+                <div data-close class="modal__close">&times;</div>
+                <div class="modal-head">
+                    <svg class="modal-head__icon">
+                        <use xlink:href="img/icons/icons.svg#ask-icon"></use>
+                    </svg>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body__item">
+                        <h2 class="modal-body__title">Что такое Hookah Map?</h2>
+                        <p class="modal-body__txt">Hookah Map - это сервис который поможет тебе спланировать твой досуг и выбрать место которое подойдёт именно тебе! Также, Hookah Map является большим маркетплейсом на котором собрано много магазинов с качественным набором товаров для любителей дымно провести время.</p>
+                    </div>
+                    <div class="modal-body__item">
+                        <h2 class="modal-body__title">Какие преимущества Hookah Map? </h2>
+                        <p class="modal-body__txt">Широкий выбор кальянных, товаров и магазинов</p>
+                        <p class="modal-body__txt">Возможность разместить свой контент, добавить свой магазин </p>
+                        <p class="modal-body__txt">Большой набор фильтров</p>
+                        <p class="modal-body__txt">Проверенные магазины и кальянные</p>
+                    </div>
+                    <nav class="modal-body__nav">
+                        <ul class="modal-body__list">
+                            <li class="modal-body__item">
+                                <a class="modal-body__link" href="#">Карта</a>
+                            </li>
+                            <li class="modal-body__item">
+                                <a class="modal-body__link" href="#">Кальянные</a>
+                            </li>
+                            <li class="modal-body__item">
+                                <a class="modal-body__link" href="#">Товары</a>
+                            </li>
+                            <li class="modal-body__item">
+                                <a class="modal-body__link" href="#">Магазины</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
 <!-- <script src="js/bootstrap.js"></script> -->
 <script src="js/swiper-bundle.min.js"></script>
 <script src="js/jquery.fancybox.js"></script>
