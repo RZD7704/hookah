@@ -12,17 +12,16 @@ let path = {
     src: {
         html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"],
         css:  [
-            "node_modules/bootstrap/dist/css/bootstrap-grid.css",
-            "node_modules/swiper/swiper-bundle.min.css",
             "node_modules/fancybox/dist/jquery.fancybox.css",
             source_folder + "/scss/style.scss"
         ],
-        js: [
-            "node_modules/jquery/dist/jquery.min.js",
-            "node_modules/swiper/swiper-bundle.min.js",
-            "node_modules/fancybox/dist/jquery.fancybox.js",
-            source_folder + "/js/script.js"
-        ],
+        // js: [
+        //     "node_modules/jquery/dist/jquery.min.js",
+        //     "node_modules/swiper/swiper-bundle.min.js",
+        //     "node_modules/fancybox/dist/jquery.fancybox.js",
+        //     source_folder + "/js/script.js"
+        // ],
+		js: source_folder + "/js/script.js",
         img:  source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
         fonts:  source_folder + "/fonts/*.ttf",
     },
@@ -82,13 +81,13 @@ function css() {
             cascade: true
         })
     )
-    // .pipe(dest(path.build.css))
-    // .pipe(clean_css())
-    // .pipe(
-    //     rename({
-    //         extname: ".min.css"
-    //     })
-    // )
+    .pipe(dest(path.build.css))
+    .pipe(clean_css())
+    .pipe(
+        rename({
+            extname: ".min.css"
+        })
+    )
     .pipe(dest(path.build.css))
     .pipe(browsersync.stream())
 }

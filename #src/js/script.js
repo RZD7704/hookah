@@ -1,19 +1,17 @@
-// @@include('alert.js')
+// @@include('header.js')
+
+@@include('../../node_modules/jquery/dist/jquery.min.js')
+@@include('../../node_modules/swiper/swiper-bundle.min.js')
+@@include('../../node_modules/fancybox/dist/jquery.fancybox.js')
+
 function initChecker() {
-	const headerParent = document.querySelector('.header-js'),
-		  mapParent = document.getElementById('map');
+	const headerParent = document.querySelector('.header-js');
 
 	if (headerParent) {
 		initStickyHeader();
 	}
-
-	if (mapParent) {
-		console.log('init');
-		generalInitMap();
-	}
 }
 initChecker();
-
 function initStickyHeader() {
 	window.addEventListener('scroll', function() {
 		let menuArea = document.querySelector('.header-js');
@@ -130,11 +128,6 @@ $(document).ready(function() {
 		$(this).toggleClass('active').siblings('.archive-filter__list').slideToggle();
 	});
 
-	// $('.archive-filter-scroll').on('click', '.archive-filter-scroll__headline', function() {
-	// 	$(this).toggleClass('active').siblings('.archive-filter-scroll__list').slideToggle();
-	// });
-
-
 	/////////////////// product +/-
 	$('.product-quantity__wrapper span').click(function () {
 		var $input = $(this).parents('.product-quantity__wrapper').find('input.product-num');
@@ -205,7 +198,6 @@ jQuery(document).ready(function($){
 		$('.show_hide_list').hide();
 	}
 });
-
 
 (function($) {
     $('.accordion > li:eq(0) a').addClass('active').next().slideDown();
@@ -522,8 +514,8 @@ var galleryTop = new Swiper('.single-product-gallery-top', {
 // Modal
 function modal() {
 	const modalTrigger = document.querySelectorAll('[data-modal]'),
-	modal = document.querySelector('.modal'),
-	modalCloseBtn = document.querySelector('[data-close]');
+		  modal = document.querySelector('.modal'),
+		  modalCloseBtn = document.querySelector('[data-close]');
   
 	
 	function closeModal () {
@@ -534,6 +526,7 @@ function modal() {
 
 	modalTrigger.forEach(btn => {
 	btn.addEventListener('click', () => {
+		modal.style.display="block";
 		modal.classList.add('show');
 		modal.classList.remove('hide');
 		document.body.style.overflow = 'hidden';
@@ -549,42 +542,41 @@ function modal() {
 	});
 
 	document.addEventListener('keydown', (e) => {
-	if (e.code === "Escape" && modal.classList.contains('show')) {
-		closeModal();
-	}
+		if (e.code === "Escape" && modal.classList.contains('show')) {
+			closeModal();
+		}
 	});
 }
 
 modal();
 
 //Dropdown
-function dropdownLog() {
-	const dropdownTrigger = document.querySelector('.log-dropdown-btn'),
-		  dropdown = document.querySelector('.log-dropdown-js');
+function dropdown(trigger, dropdownBlock, parentID) {
+	const dropdownTrigger = document.querySelector(trigger),
+		  dropdown = document.querySelector(dropdownBlock),
+		  dropdownParent = parentID;
 
 	dropdownTrigger.addEventListener('click', () => {
-		// console.log('click');
 		dropdown.classList.toggle('hide');
 	});
-	
-}
 
-dropdownLog();
-
-function dropdownBasket() {
-	const dropdownTrigger = document.querySelector('.basket-dropdown-btn'),
-		  dropdown = document.querySelector('.basket-dropdown-js');
-
-	dropdownTrigger.addEventListener('click', () => {
-		// console.log('click');
-		dropdown.classList.toggle('hide');
+	document.addEventListener('click', (e) => {
+		let hasParent = false;
+		for (let node = event.target; node != document.body; node = node.parentNode) {
+			if(node.id == dropdownParent){
+				hasParent = true;
+				break;
+			}
+		}
+		if(!hasParent) {
+			if (!dropdown.classList.contains('hide')) {
+				dropdown.classList.add('hide');
+			}
+		}
 	});
-	
 }
-
-dropdownBasket();
-
-let map;
+dropdown('.log-dropdown-btn', '.log-dropdown-js', 'log-dropdown');
+dropdown('.basket-dropdown-btn', '.basket-dropdown-js', 'basket-dropdown');
 
 function initMap() {
 	let map, coords, styles, marker, info, content;

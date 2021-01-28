@@ -368,3 +368,35 @@
         }
     }
 }
+
+.archive-nav {
+    &__list {}
+
+    &__item {
+        padding-bottom: 10px;
+    }
+
+    &__link {
+        font-weight: normal;
+        font-size: 14px;
+        letter-spacing: 0.02em;
+        color: #363636;
+        transition: all .3s;
+
+        @media (min-width: 576px) {
+            font-size: 16px;
+        }
+
+        @media (min-width: 768px) {
+            font-size: 18px;
+        }
+
+        @media (min-width: 992px) {
+            font-size: 20px;
+        }
+
+        &:hover {
+            color: #16B0A7;
+        }
+    }
+}
